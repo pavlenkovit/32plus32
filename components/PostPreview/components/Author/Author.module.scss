@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.imgLink {
+  display: block;
+  height: 34px;
+  width: 34px;
+  background: #ccc;
+  border-radius: 50%;
+  margin-right: 12px;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.name {
+  display: block;
+  margin-bottom: 2px;
+  color: #000;
+}

@@ -1,0 +1,20 @@
+.item {
+  display: inline-block;
+  margin: 3px 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.link {
+  background: #9B9FA3;
+  color: #fff;
+  display: block;
+  transition: background .15s ease-out;
+  padding: 2px 7px;
+  border-radius: 2px;
+  &:hover {
+    background: #ea0000;
+    color: #fff;
+  }
+}

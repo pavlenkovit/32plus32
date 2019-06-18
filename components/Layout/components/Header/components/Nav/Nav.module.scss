@@ -1,0 +1,31 @@
+.container {
+  background: #222;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item {
+  position: relative;
+}
+
+.link {
+  display: block;
+  padding: 10px 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #ea0000;
+  }
+}

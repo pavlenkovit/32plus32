@@ -1,0 +1,46 @@
+.container {
+  background: #000;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo {
+  display: block;
+  z-index: 3;
+  margin-right: 40px;
+}
+
+.logoImg {
+  display: block;
+  width: 254px;
+}
+
+.searchGroup {
+  flex: 1 1 auto;
+  width: 1%;
+  max-width: 400px;
+  &__inner {
+    display: flex;
+  }
+  &__input {
+    flex: 1 1 auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  &__button {
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    background: #444;
+  }
+}
