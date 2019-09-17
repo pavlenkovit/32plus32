@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 import css from './Author.module.scss';
 
@@ -23,12 +22,6 @@ const Author = (props) => {
       </div>
     </a>
   );
-};
-
-Author.propTypes = {
-  name: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
-  children: PropTypes.node,
 };
 
 export default Author;

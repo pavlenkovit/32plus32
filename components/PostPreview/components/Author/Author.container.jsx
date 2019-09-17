@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 import baseURL from '../../../../constants/baseURL';
 
@@ -29,9 +28,5 @@ class AuthorContainer extends PureComponent {
     return <Author name={name} slug={slug}>{children}</Author>;
   }
 }
-
-AuthorContainer.propTypes = {
-  id: PropTypes.number.isRequired,
-};
 
 export default AuthorContainer;

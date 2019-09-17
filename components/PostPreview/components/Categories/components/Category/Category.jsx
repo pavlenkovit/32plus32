@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import css from './Category.module.scss';
 import Link from 'next/link';
 
@@ -16,11 +15,6 @@ const Category = (props) => {
       </Link>
     </li>
   );
-};
-
-Category.propTypes = {
-  name: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
 };
 
 export default Category;

@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 
 import fetch from 'isomorphic-unfetch';
 import baseURL from '../../../../../../constants/baseURL';
@@ -28,9 +27,5 @@ class TagContainer extends PureComponent {
     return <Tag name={name} slug={slug} />;
   }
 }
-
-TagContainer.propTypes = {
-  id: PropTypes.number.isRequired,
-};
 
 export default TagContainer;

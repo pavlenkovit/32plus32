@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import css from './Categories.module.scss';
 
 import Category from './components/Category';
@@ -13,10 +12,6 @@ const Categories = (props) => {
       ))}
     </ul>
   );
-};
-
-Categories.propTypes = {
-  list: PropTypes.array.isRequired,
 };
 
 export default Categories;

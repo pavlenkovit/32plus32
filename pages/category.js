@@ -6,7 +6,7 @@ import {Col, Row} from 'react-grid-system';
 import PostPreview from '../components/PostPreview';
 
 const Category = (props) => {
-  const { category, posts } = props;
+  const { category, posts, tested } = props;
   console.log(category, 'category');
   console.log(posts, 'posts');
   return (
@@ -29,9 +29,10 @@ Category.getInitialProps = async (context) => {
   const { query: { slug } } = context;
   const resCat = await fetch(`${baseURL}/categories?slug=${slug}`);
   const dataCat = await resCat.json();
-  const category = dataCat.length > 0 ? dataCat[0] : null;
+  const category = dataCat && dataCat.length > 0 ? dataCat[0] : null;
   const resPosts = await fetch(`${baseURL}/posts?categories=${category.id}`);
   const posts = await resPosts.json();
+
   return { category, posts };
 };
 

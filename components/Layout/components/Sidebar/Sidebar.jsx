@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
 import css from './Sidebar.module.scss';
@@ -34,8 +33,5 @@ class Sidebar extends PureComponent {
     );
   }
 }
-
-Sidebar.propTypes = {
-};
 
 export default Sidebar;

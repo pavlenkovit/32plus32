@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 
 import fetch from 'isomorphic-unfetch';
 import baseURL from '../../../../../../constants/baseURL';
@@ -28,9 +27,5 @@ class CategoryContainer extends PureComponent {
     return <Category name={name} slug={slug} />;
   }
 }
-
-CategoryContainer.propTypes = {
-  id: PropTypes.number.isRequired,
-};
 
 export default CategoryContainer;

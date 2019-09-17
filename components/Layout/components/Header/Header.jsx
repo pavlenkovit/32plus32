@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import cn from 'classnames';
 import css from './Header.module.scss';
 import { Container } from 'react-grid-system';
 import Link from 'next/link';
@@ -12,27 +12,14 @@ class Header extends PureComponent {
         <Container>
           <div className={css.inner}>
             <Link href="/">
-              <a className={css.logo}>
-                <img src="/static/img/logo.png" alt="new32" className={css.logoImg}/>
-              </a>
+              <a className={css.logo}>32PLUS32</a>
             </Link>
-            <div className={css.searchGroup}>
-              <form>
-                <div className={css.searchGroup__inner}>
-                  <input type="text" className={css.searchGroup__input} placeholder="Поиск по сайту"/>
-                  <input type="submit" value="Найти" className={css.searchGroup__button}/>
-                </div>
-              </form>
-            </div>
+            <Nav />
           </div>
         </Container>
-        <Nav />
       </header>
     );
   }
 }
-
-Header.propTypes = {
-};
 
 export default Header;

@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 
 import css from './Tags.module.scss';
 import Item from './components/Tag';
@@ -16,9 +15,5 @@ class Tags extends PureComponent {
     );
   }
 }
-
-Tags.propTypes = {
-  list: PropTypes.array.isRequired,
-};
 
 export default Tags;

@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
@@ -13,6 +12,7 @@ import Comments from './components/Comments';
 import css from './PostPreview.module.scss';
 
 class PostPreview extends PureComponent {
+
   render() {
     const { post } = this.props;
     const { id, slug, title, tags, date, author, categories } = post;
@@ -56,9 +56,5 @@ class PostPreview extends PureComponent {
     );
   }
 }
-
-PostPreview.propTypes = {
-  post: PropTypes.object,
-};
 
 export default PostPreview;

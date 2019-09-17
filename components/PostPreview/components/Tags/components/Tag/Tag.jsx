@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import css from './Tag.module.scss';
@@ -16,11 +15,6 @@ const Tag = (props) => {
       </Link>
     </li>
   );
-};
-
-Tag.propTypes = {
-  name: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
 };
 
 export default Tag;

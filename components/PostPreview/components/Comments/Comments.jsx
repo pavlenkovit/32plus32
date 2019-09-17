@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import css from './Comments.module.scss';
 import CommentIcon from '../../../../icons/CommentIcon';
 
@@ -11,10 +10,6 @@ const Comments = (props) => {
       <div className={css.count}>{count}</div>
     </div>
   );
-};
-
-Comments.propTypes = {
-  count: PropTypes.number.isRequired,
 };
 
 export default Comments;
