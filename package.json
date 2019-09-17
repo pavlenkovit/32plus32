@@ -8,7 +8,7 @@
     "build": "next build",
     "now-build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "eslint './components/**/*.{ts,tsx}'"
+    "lint": "eslint './{components,scenes,pages}/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,7 +28,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/next": "^8.0.6",
+    "@types/react-html-parser": "^2.0.1",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
     "classnames": "^2.2.6",

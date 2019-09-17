@@ -1,17 +1,14 @@
 import React from 'react';
-import { Row, Col } from 'react-grid-system';
 import fetch from 'isomorphic-unfetch';
 
 import baseURL from '../constants/baseURL';
-import TrainingsPreview from '../components/TrainingsPreview';
+import TrainingsPreview from '../scenes/Trainings';
 
 const Index = (props) => {
   const { posts } = props;
 
   return (
-    <div>
-      <TrainingsPreview trainings={posts} />
-    </div>
+    <TrainingsPreview trainings={posts} />
   );
 };
 

@@ -2,41 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/trainings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/HandelGothicRegular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typings/declarations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Home/Home.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Home/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Post/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Post/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Trainings/Trainings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/Trainings/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Author/Author.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Author/Author.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Author/Author.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Author/Author.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Categories/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Categories/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/Category.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/Category.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/Category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Comments/Comments.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Comments/Comments.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Comments/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Comments/Comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Tags/Tags.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Tags/Tags.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/cli/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PostFull/PostFull.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PostFull/PostFull.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Post/Post.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PostFull/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TrainingsPreview/TrainingsPreview.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TrainingsPreview/TrainingsPreview.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Trainings/TrainingsPreview.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TrainingsPreview/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/trainings.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/trainings.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,31 +34,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Layout/Layout.tsx">
+        <entry file="file://$PROJECT_DIR$/scenes/Post/Post.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="34">
+              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#134#171#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typings/declarations.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -96,11 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/PostPreview/components/PostInfo/PostInfo.module.scss" />
-        <option value="$PROJECT_DIR$/components/PostPreview/components/PostInfo/PostInfo.jsx" />
-        <option value="$PROJECT_DIR$/icons/CommentIcon/CommentIcon.jsx" />
-        <option value="$PROJECT_DIR$/components/PostPreview/components/Author/Author.module.scss" />
-        <option value="$PROJECT_DIR$/components/PostPreview/components/Tags/Tags.module.scss" />
         <option value="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Item/Item.module.scss" />
         <option value="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Item/index.js" />
         <option value="$PROJECT_DIR$/components/PostPreview/components/Tags/components/Item/Item.jsx" />
@@ -111,11 +75,9 @@
         <option value="$PROJECT_DIR$/components/PostPreview/PostPreview.module.scss" />
         <option value="$PROJECT_DIR$/components/PostPreview/components/Comments/Comments.module.scss" />
         <option value="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/Category.module.scss" />
-        <option value="$PROJECT_DIR$/pages/trainings.js" />
         <option value="$PROJECT_DIR$/components/TrainingsPreview/TrainingsPreview.module.scss" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/pages/index.js" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" />
         <option value="$PROJECT_DIR$/components/Post/Post.jsx" />
         <option value="$PROJECT_DIR$/pages/post.js" />
@@ -145,8 +107,15 @@
         <option value="$PROJECT_DIR$/next.config.js" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/typings/declarations.d.ts" />
+        <option value="$PROJECT_DIR$/cli/component.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/components/Layout/Layout.tsx" />
+        <option value="$PROJECT_DIR$/.eslintrc.json" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/pages/trainings.js" />
+        <option value="$PROJECT_DIR$/scenes/Home/Home.tsx" />
+        <option value="$PROJECT_DIR$/scenes/Trainings/Trainings.tsx" />
+        <option value="$PROJECT_DIR$/scenes/Post/Post.tsx" />
       </list>
     </option>
   </component>
@@ -174,18 +143,13 @@
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="scenes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
+              <item name="scenes" type="462c0819:PsiDirectoryNode" />
+              <item name="Post" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,19 +166,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scenes" />
+      <recent name="$PROJECT_DIR$/components/PostPreview/components/Categories/components" />
+      <recent name="$PROJECT_DIR$/components/PostPreview/components/Tags/components" />
+      <recent name="$PROJECT_DIR$/components/PostPreview/components" />
+      <recent name="$PROJECT_DIR$/icons" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/fonts" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/components/PostPreview/components" />
       <recent name="$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/PostPreview/components/Categories/components" />
-      <recent name="$PROJECT_DIR$/components/PostPreview/components/Tags/components" />
-      <recent name="$PROJECT_DIR$/components/PostPreview/components" />
-      <recent name="$PROJECT_DIR$/icons" />
-      <recent name="$PROJECT_DIR$/components/Layout/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -267,12 +231,12 @@
       <workItem from="1568721177038" duration="1208000" />
       <workItem from="1568722488479" duration="103000" />
       <workItem from="1568723879628" duration="1057000" />
-      <workItem from="1568724982638" duration="324000" />
+      <workItem from="1568724982638" duration="4535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51839000" />
+    <option name="totallyTimeSpent" value="56050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +264,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21428572" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37551022" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -313,74 +277,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Tags/Tags.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Tags/Tags.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Tags/components/Tag/Tag.container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Author/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Author/Author.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Author/Author.container.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Categories/Categories.container.jsx" />
     <entry file="file://$PROJECT_DIR$/components/PostPreview/components/Categories/components/Category/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -477,28 +373,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/trainings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/components/TrainingsPreview/TrainingsPreview.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/TrainingsPreview/TrainingsPreview.module.scss">
+    <entry file="file://$PROJECT_DIR$/scenes/Trainings/TrainingsPreview.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
@@ -529,9 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli/component.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -545,16 +418,6 @@
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -599,20 +462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostFull/PostFull.module.scss">
+    <entry file="file://$PROJECT_DIR$/scenes/Post/Post.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostFull/PostFull.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,33 +527,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/declarations.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/constants/baseURL.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/wpapi/wpapi.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Index/Index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Index/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Home/Home.module.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Home/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/Layout.tsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.next/server/static/development/pages/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1360" column="106" selection-start-line="1360" selection-start-column="106" selection-end-line="1360" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/trainings.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Home/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Trainings/Trainings.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenes/Post/Post.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <element signature="e#134#171#0" expanded="true" />
           </folding>
         </state>
       </provider>

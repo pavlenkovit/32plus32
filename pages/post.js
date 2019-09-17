@@ -3,7 +3,7 @@ import ReactHtmlParser from 'react-html-parser';
 import fetch from 'isomorphic-unfetch';
 
 import baseURL from '../constants/baseURL';
-import PostFull from '../components/PostFull';
+import PostFull from '../scenes/Post';
 
 const Post = (props) => {
   const { post } = props;
