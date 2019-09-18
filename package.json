@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next -p 3001",
     "build": "next build",
-    "now-build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start -p 3001",
     "lint": "eslint './{components,scenes,pages}/**/*.{.ts,.tsx}'"
   },
   "eslintConfig": {
