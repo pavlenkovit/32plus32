@@ -6,7 +6,7 @@ import ReactHtmlParser from 'react-html-parser';
 import css from './Post.module.scss';
 import Author from '../../components/PostPreview/components/Author';
 
-const Post = ({ title, content, author, date }) => {
+const Post = ({ title, content, author, date, fimg_url }) => {
   return (
     <div className={css.container}>
       <h1 className={css.title}>{ReactHtmlParser(title.rendered)}</h1>
@@ -17,9 +17,11 @@ const Post = ({ title, content, author, date }) => {
           </time>
         </Author>
       </div>
-      <div className={css.imgWrapper}>
-        <img className={css.img} src="/static/img/photo.jpg" alt="" />
-      </div>
+      {fimg_url && (
+        <div className={css.imgWrapper}>
+          <img className={css.img} src={fimg_url} alt="" />
+        </div>
+      )}
       <div>
         {ReactHtmlParser(content.rendered)}
       </div>

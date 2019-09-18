@@ -15,7 +15,7 @@ class PostPreview extends PureComponent {
 
   render() {
     const { post } = this.props;
-    const { id, slug, title, tags, date, author, categories } = post;
+    const { id, slug, title, tags, date, author, categories, fimg_url } = post;
 
     const href = `/post?slug=${slug}`;
     const as = `/post/${slug}`;
@@ -24,11 +24,13 @@ class PostPreview extends PureComponent {
       <article className={css.container}>
         <div className={css.inner}>
           <div className={css.body}>
-            <Link href={href} as={as}>
-              <a className={css.imgLink}>
-                <img className={css.img} src="/static/img/photo.jpg" alt="" />
-              </a>
-            </Link>
+            {fimg_url && (
+              <Link href={href} as={as}>
+                <a className={css.imgLink}>
+                  <img className={css.img} src={fimg_url} alt="" />
+                </a>
+              </Link>
+            )}
             <div className={css.info}>
               <Author id={author}>
                 <time className={css.date}>
