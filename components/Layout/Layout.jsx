@@ -4,10 +4,9 @@ import '../../style.scss';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-// @ts-ignore
 import css from './Layout.module.scss';
 
-const Layout: React.FC = ({ children }) => (
+const Layout = ({ children }) => (
   <div className={css.wrapper}>
     <Header />
     <main className={css.content}>

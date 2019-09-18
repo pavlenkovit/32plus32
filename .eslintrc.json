@@ -1,10 +1,6 @@
 {
   "extends": [
-    "airbnb",
-    "airbnb-typescript"
-  ],
-  "plugins": [
-    "@typescript-eslint"
+    "airbnb"
   ],
   "env": {
     "browser": true,
@@ -43,5 +39,5 @@
       "version": "detect"
     }
   },
-  "parser": "@typescript-eslint/parser"
+  "parser": "babel-eslint"
 }

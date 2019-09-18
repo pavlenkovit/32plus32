@@ -1,20 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 import ReactHtmlParser from 'react-html-parser';
 
-// @ts-ignore
 import css from './Post.module.scss';
 import Author from '../../components/PostPreview/components/Author';
 
-interface IProps {
-  title: any;
-  content: any;
-  author: any;
-  date: any;
-}
-
-const Post: FC<IProps> = ({ title, content, author, date }) => {
+const Post = ({ title, content, author, date }) => {
   return (
     <div className={css.container}>
       <h1 className={css.title}>{ReactHtmlParser(title.rendered)}</h1>

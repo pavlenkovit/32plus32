@@ -1,17 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { isWeekend, isSameDay, eachDay, format, getDaysInMonth, getDay } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 import cn from 'classnames';
 
-// @ts-ignore
 import css from './TrainingsPreview.module.scss';
 
-interface IProps {
-  trainings: any[];
-}
-
-const Trainings: FC<IProps> = ({ trainings }) => {
+const Trainings = ({ trainings }) => {
   const months = [
     {
       year: 2019,
@@ -45,8 +40,8 @@ const Trainings: FC<IProps> = ({ trainings }) => {
     },
   ];
 
-  months.forEach((section: any) => {
-    trainings.forEach((item: any) => {
+  months.forEach((section) => {
+    trainings.forEach((item) => {
       const date = new Date(item.date);
       if (date.getMonth() === section.month && date.getFullYear() === section.year) {
         section.trainings.push(item);
@@ -76,7 +71,7 @@ const Trainings: FC<IProps> = ({ trainings }) => {
                 new Date(year, month, 1),
                 new Date(year, month, countDays),
               ).map(date => {
-                const train: any = section.trainings.find((item: any) => isSameDay(item.date, date));
+                const train = section.trainings.find((item) => isSameDay(item.date, date));
                 const slug = train && train.slug;
                 let href;
                 let as;

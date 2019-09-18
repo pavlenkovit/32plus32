@@ -1,17 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Row, Col } from 'react-grid-system';
 import PostPreview from '../../components/PostPreview';
-// @ts-ignore
 // import css from './Home.module.scss';
 
-interface IProps {
-  posts: any[];
-}
-
-const Home: FC<IProps> = ({ posts }) => {
+const Home = ({ posts }) => {
   return (
     <Row>
-      {posts.map((post: any, idx: number) => {
+      {posts.map((post, idx) => {
         return (
           <Col key={idx} md={6}>
             <PostPreview post={post} />
