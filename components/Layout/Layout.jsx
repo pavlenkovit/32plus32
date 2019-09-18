@@ -5,12 +5,14 @@ import '../../style.scss';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import css from './Layout.module.scss';
+import Breadcrumbs from '../Breadcrumbs';
 
 const Layout = ({ children }) => {
   //return children;
   return (
     <div className={css.wrapper}>
       <Header />
+      <Breadcrumbs />
       <main className={css.content}>
         <Container>
           <Row>

@@ -1,26 +1,60 @@
 .container {
   background: #000;
   color: #fff;
+  font-family: 'Roboto';
 }
 
 .inner {
   display: flex;
   align-items: center;
-  padding: 17px 0;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   display: block;
-  width: 200px;
-  margin-right: 15px;
+  margin-right: 25px;
   font-family: 'Handel Gothic';
   line-height: 1;
-  font-size: 34px;
+  font-size: 28px;
   color: inherit;
   margin-bottom: -0.15em;
   transition: opacity .15s ease-out;
   &:hover {
     opacity: 0.65;
     color: inherit;
+  }
+}
+
+.login {
+  padding: 0.5em 0.75em;
+  font-size: 0.75em;
+  color: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.searchButton {
+  display: block;
+  padding: .35em;
+  & svg {
+    display: block;
+    width: .9em;
+    height: .9em;
+    & path {
+      transition: fill .15s ease-out;
+    }
+  }
+  &:hover {
+    & svg {
+      & path {
+        fill: #ea0000;
+      }
+    }
   }
 }

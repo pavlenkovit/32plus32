@@ -19,13 +19,15 @@ class AuthorContainer extends PureComponent {
     const { children } = this.props;
     const { author } = this.state;
 
+    console.log(author);
+
     if (!author) {
       return null;
     }
 
     const { name, slug } = author;
 
-    return <Author name={name} slug={slug}>{children}</Author>;
+    return <Author name={name} img="/static/img/author.png" slug={slug}>{children}</Author>;
   }
 }
 

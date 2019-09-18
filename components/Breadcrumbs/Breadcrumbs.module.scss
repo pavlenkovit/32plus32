@@ -1,0 +1,29 @@
+.container {
+  background: #f4f4f4;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #9B9FA3;
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  &:after {
+    content: '/';
+    margin: 0 10px;
+  }
+  &:last-child {
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.link {
+  //color: inherit;
+}

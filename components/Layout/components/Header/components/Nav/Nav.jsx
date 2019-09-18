@@ -6,11 +6,7 @@ import css from './Nav.module.scss';
 const menu = [
   {
     href: '/',
-    title: 'Главная',
-  },
-  {
-    href: '/',
-    title: 'Все статьи',
+    title: 'Статьи',
   },
   {
     href: '/trainings',
@@ -19,10 +15,6 @@ const menu = [
   {
     href: '/',
     title: 'Нормативы',
-  },
-  {
-    href: '/',
-    title: 'Стать автором',
   },
   {
     href: '/',

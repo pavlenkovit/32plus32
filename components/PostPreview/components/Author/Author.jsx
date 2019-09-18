@@ -3,7 +3,7 @@ import Link from 'next/link';
 import css from './Author.module.scss';
 
 const Author = (props) => {
-  const { name, slug, children } = props;
+  const { name, slug, img, children } = props;
   const href = `/author?slug=${slug}`;
   const as = `/author/${slug}`;
 
@@ -11,7 +11,7 @@ const Author = (props) => {
     <a className={css.container}>
       <Link href={href} as={as}>
         <a className={css.imgLink}>
-          <img className={css.img} src="/static/img/author.png"/>
+          <img className={css.img} src={img} />
         </a>
       </Link>
       <div>
