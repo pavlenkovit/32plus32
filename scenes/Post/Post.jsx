@@ -3,10 +3,12 @@ import ReactHtmlParser from 'react-html-parser';
 
 import css from './Post.module.scss';
 import Author from '../../components/Author';
+import CustomHead from '../../components/CustomHead';
 
 const Post = ({ title, content, author, date, fimg_url }) => {
   return (
     <div className={css.container}>
+      <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
       <h1 className={css.title}>{ReactHtmlParser(title.rendered)}</h1>
       <div className={css.info}>
         <Author
