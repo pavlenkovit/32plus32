@@ -3,8 +3,7 @@ import Link from 'next/link';
 
 import css from './Tag.module.scss';
 
-const Tag = (props) => {
-  const { name, slug } = props;
+const Tag = ({ name, slug }) => {
   const href = `/tag?slug=${slug}`;
   const as = `/tag/${slug}`;
 

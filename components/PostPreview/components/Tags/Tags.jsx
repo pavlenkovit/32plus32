@@ -6,10 +6,13 @@ import Item from './components/Tag';
 class Tags extends PureComponent {
   render() {
     const { list } = this.props;
+    if (list.length === 0) {
+      return null;
+    }
     return (
       <ul className={css.list}>
-        {list.map((id) => (
-          <Item id={id} />
+        {list.map((item) => (
+          <Item key={item.id} {...item} />
         ))}
       </ul>
     );

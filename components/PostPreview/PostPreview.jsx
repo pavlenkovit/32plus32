@@ -1,11 +1,9 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
-import { format } from 'date-fns';
-import ru from 'date-fns/locale/ru';
 import ReactHtmlParser from 'react-html-parser';
 
 import Tags from './components/Tags';
-import Author from "./components/Author";
+import Author from "../Author";
 import Categories from './components/Categories';
 import Comments from './components/Comments';
 
@@ -15,8 +13,7 @@ class PostPreview extends PureComponent {
 
   render() {
     const { post } = this.props;
-    const { id, slug, title, tags, date, author, categories, fimg_url } = post;
-
+    const { id, slug, title, tags, date, fimg_url, _embedded: { author, 'wp:term': term } } = post;
     const href = `/post?slug=${slug}`;
     const as = `/post/${slug}`;
 
@@ -32,26 +29,23 @@ class PostPreview extends PureComponent {
               </Link>
             )}
             <div className={css.info}>
-              <Author id={author}>
-                <time className={css.date}>
-                  {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
-                </time>
-              </Author>
+              <Author
+                {...author[0]}
+                date={date}
+              />
             </div>
             <h3 className={css.title}>
               <Link href={href} as={as}>
                 <a className={css.titleLink}>{ReactHtmlParser(title.rendered)}</a>
               </Link>
             </h3>
-            {tags.length > 0 && (
-              <Tags list={tags} />
-            )}
+            <Tags list={term[1]} />
           </div>
           <footer className={css.footer}>
             <div className={css.categories}>
-              <Categories list={categories} />
+              <Categories list={term[0]} />
             </div>
-            <Comments id={id}/>
+            <Comments id={id} />
           </footer>
         </div>
       </article>

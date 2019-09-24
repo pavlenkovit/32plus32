@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+}
+
+.item {
+  margin-right: 15px;
+  white-space: nowrap;
+  &:last-child {
+    margin-right: 0;
+  }
+  &Active {
+    font-weight: 700;
+  }
+}

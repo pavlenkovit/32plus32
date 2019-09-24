@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  font-size: 0.75em;
 }
 
 .imgLink {
@@ -24,4 +25,9 @@
   display: block;
   margin-bottom: 2px;
   color: #000;
+}
+
+.date {
+  color: #9B9FA3;
+  display: block;
 }

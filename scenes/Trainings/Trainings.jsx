@@ -92,7 +92,7 @@ const Trainings = ({ trainings }) => {
                     <div className={css.linkWrap}>
                       {train ? (
                         <Link as={as} href={href}>
-                          <a href="/#" className={css.link}>Тренировка</a>
+                          <a className={css.link}>Тренировка</a>
                         </Link>
                       ) : (
                         <div className={css.empty}>Отдых</div>

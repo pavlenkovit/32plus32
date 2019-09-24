@@ -1,1 +1,1 @@
-export { default } from './Tag.container';
+export { default } from './Tag';

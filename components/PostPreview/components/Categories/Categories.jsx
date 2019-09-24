@@ -3,12 +3,11 @@ import css from './Categories.module.scss';
 
 import Category from './components/Category';
 
-const Categories = (props) => {
-  const { list } = props;
+const Categories = ({ list }) => {
   return (
     <ul className={css.list}>
-      {list.map((id, idx) => (
-        <Category key={idx} id={id} />
+      {list.map((item) => (
+        <Category key={item.id} {...item} />
       ))}
     </ul>
   );
