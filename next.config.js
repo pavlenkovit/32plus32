@@ -3,7 +3,7 @@ const withSass = require('@zeit/next-sass');
 const withCss = require('@zeit/next-css');
 
 module.exports = withImages(withCss(withSass({
-  target: 'serverless',
+  //target: 'serverless',
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,
