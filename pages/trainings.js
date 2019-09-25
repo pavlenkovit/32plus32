@@ -13,7 +13,7 @@ const Index = (props) => {
 };
 
 Index.getInitialProps = async (context) => {
-  const res = await fetch(`${baseURL}/posts?categories=77&per_page=100`);
+  const res = await fetch(`${baseURL}/posts?categories=77&per_page=100&_embed`);
   const data = await res.json();
 
   return { posts: data };

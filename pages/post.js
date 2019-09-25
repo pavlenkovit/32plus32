@@ -24,7 +24,7 @@ Post.getInitialProps = async (context) => {
     slug = req.params.slug;
   }
 
-  const res = await fetch(`${baseURL}/posts?slug=${slug}`);
+  const res = await fetch(`${baseURL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
   const post = data && data.length > 0 ? data[0] : null;
   return { post, slug };

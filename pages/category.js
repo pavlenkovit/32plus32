@@ -13,7 +13,16 @@ const CategoryPage = (props) => {
 };
 
 CategoryPage.getInitialProps = async (context) => {
-  const { query: { slug } } = context;
+  const { query, req } = context;
+
+  let slug = '';
+  if (query.slug) { // переходы внутри сайта
+    slug = context.query.slug;
+  }
+  if (req && req.params && req.params.slug) { // прямой переход по ссылке
+    slug = req.params.slug;
+  }
+
   const resCat = await fetch(`${baseURL}/categories?slug=${slug}`);
   const dataCat = await resCat.json();
   const category = dataCat && dataCat.length > 0 ? dataCat[0] : null;
