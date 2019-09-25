@@ -14,7 +14,16 @@ const Post = (props) => {
 };
 
 Post.getInitialProps = async (context) => {
-  const { query: { slug } } = context;
+  const { query, req } = context;
+
+  let slug = '';
+  if (query.slug) { // переходы внутри сайта
+    slug = context.query.slug;
+  }
+  if (req && req.params && req.params.slug) { // прямой переход по ссылке
+    slug = req.params.slug;
+  }
+
   const res = await fetch(`${baseURL}/posts?slug=${slug}`);
   const data = await res.json();
   const post = data && data.length > 0 ? data[0] : null;
