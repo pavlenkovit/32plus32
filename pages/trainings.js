@@ -2,21 +2,21 @@ import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
 import baseURL from '../constants/baseURL';
-import TrainingsPreview from '../scenes/Trainings';
+import Trainings from '../scenes/Trainings';
 
-const Index = (props) => {
+const TrainingsPage = (props) => {
   const { posts } = props;
 
   return (
-    <TrainingsPreview trainings={posts} />
+    <Trainings trainings={posts} />
   );
 };
 
-Index.getInitialProps = async (context) => {
-  const res = await fetch(`${baseURL}/posts?categories=77&per_page=100&_embed`);
+TrainingsPage.getInitialProps = async (context) => {
+  const res = await fetch(`${baseURL}/posts?categories=77&_embed`);
   const data = await res.json();
 
   return { posts: data };
 };
 
-export default Index;
+export default TrainingsPage;

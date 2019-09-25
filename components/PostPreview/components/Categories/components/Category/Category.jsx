@@ -7,11 +7,9 @@ const Category = ({ name, slug }) => {
   const as = `/category/${slug}`;
 
   return (
-    <li className={css.item}>
-      <Link href={href} as={as}>
-        <a className={css.link}>{name}</a>
-      </Link>
-    </li>
+    <Link href={href} as={as}>
+      <a className={css.link}>{name}</a>
+    </Link>
   );
 };
 

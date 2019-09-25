@@ -4,7 +4,7 @@ import css from './Sidebar.module.scss';
 class Sidebar extends PureComponent {
   render() {
     return (
-      <div>Реклама</div>
+      <div className={css.container}>Реклама</div>
     )
   }
 }

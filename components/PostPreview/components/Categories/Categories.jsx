@@ -5,11 +5,14 @@ import Category from './components/Category';
 
 const Categories = ({ list }) => {
   return (
-    <ul className={css.list}>
-      {list.map((item) => (
-        <Category key={item.id} {...item} />
+    <div className={css.list}>
+      {list.map((item, idx) => (
+        <>
+          <Category key={item.id} {...item} />
+          {idx !== list.length - 1 && <span>, </span>}
+        </>
       ))}
-    </ul>
+    </div>
   );
 };
 
