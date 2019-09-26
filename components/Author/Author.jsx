@@ -10,15 +10,15 @@ const Author = (props) => {
   const as = `/author/${slug}`;
 
   return (
-    <div className={css.container}>
+    <div className={css.container} itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
         <a className={css.imgLink}>
-          <img className={css.img} src={img} />
+          <img className={css.img} src={img} alt={name} itemProp="image" />
         </a>
       </Link>
       <div>
         <Link href={href} as={as}>
-          <a className={css.name} itemProp="author">{name}</a>
+          <a className={css.name} itemProp="name">{name}</a>
         </Link>
         <time className={css.date} dateTime={date}>
           {format(new Date(date), 'D MMMM YYYY', { locale: ru })}

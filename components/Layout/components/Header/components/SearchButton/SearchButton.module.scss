@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  padding: .35em;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  cursor: pointer;
+
+  & svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+
+    & path {
+      transition: fill .15s ease-out;
+    }
+  }
+
+  &:hover {
+    & svg {
+      & path {
+        fill: #ea0000;
+      }
+    }
+  }
+}

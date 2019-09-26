@@ -9,7 +9,11 @@ const Post = ({ title, content, author, date, fimg_url }) => {
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
-      <h1 className={css.title} dangerouslySetInnerHTML={{__html: title.rendered}} itemProp="name" />
+      <h1
+        className={css.title}
+        dangerouslySetInnerHTML={{__html: title.rendered}}
+        itemProp="headline name"
+      />
       <div className={css.info}>
         <Author
           name="Ivan Ivanov"

@@ -19,15 +19,19 @@ class PostPreview extends PureComponent {
     return (
       <article className={css.container} itemScope itemType="http://schema.org/Article">
         {fimg_url && (
-          <Link href={href} as={as}>
-            <a className={css.imgLink} style={{ backgroundImage: `url(${fimg_url})` }} itemProp="url" />
-          </Link>
+          <>
+            <meta itemProp="image" content={fimg_url} />
+            <meta itemProp="datePublished" content={date} />
+            <Link href={href} as={as}>
+              <a className={css.imgLink} style={{ backgroundImage: `url(${fimg_url})` }} itemProp="url" />
+            </Link>
+          </>
         )}
         <div className={css.body}>
-          <h2 className={css.title} itemProp="name">
+          <h2 className={css.title}>
             <Link href={href} as={as}>
               <a className={css.titleLink} itemProp="url">
-                <span className={css.underline}>
+                <span className={css.underline} itemProp="headline name">
                   {ReactHtmlParser(title.rendered)}
                 </span>
               </a>
@@ -37,6 +41,7 @@ class PostPreview extends PureComponent {
             <Author
               {...author[0]}
               date={date}
+              img="static/img/author.png"
             />
           </div>
           <footer className={css.footer}>

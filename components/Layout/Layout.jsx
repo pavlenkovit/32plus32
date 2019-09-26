@@ -8,26 +8,38 @@ import Breadcrumbs from '../Breadcrumbs';
 import Container from '../Container';
 import Footer from './components/Footer';
 
-const Layout = ({ children }) => {
-  return (
-    <div className={css.wrapper}>
-      <Header />
-      <Breadcrumbs />
-      <main className={css.main}>
-        <Container>
-          <div className={css.inner}>
-            <div className={css.content}>
-              {children}
+class Layout extends React.PureComponent {
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  }
+
+  handleResize = () => {
+    this.props.checkIsMobile(window.innerWidth <= 768);
+  };
+
+  render() {
+    const { children } = this.props;
+    return (
+      <div className={css.wrapper}>
+        <Header />
+        <Breadcrumbs />
+        <main className={css.main}>
+          <Container>
+            <div className={css.inner}>
+              <div className={css.content}>
+                {children}
+              </div>
+              <div className={css.sidebar}>
+                <Sidebar />
+              </div>
             </div>
-            <div className={css.sidebar}>
-              <Sidebar />
-            </div>
-          </div>
-        </Container>
-      </main>
-      <Footer />
-    </div>
-  )
-};
+          </Container>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default Layout;
