@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Author/Author.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Author/Author.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/Post/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upd.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="498">
@@ -30,11 +27,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="459">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/upd.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -99,7 +105,6 @@
         <option value="$PROJECT_DIR$/scenes/Category/components/Categories/Categories.module.scss" />
         <option value="$PROJECT_DIR$/scenes/Category/components/Categories/Categories.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/upd.sh" />
         <option value="$PROJECT_DIR$/next.config.js" />
         <option value="$PROJECT_DIR$/components/CustomHead/CustomHead.jsx" />
         <option value="$PROJECT_DIR$/scenes/Category/Category.jsx" />
@@ -119,6 +124,7 @@
         <option value="$PROJECT_DIR$/scenes/Post/Post.jsx" />
         <option value="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" />
         <option value="$PROJECT_DIR$/components/Author/Author.jsx" />
+        <option value="$PROJECT_DIR$/upd.sh" />
       </list>
     </option>
   </component>
@@ -141,51 +147,6 @@
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PostPreview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
@@ -296,12 +257,12 @@
       <workItem from="1569419110294" duration="1613000" />
       <workItem from="1569422020468" duration="702000" />
       <workItem from="1569427872441" duration="3356000" />
-      <workItem from="1569483787544" duration="2149000" />
+      <workItem from="1569483787544" duration="2285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90851000" />
+    <option name="totallyTimeSpent" value="90987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,7 +277,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2838828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2838828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,7 +290,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21836735" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28163266" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -480,7 +441,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.next/BUILD_ID" />
     <entry file="file://$PROJECT_DIR$/.next/serverless/pages/post.js" />
-    <entry file="file://$PROJECT_DIR$/upd.sh" />
     <entry file="file://$PROJECT_DIR$/components/CustomHead/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -697,16 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -714,6 +664,23 @@
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upd.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
