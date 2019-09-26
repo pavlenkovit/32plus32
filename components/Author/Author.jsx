@@ -10,7 +10,7 @@ const Author = (props) => {
   const as = `/author/${slug}`;
 
   return (
-    <a href="/#" className={css.container}>
+    <div className={css.container}>
       <Link href={href} as={as}>
         <a className={css.imgLink}>
           <img className={css.img} src={img} />
@@ -18,13 +18,13 @@ const Author = (props) => {
       </Link>
       <div>
         <Link href={href} as={as}>
-          <a className={css.name}>{name}</a>
+          <a className={css.name} itemProp="author">{name}</a>
         </Link>
-        <time className={css.date}>
+        <time className={css.date} dateTime={date}>
           {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
         </time>
       </div>
-    </a>
+    </div>
   );
 };
 

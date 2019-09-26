@@ -9,7 +9,7 @@ const Post = ({ title, content, author, date, fimg_url }) => {
   return (
     <div className={css.container}>
       <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
-      <h1 className={css.title}>{ReactHtmlParser(title.rendered)}</h1>
+      <h1 className={css.title} dangerouslySetInnerHTML={{__html: title.rendered}} />
       <div className={css.info}>
         <Author
           name="Ivan Ivanov"
@@ -22,9 +22,7 @@ const Post = ({ title, content, author, date, fimg_url }) => {
           <img className={css.img} src={fimg_url} alt="" />
         </div>
       )}
-      <div>
-        {ReactHtmlParser(content.rendered)}
-      </div>
+      <div dangerouslySetInnerHTML={{__html: content.rendered}} />
     </div>
   );
 };

@@ -18,16 +18,16 @@ class PostPreview extends PureComponent {
     const as = `/post/${slug}`;
 
     return (
-      <article className={css.container}>
+      <article className={css.container} itemScope itemType="http://schema.org/Article">
         {fimg_url && (
           <Link href={href} as={as}>
-            <a className={css.imgLink} style={{ backgroundImage: `url(${fimg_url})` }} />
+            <a className={css.imgLink} style={{ backgroundImage: `url(${fimg_url})` }} itemProp="url" />
           </Link>
         )}
         <div className={css.body}>
-          <h2 className={css.title}>
+          <h2 className={css.title} itemProp="name">
             <Link href={href} as={as}>
-              <a className={css.titleLink}>
+              <a className={css.titleLink} itemProp="url">
                 <span className={css.underline}>
                   {ReactHtmlParser(title.rendered)}
                 </span>
