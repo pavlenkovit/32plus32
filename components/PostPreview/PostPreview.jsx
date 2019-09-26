@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import Link from 'next/link';
 import ReactHtmlParser from 'react-html-parser';
 
-import Tags from './components/Tags';
 import Author from '../Author';
 import Categories from './components/Categories';
 import Comments from './components/Comments';

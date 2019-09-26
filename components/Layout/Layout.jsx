@@ -1,33 +1,31 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import '../../style.scss';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import css from './Layout.module.scss';
 import Breadcrumbs from '../Breadcrumbs';
+import Container from '../Container';
+import Footer from './components/Footer';
 
 const Layout = ({ children }) => {
-  //return children;
   return (
     <div className={css.wrapper}>
       <Header />
       <Breadcrumbs />
-      <main className={css.content}>
+      <main className={css.main}>
         <Container>
-          <Row>
-            <Col md={9}>
+          <div className={css.inner}>
+            <div className={css.content}>
               {children}
-            </Col>
-            <Col md={3}>
+            </div>
+            <div className={css.sidebar}>
               <Sidebar />
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </main>
-      <footer>
-        footer content
-      </footer>
+      <Footer />
     </div>
   )
 };

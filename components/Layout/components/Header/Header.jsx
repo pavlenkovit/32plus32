@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
-import { Container } from 'react-grid-system';
 import Link from 'next/link';
 import Nav from './components/Nav';
 import css from './Header.module.scss';
+import Container from '../../../Container';
 
 class Header extends PureComponent {
   render() {

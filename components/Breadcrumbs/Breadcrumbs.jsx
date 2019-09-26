@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Breadcrumbs.module.scss';
-import { Container } from 'react-grid-system';
+import Container from '../Container';
 
 const Breadcrumbs = () => {
   return (

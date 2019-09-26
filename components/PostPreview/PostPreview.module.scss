@@ -43,8 +43,10 @@
 .titleLink {
   color: inherit;
   display: block;
+  text-decoration: none;
   &:hover {
     color: inherit;
+    text-decoration: none;
     & .underline {
       background-size: 100% 100%;
     }

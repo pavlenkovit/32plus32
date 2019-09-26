@@ -1,7 +1,6 @@
 .container {
   background: #000;
   color: #fff;
-  font-family: 'Roboto';
 }
 
 .inner {
@@ -25,7 +24,9 @@
   color: inherit;
   margin-bottom: -0.15em;
   transition: opacity .15s ease-out;
+  text-decoration: none;
   &:hover {
+    text-decoration: none;
     opacity: 0.65;
     color: inherit;
   }

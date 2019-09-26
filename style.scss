@@ -41,12 +41,11 @@ h4 {
 }
 
 a {
-  color: #9B9FA3;
-  text-decoration: none;
+  color: #ea0000;
+  text-decoration: underline;
   transition: color .15s ease-out;
   &:hover {
-    text-decoration: none;
-    color: #ea0000;
+    color: #333;
   }
 }
 

@@ -7,9 +7,9 @@ import CustomHead from '../../components/CustomHead';
 
 const Post = ({ title, content, author, date, fimg_url }) => {
   return (
-    <div className={css.container}>
+    <article className={css.container} itemScope itemType="http://schema.org/Article">
       <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
-      <h1 className={css.title} dangerouslySetInnerHTML={{__html: title.rendered}} />
+      <h1 className={css.title} dangerouslySetInnerHTML={{__html: title.rendered}} itemProp="name" />
       <div className={css.info}>
         <Author
           name="Ivan Ivanov"
@@ -23,7 +23,7 @@ const Post = ({ title, content, author, date, fimg_url }) => {
         </div>
       )}
       <div dangerouslySetInnerHTML={{__html: content.rendered}} />
-    </div>
+    </article>
   );
 };
 
