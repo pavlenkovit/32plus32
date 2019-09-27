@@ -1,9 +1,10 @@
 import React from 'react';
 import PostPreview from '../../components/PostPreview';
 import CustomHead from '../../components/CustomHead';
-// import css from './Home.module.scss';
+import Pagination from '../../components/Pagination';
+import css from './Home.module.scss';
 
-const Home = ({ posts }) => {
+const Home = ({ posts, totalPages, page }) => {
   return (
     <>
       <CustomHead />
@@ -12,6 +13,12 @@ const Home = ({ posts }) => {
           <PostPreview key={idx} post={post} />
         );
       })}
+      <Pagination
+        total={totalPages}
+        activePage={page}
+        rootHref="/"
+        rootAs="/"
+      />
     </>
   );
 };

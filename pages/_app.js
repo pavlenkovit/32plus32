@@ -13,14 +13,14 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Provider store={store}>
-        <Container>
-          <Head>
-            <meta name="theme-color" content="#ffffff" />
-          </Head>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </Container>
+        {/*<Container>*/}
+        <Head>
+          <meta name="theme-color" content="#ffffff" />
+        </Head>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+        {/*</Container>*/}
       </Provider>
     )
   }

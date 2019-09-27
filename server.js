@@ -18,7 +18,13 @@ app.prepare()
 
     server.get('/category/:slug', (req, res) => {
       const actualPage = '/category';
-      const queryParams = { slug: req.params.slug };
+      const queryParams = { slug: req.params.slug, page: 1 };
+      return app.render(req, res, actualPage, queryParams)
+    });
+
+    server.get('/category/:slug/:page', (req, res) => {
+      const actualPage = '/category';
+      const queryParams = { slug: req.params.slug, page: req.params.page };
       return app.render(req, res, actualPage, queryParams)
     });
 

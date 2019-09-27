@@ -1,0 +1,20 @@
+.item {
+  margin-right: 5px;
+  &Active {
+    & .link {
+      color: #333;
+      border-color: #333;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.link {
+  color: #ea0000;
+  text-decoration: none;
+  display: block;
+  padding: .35em 0.65em;
+  border-bottom: solid 2px transparent;
+}
