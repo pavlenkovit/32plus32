@@ -4,8 +4,9 @@ import ReactHtmlParser from 'react-html-parser';
 import css from './Post.module.scss';
 import Author from '../../components/Author';
 import CustomHead from '../../components/CustomHead';
+import Share from '../../components/Share';
 
-const Post = ({ title, content, author, date, fimg_url }) => {
+const Post = ({ title, content, date, fimg_url, _embedded: { author, 'wp:term': term } }) => {
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
@@ -16,8 +17,8 @@ const Post = ({ title, content, author, date, fimg_url }) => {
       />
       <div className={css.info}>
         <Author
-          name="Ivan Ivanov"
-          slug="ivan"
+          {...author[0]}
+          img="/static/img/author.png"
           date={date}
         />
       </div>
@@ -27,6 +28,7 @@ const Post = ({ title, content, author, date, fimg_url }) => {
         </div>
       )}
       <div dangerouslySetInnerHTML={{__html: content.rendered}} />
+      <Share />
     </article>
   );
 };

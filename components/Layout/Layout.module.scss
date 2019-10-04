@@ -23,14 +23,3 @@
   width: 300px;
   margin-left: 30px;
 }
-
-@media (max-width: 992px) {
-  .inner {
-    flex-wrap: wrap;
-  }
-
-  .sidebar {
-    width: 100%;
-    margin-left: 0;
-  }
-}

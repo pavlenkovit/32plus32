@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+}

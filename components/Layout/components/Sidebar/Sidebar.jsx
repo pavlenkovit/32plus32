@@ -1,25 +1,126 @@
 import React, { PureComponent } from 'react';
+import cn from 'classnames';
 import css from './Sidebar.module.scss';
 
 class Sidebar extends PureComponent {
+  sidebar = React.createRef();
+
+  lastScrollTop = 0;
+  isUpdateDirectionTop = false;
+  offsetTop = 0;
+  sidebarOverflow = false;
+  downDirectionScroll = true;
+
+  state = {
+    isFixedTop: false,
+    isFixedBottom: false,
+    marginTop: 0,
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.setPosition);
+
+    this.offsetTop = this.sidebar.current.offsetTop;
+    this.setPosition();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.setPosition);
+  }
+
+  scrollDirection = () => {
+    const st = window.pageYOffset;
+    this.downDirectionScroll = st > this.lastScrollTop;
+    this.lastScrollTop = st <= 0 ? 0 : st;
+  };
+
+  updatePosition = (top, bottom, margin) => {
+    this.setState({
+      isFixedTop: top,
+      isFixedBottom: bottom,
+      marginTop: margin,
+    });
+  };
+
+  setPosition = () => {
+    const { isFixedBottom, isFixedTop } = this.state;
+    const y = window.scrollY;
+    const sidebar = this.sidebar.current;
+    const sidebarHeight = sidebar.offsetHeight;
+    const parentHeight = sidebar.parentElement.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const rect = sidebar.getBoundingClientRect();
+
+    this.scrollDirection();
+
+    this.sidebarOverflow = sidebarHeight > windowHeight;
+
+    if (!this.sidebarOverflow) { // если сайдбар меньше высоты экрана
+      this.updatePosition(y > this.offsetTop - 15, false, 0);
+    }
+
+    if (this.sidebarOverflow) { // если сайдбар больше высоты экрана
+      if (y + windowHeight > this.offsetTop + parentHeight) { // долистали до футера
+        this.updatePosition(false, false, parentHeight - sidebarHeight);
+        return;
+      }
+
+      if (y < this.offsetTop - 15) { // в зоне хедера
+        this.updatePosition(false, false, 0);
+        return;
+      }
+
+      if (this.downDirectionScroll) { // листаем вниз
+
+        if (!isFixedBottom && !isFixedTop) {
+          if (rect.bottom - windowHeight < 0) {
+            this.updatePosition(false, true, 0);
+            return;
+          }
+        }
+
+        if (isFixedTop) { // если поменяли направление при прибитом к верху сайдбару
+          this.updatePosition(false, false, y - this.offsetTop + 15);
+          return;
+        }
+      }
+
+      if (!this.downDirectionScroll) {  // листаем вверх
+
+        if (!isFixedTop) {
+          if (rect.y - 15 > 0) {
+            this.updatePosition(true, false, 0);
+            return;
+          }
+        }
+
+        if (!isFixedBottom && !isFixedTop) {
+          return;
+        }
+
+        if (isFixedBottom) { // если поменяли направление при прибитом к низу сайдбару
+          this.updatePosition(false, false, y - sidebarHeight + windowHeight - this.offsetTop);
+        }
+      }
+    }
+  };
+
   render() {
+    const { isFixedTop, isFixedBottom, marginTop } = this.state;
+    const classesSidebar = cn(css.sidebar, {
+      [css.fixedTop]: isFixedTop,
+      [css.fixedBottom]: isFixedBottom,
+    });
+
     return (
-      <div className={css.container}>
-        <aside className={css.sidebar}>
-          <p>
-            Сейчас мы существуем за счет вашей поддержки, поэтому любая сумма поможет проекту существовать и развиваться дальше!
-          </p>
-          <iframe
-            src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82&targets-hint=&default-sum=100&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=&quickpay=shop&account=410011174243829"
-            width="100%"
-            height="222"
-            frameBorder="0"
-            allowTransparency="true"
-            scrolling="no"
-          />
-        </aside>
+      <div ref={this.sidebar} className={classesSidebar} style={{ marginTop }}>
+        {[1, 2, 3, 4].map(item => (
+          <aside key={item} className={css.widget}>
+            Рекламный блок
+          </aside>
+        ))}
       </div>
-    )
+    );
   }
 }
 

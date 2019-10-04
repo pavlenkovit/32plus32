@@ -1,2 +1,21 @@
-.container {
+.sidebar {
+  width: 300px;
+  padding-bottom: 15px;
+  &.fixedTop {
+    position: fixed;
+    top: 15px;
+    transform: translateZ(0);
+  }
+  &.fixedBottom {
+    position: fixed;
+    bottom: 0;
+    transform: translateZ(0);
+  }
+}
+
+.widget {
+  background: lightgray;
+  margin-bottom: 20px;
+  height: 300px;
+  font-size: 20px;
 }

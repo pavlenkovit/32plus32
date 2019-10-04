@@ -19,7 +19,7 @@ class Layout extends React.PureComponent {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, isMobile } = this.props;
     return (
       <div className={css.wrapper}>
         <Header />
@@ -30,9 +30,11 @@ class Layout extends React.PureComponent {
               <div className={css.content}>
                 {children}
               </div>
-              <div className={css.sidebar}>
-                <Sidebar />
-              </div>
+              {!isMobile && (
+                <div className={css.sidebar}>
+                  <Sidebar />
+                </div>
+              )}
             </div>
           </Container>
         </main>

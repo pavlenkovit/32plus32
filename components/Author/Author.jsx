@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import css from './Author.module.scss';
-import { format } from "date-fns";
-import ru from "date-fns/locale/ru";
+import { format } from 'date-fns';
+import ru from 'date-fns/locale/ru';
 
 const Author = (props) => {
   const { name, slug, img, date } = props;
@@ -16,7 +16,7 @@ const Author = (props) => {
           <img className={css.img} src={img} alt={name} itemProp="image" />
         </a>
       </Link>
-      <div>
+      <div className={css.content}>
         <Link href={href} as={as}>
           <a className={css.name} itemProp="name">{name}</a>
         </Link>
