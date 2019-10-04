@@ -13,7 +13,7 @@ class PostPreview extends PureComponent {
   render() {
     const { post } = this.props;
     const { id, slug, title, excerpt, date, fimg_url, _embedded: { author, 'wp:term': term } } = post;
-    const href = `/post?slug=${slug}`;
+    const href = `/post/[${slug}]`;
     const as = `/post/${slug}`;
 
     return (
