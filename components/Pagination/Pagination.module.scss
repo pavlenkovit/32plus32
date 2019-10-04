@@ -6,6 +6,9 @@
 
 .list {
   display: flex;
-  flex-wrap: wrap;
   padding: 0 10px;
+}
+
+.dots {
+  padding: .35em 0.65em;
 }
