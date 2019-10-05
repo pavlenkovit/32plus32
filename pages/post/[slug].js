@@ -13,7 +13,7 @@ const Slug = (props) => {
 };
 
 Slug.getInitialProps = async (context) => {
-  const { slug } = context.query;
+  const { query: { slug } } = context;
   const res = await fetch(`${baseURL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
   const post = data && data.length > 0 ? data[0] : null;

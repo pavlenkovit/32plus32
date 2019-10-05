@@ -4,26 +4,15 @@ import fetch from 'isomorphic-unfetch';
 import baseURL from '../constants/baseURL';
 import Trainings from '../scenes/Trainings';
 
-const TrainingsPage = (props) => {
-  const { trainings, totalPages, page } = props;
-
+const TrainingsPage = ({ trainings, totalPages, page }) => {
   return (
     <Trainings trainings={trainings} totalPages={totalPages} page={page} />
   );
 };
 
 TrainingsPage.getInitialProps = async (context) => {
-  const { query, req } = context;
-
-  let page = 1;
-  if (query.page) { // переходы внутри сайта
-    page = +context.query.page;
-  }
-  if (req && req.params) { // прямой переход по ссылке
-    if (req.params.page) {
-      page = +req.params.page;
-    }
-  }
+  const { query: { page: p } } = context;
+  const page = p ? +p : 1;
 
   const res = await fetch(`${baseURL}/posts?categories=77&page=${page}&_embed`);
   const trainings = await res.json();

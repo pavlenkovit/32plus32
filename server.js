@@ -10,24 +10,6 @@ app.prepare()
   .then(() => {
     const server = express();
 
-    server.get('/trainings/:page', (req, res) => {
-      const actualPage = '/trainings';
-      const queryParams = { page: req.params.page };
-      return app.render(req, res, actualPage, queryParams)
-    });
-
-    server.get('/category/:slug', (req, res) => {
-      const actualPage = '/category';
-      const queryParams = { slug: req.params.slug, page: 1 };
-      return app.render(req, res, actualPage, queryParams)
-    });
-
-    server.get('/category/:slug/:page', (req, res) => {
-      const actualPage = '/category';
-      const queryParams = { slug: req.params.slug, page: req.params.page };
-      return app.render(req, res, actualPage, queryParams)
-    });
-
     server.get('*', (req, res) => {
       return handle(req, res)
     });

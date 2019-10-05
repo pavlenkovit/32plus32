@@ -32,19 +32,9 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
 
   const pages = getPages();
 
-  const hrefPath = (page) => {
-    if (rootHref === '/') {
-      return `/?page=${page}`;
-    }
-    return `${rootHref}&page=${page}`;
-  };
+  const hrefPath = (page) => `${rootHref}?page=${page}`;
 
-  const asPath = (page) => {
-    if (rootHref === '/') {
-      return `/?page=${page}`;
-    }
-    return `${rootAs}/${page}`;
-  };
+  const asPath = (page) => `${rootAs}?page=${page}`;
 
   return (
     <div className={css.container}>

@@ -50,7 +50,7 @@ const Category = ({ posts, category, totalPages, page }) => {
       <Pagination
         total={totalPages}
         activePage={page}
-        rootHref={`/category?slug=${category.slug}`}
+        rootHref={'/category/[slug]'}
         rootAs={`/category/${category.slug}`}
       />
     </div>

@@ -17,7 +17,7 @@ const Page = ({ slug }) => {
 };
 
 Page.getInitialProps = async (context) => {
-  const { slug } = context.query;
+  const { query: { slug } } = context;
   return { slug };
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
-import baseURL from '../constants/baseURL';
-import Category from '../scenes/Category';
+import baseURL from '../../constants/baseURL';
+import Category from '../../scenes/Category';
 
 const CategoryPage = (props) => {
   const { category, posts, totalPages, page } = props;
@@ -13,24 +13,8 @@ const CategoryPage = (props) => {
 };
 
 CategoryPage.getInitialProps = async (context) => {
-  const { query, req } = context;
-
-  let slug = '';
-  let page = 1;
-  if (query.slug) { // переходы внутри сайта
-    slug = context.query.slug;
-  }
-  if (query.page) { // переходы внутри сайта
-    page = +context.query.page;
-  }
-  if (req && req.params) { // прямой переход по ссылке
-    if (req.params.slug) {
-      slug = req.params.slug;
-    }
-    if (req.params.page) {
-      page = +req.params.page;
-    }
-  }
+  const { query: { slug, page: p } } = context;
+  const page = p ? +p : 1;
 
   const resCat = await fetch(`${baseURL}/categories?slug=${slug}`);
   const dataCat = await resCat.json();
