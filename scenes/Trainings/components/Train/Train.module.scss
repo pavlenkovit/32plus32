@@ -1,0 +1,23 @@
+.container {
+  background: #F3F3F3;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: background .2s ease-out;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.week {
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 400;
+}

@@ -5,10 +5,10 @@ import baseURL from '../../constants/baseURL';
 import PostFull from '../../scenes/Post';
 
 const Post = (props) => {
-  const { post } = props;
-  console.log(post);
+  const { train } = props;
+  console.log(train);
   return (
-    <PostFull {...post} />
+    <PostFull {...train} />
   );
 };
 
@@ -16,8 +16,8 @@ Post.getInitialProps = async (context) => {
   const { query: { slug } } = context;
   const res = await fetch(`${baseURL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
-  const post = data && data.length > 0 ? data[0] : null;
-  return { post };
+  const train = data && data.length > 0 ? data[0] : null;
+  return { train };
 };
 
 export default Post;

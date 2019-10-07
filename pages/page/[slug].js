@@ -1,24 +1,23 @@
-import Link from 'next/link';
+import React from 'react';
+import fetch from 'isomorphic-unfetch';
 
-const Page = ({ slug }) => {
+import baseURL from '../../constants/baseURL';
+import PostFull from '../../scenes/Post';
+
+const Page = (props) => {
+  const { page } = props;
+  console.log(page);
   return (
-    <div>
-      <h1>Page: {slug}</h1>
-      <ul>
-        <li>
-          <Link href="/page/[slug]" as="/page/abc">abc</Link>
-        </li>
-        <li>
-          <Link href="/page/[slug]" as="/page/about">about</Link>
-        </li>
-      </ul>
-    </div>
+    <PostFull {...page} />
   );
 };
 
 Page.getInitialProps = async (context) => {
   const { query: { slug } } = context;
-  return { slug };
+  const res = await fetch(`${baseURL}/pages?slug=${slug}&_embed`);
+  const data = await res.json();
+  const page = data && data.length > 0 ? data[0] : null;
+  return { page };
 };
 
 export default Page;

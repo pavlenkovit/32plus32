@@ -15,7 +15,7 @@ class Layout extends React.PureComponent {
   }
 
   handleResize = () => {
-    this.props.checkIsMobile(window.innerWidth <= 768);
+    this.props.checkIsMobile(window.innerWidth <= 992);
   };
 
   render() {
@@ -23,7 +23,7 @@ class Layout extends React.PureComponent {
     return (
       <div className={css.wrapper}>
         <Header />
-        <Breadcrumbs />
+        <div id="breadcrumbs" className={css.breadCrumbs} />
         <main className={css.main}>
           <Container>
             <div className={css.inner}>

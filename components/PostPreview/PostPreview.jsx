@@ -1,10 +1,8 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
 import ReactHtmlParser from 'react-html-parser';
-
 import Author from '../Author';
 import Categories from './components/Categories';
-import Comments from './components/Comments';
 
 import css from './PostPreview.module.scss';
 
@@ -12,7 +10,7 @@ class PostPreview extends PureComponent {
 
   render() {
     const { post } = this.props;
-    const { id, slug, title, excerpt, date, fimg_url, _embedded: { author, 'wp:term': term } } = post;
+    const { slug, title, excerpt, date, fimg_url, _embedded: { author, 'wp:term': term } } = post;
     const href = '/post/[slug]';
     const as = `/post/${slug}`;
 

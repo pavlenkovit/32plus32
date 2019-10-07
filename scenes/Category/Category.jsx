@@ -3,6 +3,8 @@ import css from './Category.module.scss';
 import PostPreview from '../../components/PostPreview';
 import CustomHead from '../../components/CustomHead';
 import Pagination from '../../components/Pagination';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import ReactHtmlParser from 'react-html-parser';
 
 const list = [
   {
@@ -39,6 +41,13 @@ const Category = ({ posts, category, totalPages, page }) => {
   return (
     <div>
       <CustomHead title={category.name} />
+      <Breadcrumbs
+        items={[
+          {
+            title: category.name,
+          }
+        ]}
+      />
       <h1>{category.name}</h1>
       <div>
         {posts.map((post, idx) => {
