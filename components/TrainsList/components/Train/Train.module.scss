@@ -1,6 +1,6 @@
 .container {
   background: #f7f7f7;
-  padding: 15px 15px;
+  padding: 17px 15px;
   margin-bottom: 30px;
   position: relative;
   transition: background .2s ease-out;
@@ -8,15 +8,32 @@
   display: block;
   color: inherit;
   border-radius: 2px;
+  overflow: hidden;
   &:hover {
     text-decoration: none;
     color: inherit;
+
+    & .arrowIcon {
+      transform: rotate(-90deg) translateY(7px);
+    }
+
+    & .img {
+      transform: scale(1.075);
+    }
   }
 }
 
 .date {
   margin-bottom: 10px;
-  color: #7b7b7b;
+  color: #ea0000;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: transform .25s ease-out;
 }
 
 .title {
@@ -30,15 +47,10 @@
   display: flex;
   align-items: center;
   font-size: 0.9em;
+  margin-top: 10px;
 
   & span {
     margin-right: 5px;
-  }
-
-  &:hover {
-    & .arrowIcon {
-      transform: rotate(-90deg) translateY(7px);
-    }
   }
 }
 

@@ -2,17 +2,40 @@ import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
 import baseURL from '../../constants/baseURL';
-import PostFull from '../../scenes/Post';
+import Post from '../../components/Post';
+import ReactHtmlParser from 'react-html-parser';
+import CustomHead from '../../components/CustomHead';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import getMeta from '../../utils/getMeta';
 
-const Post = (props) => {
+const TrainPage = (props) => {
   const { train } = props;
   console.log(train);
+
+  const title = ReactHtmlParser(train.title.rendered);
+
   return (
-    <PostFull {...train} />
+    <>
+      <CustomHead
+        title={title}
+        { ...getMeta(train) }
+      />
+      <Breadcrumbs
+        items={[
+          {
+            title: 'Тренировки по классическому двоеборью',
+            href: '/trainings',
+            as: '/trainings',
+          },
+          { title }
+        ]}
+      />
+      <Post {...train} />
+    </>
   );
 };
 
-Post.getInitialProps = async (context) => {
+TrainPage.getInitialProps = async (context) => {
   const { query: { slug } } = context;
   const res = await fetch(`${baseURL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
@@ -20,4 +43,4 @@ Post.getInitialProps = async (context) => {
   return { train };
 };
 
-export default Post;
+export default TrainPage;

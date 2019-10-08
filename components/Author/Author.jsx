@@ -20,9 +20,11 @@ const Author = (props) => {
         <Link href={href} as={as}>
           <a className={css.name} itemProp="name">{name}</a>
         </Link>
-        <time className={css.date} dateTime={date}>
-          {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
-        </time>
+        {date && (
+          <time className={css.date} dateTime={date}>
+            {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
+          </time>
+        )}
       </div>
     </div>
   );

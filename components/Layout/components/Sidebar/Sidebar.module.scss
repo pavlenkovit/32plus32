@@ -14,8 +14,12 @@
 }
 
 .widget {
-  background: lightgray;
-  margin-bottom: 20px;
-  height: 300px;
+  background: #f4f4f4;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  height: 400px;
   font-size: 20px;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #9B9FA3;
 }

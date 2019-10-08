@@ -112,7 +112,7 @@ class Sidebar extends PureComponent {
 
     return (
       <div ref={this.sidebar} className={classesSidebar} style={{ marginTop }}>
-        {[1, 2, 3, 4].map(item => (
+        {[1, 2, 3].map(item => (
           <aside key={item} className={css.widget}>
             Рекламный блок
           </aside>

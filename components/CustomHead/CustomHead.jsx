@@ -6,7 +6,7 @@ const CustomHead = (props) => {
   const {
     title = 'Гиревой спорт',
     description = 'Сайт о гиревом спорте',
-    imgKey = '',
+    img = '',
     url = '',
     keywords = '',
   } = props;
@@ -14,7 +14,7 @@ const CustomHead = (props) => {
   return (
     <Head>
       <title key="title">{title} | 32PLUS32</title>
-      <meta key="meta-image" property="og:image" content={imgKey} />
+      <meta key="meta-image" property="og:image" content={img} />
       <meta key="meta-url" property="og:url" content={`https://32plus32.ru${url}`} />
       <meta key="meta-title" property="og:title" content={title} />
       <meta key="meta-description" name="description" content={description} />
@@ -25,7 +25,7 @@ const CustomHead = (props) => {
 
 CustomHead.propTypes = {
   title: PropTypes.string,
-  imgKey: PropTypes.string,
+  img: PropTypes.string,
   description: PropTypes.string,
   url: PropTypes.string,
   keywords: PropTypes.string,

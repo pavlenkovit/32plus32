@@ -2,17 +2,31 @@ import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
 import baseURL from '../../constants/baseURL';
-import PostFull from '../../scenes/Post';
+import Post from '../../components/Post';
+import ReactHtmlParser from 'react-html-parser';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import CustomHead from '../../components/CustomHead';
+import getMeta from '../../utils/getMeta';
 
-const Post = (props) => {
+const PostPage = (props) => {
   const { post } = props;
   console.log(post);
+
+  const title = ReactHtmlParser(post.title.rendered);
+
   return (
-    <PostFull {...post} />
+    <>
+      <CustomHead
+        title={title}
+        { ...getMeta(post) }
+      />
+      <Breadcrumbs items={[{ title }]} />
+      <Post {...post} />
+    </>
   );
 };
 
-Post.getInitialProps = async (context) => {
+PostPage.getInitialProps = async (context) => {
   const { query: { slug } } = context;
   const res = await fetch(`${baseURL}/posts?slug=${slug}&_embed`);
   const data = await res.json();
@@ -20,4 +34,4 @@ Post.getInitialProps = async (context) => {
   return { post };
 };
 
-export default Post;
+export default PostPage;

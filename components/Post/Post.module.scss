@@ -1,0 +1,52 @@
+.container {
+  & :global(.wp-caption) {
+    max-width: 100%;
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.imgWrapper {
+
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  margin-bottom: 25px;
+}
+
+.content {
+  & :global(.table) {
+    border-collapse: collapse;
+    margin: 15px -1px;
+    min-width: calc(100% + 2px);
+    & th, td {
+      border: 1px solid #dee2e6;
+      padding: 0.35em 0.5em;
+      vertical-align: middle;
+      &.message {
+        color: #a61b1b;
+        font-weight: 600;
+      }
+    }
+    & thead th {
+      font-weight: 700;
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      border-top: none;
+      font-size: 0.9em;
+    }
+  }
+
+}

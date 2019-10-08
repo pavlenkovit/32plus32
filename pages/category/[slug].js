@@ -1,14 +1,31 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import baseURL from '../../constants/baseURL';
-import Category from '../../scenes/Category';
+import CustomHead from '../../components/CustomHead';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import MainTitle from '../../components/MainTitle';
+import PostsList from '../../components/PostsList';
+import Pagination from '../../components/Pagination';
 
 const CategoryPage = (props) => {
   const { category, posts, totalPages, page } = props;
-  // console.log(category, 'category');
   console.log(posts, 'posts');
+
   return (
-    <Category posts={posts} category={category} totalPages={totalPages} page={page} />
+    <>
+      <CustomHead
+        title={category.name}
+      />
+      <Breadcrumbs items={[{ title: category.name }]} />
+      <MainTitle>{category.name}</MainTitle>
+      <PostsList posts={posts} />
+      <Pagination
+        total={totalPages}
+        activePage={page}
+        rootHref={'/category/[slug]'}
+        rootAs={`/category/${category.slug}`}
+      />
+    </>
   );
 };
 

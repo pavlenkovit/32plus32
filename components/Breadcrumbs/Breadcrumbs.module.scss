@@ -10,14 +10,20 @@
   margin: 0;
   list-style: none;
   padding: 0;
+  overflow: hidden;
 }
 
 .item {
+  white-space: nowrap;
   &:after {
     content: '/';
     margin: 0 10px;
   }
   &:last-child {
+    flex: 1 1 auto;
+    width: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &:after {
       content: '';
     }
@@ -25,5 +31,5 @@
 }
 
 .link {
-  //color: inherit;
+  white-space: nowrap;
 }
