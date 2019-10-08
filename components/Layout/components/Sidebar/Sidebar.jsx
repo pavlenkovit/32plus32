@@ -7,7 +7,6 @@ class Sidebar extends PureComponent {
 
   lastScrollTop = 0;
   isUpdateDirectionTop = false;
-  offsetTop = 0;
   sidebarOverflow = false;
   downDirectionScroll = true;
 
@@ -19,8 +18,6 @@ class Sidebar extends PureComponent {
 
   componentDidMount() {
     window.addEventListener('scroll', this.setPosition);
-
-    this.offsetTop = this.sidebar.current.offsetTop;
     this.setPosition();
   }
 
@@ -50,22 +47,23 @@ class Sidebar extends PureComponent {
     const parentHeight = sidebar.parentElement.offsetHeight;
     const windowHeight = window.innerHeight;
     const rect = sidebar.getBoundingClientRect();
+    const offsetTop = document.querySelector('#header').offsetHeight + 30;
 
     this.scrollDirection();
 
     this.sidebarOverflow = sidebarHeight > windowHeight;
 
     if (!this.sidebarOverflow) { // если сайдбар меньше высоты экрана
-      this.updatePosition(y > this.offsetTop - 15, false, 0);
+      this.updatePosition(y > offsetTop - 15, false, 0);
     }
 
     if (this.sidebarOverflow) { // если сайдбар больше высоты экрана
-      if (y + windowHeight > this.offsetTop + parentHeight) { // долистали до футера
+      if (y + windowHeight > offsetTop + parentHeight) { // долистали до футера
         this.updatePosition(false, false, parentHeight - sidebarHeight);
         return;
       }
 
-      if (y < this.offsetTop - 15) { // в зоне хедера
+      if (y < offsetTop - 15) { // в зоне хедера
         this.updatePosition(false, false, 0);
         return;
       }
@@ -80,7 +78,7 @@ class Sidebar extends PureComponent {
         }
 
         if (isFixedTop) { // если поменяли направление при прибитом к верху сайдбару
-          this.updatePosition(false, false, y - this.offsetTop + 15);
+          this.updatePosition(false, false, y - offsetTop + 15);
           return;
         }
       }
@@ -99,7 +97,7 @@ class Sidebar extends PureComponent {
         }
 
         if (isFixedBottom) { // если поменяли направление при прибитом к низу сайдбару
-          this.updatePosition(false, false, y - sidebarHeight + windowHeight - this.offsetTop);
+          this.updatePosition(false, false, y - sidebarHeight + windowHeight - offsetTop);
         }
       }
     }

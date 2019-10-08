@@ -1,5 +1,5 @@
 .container {
-  background: #F3F3F3;
+  background: #f7f7f7;
   padding: 15px 15px;
   margin-bottom: 30px;
   position: relative;
@@ -7,17 +7,44 @@
   text-decoration: none;
   display: block;
   color: inherit;
+  border-radius: 2px;
   &:hover {
     text-decoration: none;
     color: inherit;
   }
 }
 
-.week {
+.date {
+  margin-bottom: 10px;
+  color: #7b7b7b;
 }
 
 .title {
-  margin: 0;
-  font-size: 1.25em;
+  margin: 0 0 10px;
+  //font-size: 1.5em;
   font-weight: 400;
+  line-height: 1.33;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+
+  & span {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    & .arrowIcon {
+      transform: rotate(-90deg) translateY(7px);
+    }
+  }
+}
+
+.arrowIcon {
+  display: block;
+  margin-top: 1px;
+  transform: rotate(-90deg);
+  transition: transform .15s ease-out;
 }

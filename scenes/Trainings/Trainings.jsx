@@ -5,6 +5,7 @@ import Train from './components/Train';
 import Pagination from '../../components/Pagination';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import CustomHead from '../../components/CustomHead';
+import MainTitle from '../../components/MainTitle';
 
 const Trainings = ({ trainings, totalPages, page }) => {
   return (
@@ -17,6 +18,7 @@ const Trainings = ({ trainings, totalPages, page }) => {
           }
         ]}
       />
+      <MainTitle>Тренировки по классическому двоеборью</MainTitle>
       <div className={css.container}>
         {trainings.map(train => {
           return (

@@ -5,6 +5,7 @@ import ru from 'date-fns/locale/ru'
 import css from './Train.module.scss';
 import ReactHtmlParser from 'react-html-parser';
 import Link from 'next/link';
+import ArrowIcon from '../../../../icons/ArrowIcon';
 
 const Train = ({ title, slug, fimg_url }) => {
   const renderTitle = ReactHtmlParser(title.rendered);
@@ -17,11 +18,14 @@ const Train = ({ title, slug, fimg_url }) => {
   return (
     <Link href="train/[slug]" as={`train/${slug}`}>
       <a className={css.container}>
-        <div className={css.week}>{day}/{month}/{year} (среда)</div>
+        <div className={css.date}>{day}/{month}/{year} (среда)</div>
         <h2 className={css.title}>
           <b>Тренировка</b> по классическому двоеборью
         </h2>
-        <div>Тренироваться</div>
+        <div className={css.action}>
+          <span>Тренироваться</span>
+          <ArrowIcon className={css.arrowIcon} size={10} />
+        </div>
       </a>
     </Link>
   );

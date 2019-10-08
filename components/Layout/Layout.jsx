@@ -4,7 +4,6 @@ import '../../style.scss';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import css from './Layout.module.scss';
-import Breadcrumbs from '../Breadcrumbs';
 import Container from '../Container';
 import Footer from './components/Footer';
 
@@ -22,8 +21,10 @@ class Layout extends React.PureComponent {
     const { children, isMobile } = this.props;
     return (
       <div className={css.wrapper}>
-        <Header />
-        <div id="breadcrumbs" className={css.breadCrumbs} />
+        <div className={css.header} id="header">
+          <Header />
+          <div id="breadcrumbs" />
+        </div>
         <main className={css.main}>
           <Container>
             <div className={css.inner}>

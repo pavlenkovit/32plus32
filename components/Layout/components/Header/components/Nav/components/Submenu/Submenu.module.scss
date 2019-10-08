@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.35);
+  z-index: 1;
+  padding: 15px 15px;
+  transition: opacity .2s ease-out, transform .225s ease-out;
+  border-radius: 1px;
+  &:after {
+    content: '';
+    position: absolute;
+    border: 0.5rem solid transparent;
+    pointer-events: none;
+    top: -1rem;
+    left: 40px;
+    border-bottom: 0.5rem solid #fff;
+  }
+}
+
+.list {
+}
+
+.link {
+  display: block;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 7px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

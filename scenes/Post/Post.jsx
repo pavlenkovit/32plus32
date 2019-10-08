@@ -7,10 +7,25 @@ import CustomHead from '../../components/CustomHead';
 import Share from '../../components/Share';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-const Post = ({ title, content, date, fimg_url, _embedded: { author, 'wp:term': term } }) => {
+const Post = (props) => {
+
+  const { title, content, date, fimg_url,
+    _embedded: { author, 'wp:term': term },
+    meta: { _aioseop_description, _aioseop_keywords },
+  } = props;
+
+  const metaDescription = _aioseop_description ? _aioseop_description[0] : '';
+  const metaKeywords = _aioseop_keywords ? _aioseop_keywords[0] : '';
+
+
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
-      <CustomHead title={ReactHtmlParser(title.rendered)} imgKey={fimg_url} />
+      <CustomHead
+        title={ReactHtmlParser(title.rendered)}
+        description={metaDescription}
+        keywords={metaKeywords}
+        imgKey={fimg_url}
+      />
       <Breadcrumbs
         items={[
           {

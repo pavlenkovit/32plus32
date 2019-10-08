@@ -5,37 +5,7 @@ import CustomHead from '../../components/CustomHead';
 import Pagination from '../../components/Pagination';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ReactHtmlParser from 'react-html-parser';
-
-const list = [
-  {
-    title: 'Научные статьи',
-    slug: 'nauchnye-stati',
-  },
-  {
-    title: 'Планирование',
-    slug: 'planirovanie-trenirovok',
-  },
-  {
-    title: 'Упражнения',
-    slug: 'upragneniya',
-  },
-  {
-    title: 'Техника',
-    slug: 'tehnika',
-  },
-  {
-    title: 'Тренинг',
-    slug: 'trenirovki',
-  },
-  {
-    title: 'Восстановление',
-    slug: 'vosstanovlenie',
-  },
-  {
-    title: 'Личности',
-    slug: 'lichnosti',
-  },
-];
+import MainTitle from '../../components/MainTitle';
 
 const Category = ({ posts, category, totalPages, page }) => {
   return (
@@ -48,7 +18,7 @@ const Category = ({ posts, category, totalPages, page }) => {
           }
         ]}
       />
-      <h1>{category.name}</h1>
+      <MainTitle>{category.name}</MainTitle>
       <div>
         {posts.map((post, idx) => {
           return (

@@ -7,7 +7,9 @@ import css from './Home.module.scss';
 const Home = ({ posts, totalPages, page }) => {
   return (
     <>
-      <CustomHead />
+      <CustomHead
+        description="Сайт о гиревом спорте"
+      />
       {posts.map((post, idx) => {
         return (
           <PostPreview key={idx} post={post} />
