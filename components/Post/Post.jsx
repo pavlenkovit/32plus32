@@ -17,7 +17,6 @@ const Post = (props) => {
       <div className={css.info}>
         <Author
           {...author[0]}
-          img="/static/img/author.png"
           date={date}
         />
       </div>

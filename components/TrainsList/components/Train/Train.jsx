@@ -24,10 +24,7 @@ const Train = ({ title, slug, fimg_url, _embedded: { author, 'wp:term': term } }
         <h2 className={css.title}>
           <b>Тренировка</b> по классическому двоеборью
         </h2>
-        <Author
-          {...author[0]}
-          img="/static/img/author.png"
-        />
+        <Author {...author[0]} />
         <div className={css.action}>
           <span>Тренироваться</span>
           <ArrowIcon className={css.arrowIcon} size={10} />

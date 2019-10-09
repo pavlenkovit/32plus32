@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/user/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7e09069acb3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Author/Author.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Author/Author.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google1bd6029f2902481b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yandex_6f1458ca5ce24a1a.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,23 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx">
+        <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="323">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -41,9 +37,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isFixed</find>
-      <find>sidebar</find>
-      <find>commentIcon</find>
       <find>&amp; \*</find>
       <find>marginTop</find>
       <find>sidebarOverflow</find>
@@ -58,7 +51,6 @@
       <find>as</find>
       <find>rootAs</find>
       <find>href=</find>
-      <find>author</find>
       <find>isMobile</find>
       <find>Height</find>
       <find>offsetTop</find>
@@ -71,6 +63,10 @@
       <find>img=</find>
       <find>keywords</find>
       <find>media</find>
+      <find>author</find>
+      <find>/author</find>
+      <find>static/</find>
+      <find>Author</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/components/Author</dir>
@@ -86,12 +82,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/components/Pagination/Pagination.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/components/Breadcrumbs/Breadcrumbs.jsx" />
         <option value="$PROJECT_DIR$/reg.js" />
-        <option value="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/Layout.jsx" />
         <option value="$PROJECT_DIR$/icons/ArrowIcon.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/constants/nav.js" />
@@ -125,18 +119,20 @@
         <option value="$PROJECT_DIR$/pages/page/[slug].js" />
         <option value="$PROJECT_DIR$/pages/train/[slug].js" />
         <option value="$PROJECT_DIR$/components/Breadcrumbs/Breadcrumbs.module.scss" />
-        <option value="$PROJECT_DIR$/components/Post/Post.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/Layout.module.scss" />
         <option value="$PROJECT_DIR$/components/Post/Post.module.scss" />
-        <option value="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" />
-        <option value="$PROJECT_DIR$/components/Author/Author.jsx" />
         <option value="$PROJECT_DIR$/components/Author/Author.module.scss" />
         <option value="$PROJECT_DIR$/components/TrainsList/components/Train/Train.module.scss" />
         <option value="$PROJECT_DIR$/components/TrainsList/TrainsList.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" />
+        <option value="$PROJECT_DIR$/pages/user/[slug].js" />
+        <option value="$PROJECT_DIR$/components/Author/Author.jsx" />
+        <option value="$PROJECT_DIR$/components/PostPreview/PostPreview.jsx" />
+        <option value="$PROJECT_DIR$/components/Post/Post.jsx" />
+        <option value="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" />
       </list>
     </option>
   </component>
@@ -163,6 +159,22 @@
             </path>
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PostPreview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -180,19 +192,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/Layout/components/Sidebar/components" />
-      <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/components/TrainsList/components" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/pages/category/page" />
       <recent name="$PROJECT_DIR$/pages/post" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Sidebar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Sidebar/components" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/components/TrainsList/components" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,12 +329,13 @@
       <workItem from="1570607494593" duration="1008000" />
       <workItem from="1570610780566" duration="258000" />
       <workItem from="1570614642488" duration="100000" />
-      <workItem from="1570628651859" duration="27000" />
+      <workItem from="1570628651859" duration="58000" />
+      <workItem from="1570629095005" duration="1572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180171000" />
+    <option name="totallyTimeSpent" value="181774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,7 +350,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32356533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32722834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,7 +363,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18775511" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.10510204" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,27 +376,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/img/photo.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/photo.png" />
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/Header.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -517,16 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/category/[slug].js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -591,16 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -626,16 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,23 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a7e09069acb3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -714,10 +659,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/yandex_6f1458ca5ce24a1a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/avatars/pavlenko_32plus32.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/user/[slug].js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Author/Author.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

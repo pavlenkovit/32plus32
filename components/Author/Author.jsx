@@ -5,15 +5,15 @@ import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 
 const Author = (props) => {
-  const { name, slug, img, date } = props;
-  const href = `/author?slug=${slug}`;
-  const as = `/author/${slug}`;
+  const { name, slug, date } = props;
+  const href = '/user/[slug]';
+  const as = `/user/${slug}`;
 
   return (
     <div className={css.container} itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
         <a className={css.imgLink}>
-          <img className={css.img} src={img} alt={name} itemProp="image" />
+          <img className={css.img} src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
         </a>
       </Link>
       <div className={css.content}>

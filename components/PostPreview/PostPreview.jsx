@@ -39,7 +39,6 @@ class PostPreview extends PureComponent {
             <Author
               {...author[0]}
               date={date}
-              img="/static/img/author.png"
             />
           </div>
           <div
