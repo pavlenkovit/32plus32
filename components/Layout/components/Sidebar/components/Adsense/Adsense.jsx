@@ -7,7 +7,7 @@ const Adsense = () => {
       <div className={css.widget}>
         {/* Yandex.RTB R-A-332263-1 */}
         <div id="yandex_rtb_R-A-332263-1" />
-        <script dangerouslySetInnerHTML={{
+        <script type="text/javascript" dangerouslySetInnerHTML={{
           __html: `
             (function(w, d, n, s, t) {
                 w[n] = w[n] || [];
@@ -31,7 +31,7 @@ const Adsense = () => {
       <div className={css.widget}>
         {/* Yandex.RTB R-A-332263-4 */}
         <div id="yandex_rtb_R-A-332263-4" />
-        <script dangerouslySetInnerHTML={{
+        <script type="text/javascript" dangerouslySetInnerHTML={{
           __html: `
             (function(w, d, n, s, t) {
                 w[n] = w[n] || [];
@@ -55,7 +55,7 @@ const Adsense = () => {
       <div className={css.widget}>
         {/* Yandex.RTB R-A-332263-5 */}
         <div id="yandex_rtb_R-A-332263-5" />
-        <script dangerouslySetInnerHTML={{
+        <script type="text/javascript" dangerouslySetInnerHTML={{
           __html: `
             (function(w, d, n, s, t) {
                 w[n] = w[n] || [];
