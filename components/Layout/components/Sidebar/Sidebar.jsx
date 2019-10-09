@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import cn from 'classnames';
 import css from './Sidebar.module.scss';
+import Adsense from './components/Adsense';
 
 class Sidebar extends PureComponent {
   sidebar = React.createRef();
@@ -112,11 +113,7 @@ class Sidebar extends PureComponent {
 
     return (
       <div ref={this.sidebar} className={classesSidebar} style={{ marginTop }}>
-        {[1, 2, 3].map(item => (
-          <aside key={item} className={css.widget}>
-            Рекламный блок
-          </aside>
-        ))}
+        <Adsense />
       </div>
     );
   }
