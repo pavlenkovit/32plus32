@@ -1,6 +1,7 @@
 .container {
   background: #000;
   color: #fff;
+  position: relative;
 }
 
 .inner {
@@ -11,6 +12,27 @@
 }
 
 .left {
+  display: flex;
+  align-items: center;
+}
+
+.enter {
+  height: 0;
+}
+
+.enterActive {
+  height: 55px;
+}
+
+.exit {
+  height: 55px;
+}
+
+.exitActive {
+  height: 0;
+}
+
+.mobileWrapper {
   display: flex;
   align-items: center;
 }

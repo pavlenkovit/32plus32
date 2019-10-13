@@ -52,6 +52,7 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
         )}
         {pages.map((page) => (
           <PageLink
+            key={page}
             href={hrefPath(page)}
             as={asPath(page)}
             isActive={activePage === page}

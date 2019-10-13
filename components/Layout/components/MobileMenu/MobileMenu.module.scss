@@ -1,0 +1,26 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: -60px;
+  background: #fff;
+  z-index: 100;
+  transition: opacity .2s ease-out;
+}
+
+.enter {
+  opacity: 0;
+}
+
+.enterActive {
+  opacity: 1;
+}
+
+.exit {
+  opacity: 1;
+}
+
+.exitActive {
+  opacity: 0;
+}

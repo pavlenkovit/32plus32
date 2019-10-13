@@ -38,9 +38,9 @@ class Submenu extends PureComponent {
     return (
       <div className={css.container}>
         <div className={css.list}>
-          {list.map(item => {
+          {list.map((item, idx) => {
             return (
-              <Link href="/category/[slug]" as={`/category/${item.slug}`}>
+              <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
                 <a className={css.link}>{item.title}</a>
               </Link>
             );

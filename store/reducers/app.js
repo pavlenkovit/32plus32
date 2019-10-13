@@ -4,6 +4,7 @@ import * as actions from '../actions';
 const initial = {
   isMobile: false,
   menuIsActive: false,
+  searchIsActive: false,
 };
 
 export default handleActions({
@@ -23,6 +24,20 @@ export default handleActions({
     return {
       ...state,
       menuIsActive: false,
+    };
+  },
+
+  [actions.toggleSearch](state) {
+    return {
+      ...state,
+      searchIsActive: !state.searchIsActive,
+    };
+  },
+
+  [actions.closeSearch](state) {
+    return {
+      ...state,
+      searchIsActive: false,
     };
   },
 

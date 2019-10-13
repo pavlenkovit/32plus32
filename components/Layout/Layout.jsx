@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import css from './Layout.module.scss';
 import Container from '../Container';
 import Footer from './components/Footer';
+import MobileMenu from './components/MobileMenu';
 
 class Layout extends React.PureComponent {
   componentDidMount() {
@@ -21,6 +22,7 @@ class Layout extends React.PureComponent {
     const { children, isMobile } = this.props;
     return (
       <div className={css.wrapper}>
+        {isMobile && <MobileMenu />}
         <div className={css.header} id="header">
           <Header />
           <div id="breadcrumbs" />

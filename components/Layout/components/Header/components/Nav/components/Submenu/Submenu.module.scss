@@ -4,10 +4,10 @@
   left: 0;
   background: #fff;
   box-shadow: 0 0 6px rgba(0,0,0,0.35);
-  z-index: 1;
-  padding: 15px 15px;
+  z-index: 2;
+  padding: 12px 0;
   transition: opacity .2s ease-out, transform .225s ease-out;
-  border-radius: 1px;
+  border-radius: 2px;
   &:after {
     content: '';
     position: absolute;
@@ -28,8 +28,12 @@
   letter-spacing: 0.1em;
   font-weight: 500;
   text-decoration: none;
-  margin-bottom: 7px;
+  padding: 4px 15px;
+  color: #333;
   &:last-child {
     margin-bottom: 0;
+  }
+  &:hover {
+    background: #f4f4f4;
   }
 }
