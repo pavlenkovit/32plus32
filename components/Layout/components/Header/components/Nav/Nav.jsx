@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
-import menu from './constants/nav';
+import menu from '../../../../../../constants/nav';
 
 import css from './Nav.module.scss';
 import ArrowIcon from '../../../../../../icons/ArrowIcon';

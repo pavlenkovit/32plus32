@@ -8,22 +8,6 @@ $main-color: #fff;
   box-sizing: content-box;
   cursor: pointer;
   z-index: 1;
-
-  &.active {
-    & .line {
-      transition: .2s top, .2s transform .2s;
-      top: 8px;
-      &.top {
-        transform: rotate(45deg);
-      }
-      &.center {
-        background: transparent;
-      }
-      &.bottom {
-        transform: rotate(-45deg);
-      }
-    }
-  }
 }
 
 .inner {
@@ -37,7 +21,6 @@ $main-color: #fff;
   height: 2px;
   position: absolute;
   background: $main-color;
-  transition: .2s transform, .2s top .2s, .2s background;
   &.top {
     top: 0;
   }

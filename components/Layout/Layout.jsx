@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../style.scss';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -7,6 +6,8 @@ import css from './Layout.module.scss';
 import Container from '../Container';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
+
+import '../../style.scss';
 
 class Layout extends React.PureComponent {
   componentDidMount() {

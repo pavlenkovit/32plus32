@@ -13,25 +13,25 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Provider store={store}>
-        {/*<Container>*/}
-        <Head>
-          <meta name="theme-color" content="#ffffff" />
-          <script dangerouslySetInnerHTML={{ __html: `
-              window.fbAsyncInit = function() {
-                FB.init({
-                  appId: '509265456539260',
-                  autoLogAppEvents: true,
-                  xfbml: true,
-                  version: 'v4.0',
-                });
-              };`}}
-          />
-          <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
-        </Head>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-        {/*</Container>*/}
+        <Container>
+          <Head>
+            <meta name="theme-color" content="#ffffff" />
+            <script dangerouslySetInnerHTML={{ __html: `
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    appId: '509265456539260',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v4.0',
+                  });
+                };`}}
+            />
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
+          </Head>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </Container>
       </Provider>
     )
   }
