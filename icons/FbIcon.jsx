@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FbIcon = ({ size = 17, color = '#333', className }) => {
+const FbIcon = ({ size = 20, color = '#333', className }) => {
   return (
     <svg className={className} width={size} height={size} viewBox="0 0 16 16">
       <path

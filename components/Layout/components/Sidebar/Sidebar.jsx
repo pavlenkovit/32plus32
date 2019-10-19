@@ -54,18 +54,24 @@ class Sidebar extends PureComponent {
 
     this.sidebarOverflow = sidebarHeight > windowHeight;
 
+    if (y < offsetTop - 15) { // в зоне хедера
+      this.updatePosition(false, false, 0);
+      return;
+    }
+
     if (!this.sidebarOverflow) { // если сайдбар меньше высоты экрана
-      this.updatePosition(y > offsetTop - 15, false, 0);
+
+      if (y > offsetTop + parentHeight - sidebarHeight - 15) { // долистали до футера
+        this.updatePosition(false, false, parentHeight - sidebarHeight);
+        return;
+      }
+
+      this.updatePosition(true, false, 0);
     }
 
     if (this.sidebarOverflow) { // если сайдбар больше высоты экрана
       if (y + windowHeight > offsetTop + parentHeight) { // долистали до футера
         this.updatePosition(false, false, parentHeight - sidebarHeight);
-        return;
-      }
-
-      if (y < offsetTop - 15) { // в зоне хедера
-        this.updatePosition(false, false, 0);
         return;
       }
 

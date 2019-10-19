@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OkIcon = ({ size = 14, color = '#333', className }) => {
+const OkIcon = ({ size = 15, color = '#333', className }) => {
   return (
     <svg className={className} width={size} viewBox="0 0 11 18">
       <g fill={color} fillRule="evenodd">

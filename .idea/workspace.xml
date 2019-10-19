@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/icons/InstaIcon.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/TwitterIcon.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Post/Post.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post/Post.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Share/Share.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Share/Share.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Share/Share.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Share/Share.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/FbIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/FbIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/InstaIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/InstaIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/OkIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/OkIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/VkIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/VkIcon.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,23 +22,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Share/Share.module.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rootAs</find>
-      <find>href=</find>
-      <find>isMobile</find>
-      <find>Height</find>
-      <find>offsetTop</find>
-      <find>this.offsetTop</find>
-      <find>href=&quot;</find>
-      <find>Упражнени</find>
-      <find>fimg_url</find>
-      <find>Tags</find>
-      <find>imgKey</find>
-      <find>img=</find>
-      <find>keywords</find>
       <find>author</find>
       <find>/author</find>
       <find>static/</find>
@@ -49,6 +65,19 @@
       <find>vkIcon</find>
       <find>media</find>
       <find>table</find>
+      <find>console.log</find>
+      <find>cons</find>
+      <find>футера</find>
+      <find>this.sidebarOverflow</find>
+      <find>isFixedBottom</find>
+      <find>sidebarOverflow</find>
+      <find>downDirectionScroll</find>
+      <find>isUpdateDirectionTop</find>
+      <find>lastScrollTop</find>
+      <find>scrollDirection</find>
+      <find>VkIcon</find>
+      <find>Share</find>
+      <find>sidebarHeight</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/components/Author</dir>
@@ -65,16 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/Post/Post.jsx" />
-        <option value="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" />
-        <option value="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" />
-        <option value="$PROJECT_DIR$/components/TrainsList/components/Train/Train.module.scss" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" />
-        <option value="$PROJECT_DIR$/icons/SearchIcon.jsx" />
-        <option value="$PROJECT_DIR$/store/actions/index.js" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/index.js" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.container.js" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Search/Search.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Search/Search.container.js" />
@@ -113,9 +132,19 @@
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/FooterSidebar/FooterSidebar.module.scss" />
         <option value="$PROJECT_DIR$/components/Post/Post.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/Footer.jsx" />
-        <option value="$PROJECT_DIR$/icons/InstaIcon.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/Layout.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss" />
+        <option value="$PROJECT_DIR$/icons/VkIcon.jsx" />
+        <option value="$PROJECT_DIR$/icons/InstaIcon.jsx" />
+        <option value="$PROJECT_DIR$/icons/FbIcon.jsx" />
+        <option value="$PROJECT_DIR$/icons/OkIcon.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.jsx" />
+        <option value="$PROJECT_DIR$/icons/TwitterIcon.jsx" />
+        <option value="$PROJECT_DIR$/components/Share/Share.module.scss" />
+        <option value="$PROJECT_DIR$/components/Share/Share.jsx" />
       </list>
     </option>
   </component>
@@ -132,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,51 +177,6 @@
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Social" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,7 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,19 +198,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/Layout/components/Footer/components" />
-      <recent name="$PROJECT_DIR$/constants" />
-      <recent name="$PROJECT_DIR$/components/Layout/components" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
-      <recent name="$PROJECT_DIR$/components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/components/Layout/components/MobileMenu" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Search" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Layout/components/Footer/components" />
+      <recent name="$PROJECT_DIR$/constants" />
+      <recent name="$PROJECT_DIR$/components/Layout/components" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
+      <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,11 +347,12 @@
       <workItem from="1571170742365" duration="267000" />
       <workItem from="1571251714544" duration="303000" />
       <workItem from="1571475136048" duration="5030000" />
+      <workItem from="1571482611069" duration="5854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201297000" />
+    <option name="totallyTimeSpent" value="207151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,8 +365,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21367522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21611722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -394,7 +380,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24183674" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1755102" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -407,80 +393,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-transition-group/esm/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Search/Search.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" lean-forward="true" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/baseURL.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton/SearchButton.container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Search/Search.container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Search/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -638,16 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/next.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -747,16 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="42" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -798,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icons/InstaIcon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -812,12 +697,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.jsx">
+    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/components/Adsense/Adsense.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/InstaIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/FbIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/OkIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/VkIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/TwitterIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Share/Share.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

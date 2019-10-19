@@ -9,16 +9,16 @@ const Social = () => {
   return (
     <div className={css.container}>
       <a className={css.link} href="https://vk.com/32plus32" target="_blank">
-        <VkIcon className={css.icon} color="#9B9B9B" size={28} />
+        <VkIcon className={css.icon} color="#9B9B9B" />
       </a>
       <a className={css.link} href="https://www.instagram.com/32plus32/" target="_blank">
-        <InstaIcon className={css.icon} color="#9B9B9B" size={20} />
+        <InstaIcon className={css.icon} color="#9B9B9B" />
       </a>
       <a className={css.link} href="https://www.facebook.com/32plus32/" target="_blank">
-        <FbIcon className={css.icon} color="#9B9B9B" size={20} />
+        <FbIcon className={css.icon} color="#9B9B9B" />
       </a>
       <a className={css.link} href="https://ok.ru/ok32plus32" target="_blank">
-        <OkIcon className={css.icon} color="#9B9B9B" size={15} />
+        <OkIcon className={css.icon} color="#9B9B9B" />
       </a>
     </div>
   );
