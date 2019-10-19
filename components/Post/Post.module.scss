@@ -27,10 +27,15 @@
 }
 
 .content {
+  & :global(.table-responsive) {
+    width: 100%;
+    overflow-x: auto;
+  }
+
   & :global(.table) {
     border-collapse: collapse;
-    margin: 15px -1px;
-    min-width: calc(100% + 2px);
+    margin: 15px 0;
+    min-width: 100%;
     & th, td {
       border: 1px solid #dee2e6;
       padding: 0.35em 0.5em;
