@@ -36,7 +36,7 @@ const MobileMenu = ({ menuIsActive, closeMenu }) => {
             return (
               <li key={idx} className={css.item}>
                 <Link href={item.href} as={item.as}>
-                  <a className={css.link}>{item.title}</a>
+                  <a onClick={closeMenu} className={css.link}>{item.title}</a>
                 </Link>
               </li>
             )

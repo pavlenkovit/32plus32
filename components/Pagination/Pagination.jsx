@@ -42,9 +42,9 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
         <Button
           href={hrefPath(activePage - 1)}
           as={asPath(activePage - 1)}
-        >
-          Назад
-        </Button>
+          text="Назад"
+          prev
+        />
       )}
       <div className={css.list}>
         {pages[0] !== 1 && (
@@ -68,9 +68,9 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
         <Button
           href={hrefPath(activePage + 1)}
           as={asPath(activePage + 1)}
-        >
-          Вперед
-        </Button>
+          text="Вперед"
+          next
+        />
       )}
     </div>
   );

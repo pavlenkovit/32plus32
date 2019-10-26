@@ -12,13 +12,13 @@
 
 .item {
   position: relative;
-  & > div {
+  & > ul {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
   }
   &:hover {
-    & > div {
+    & > ul {
       opacity: 1;
       pointer-events: inherit;
       transform: translateY(0px);

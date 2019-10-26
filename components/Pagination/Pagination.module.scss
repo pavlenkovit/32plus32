@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 .list {
@@ -10,5 +12,11 @@
 }
 
 .dots {
-  padding: .35em 0.65em;
+  padding: .2em .35em;
+}
+
+@media (max-width: 480px) {
+  .dots {
+    padding: .2em .2em;
+  }
 }

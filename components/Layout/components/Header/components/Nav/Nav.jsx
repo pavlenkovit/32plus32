@@ -9,10 +9,10 @@ import Submenu from './components/Submenu';
 class Nav extends PureComponent {
   render() {
     return (
-      <nav className={css.container}>
-        <ul className={css.menu}>
+      <nav itemScope itemType="http://schema.org/SiteNavigationElement" className={css.container}>
+        <ul className={css.menu} itemScope itemType="http://schema.org/ItemList">
           {menu.map((item, idx) => (
-            <li key={idx} className={css.item}>
+            <li itemProp="itemListElement" key={idx} className={css.item}>
               <Link href={item.href} as={item.as}>
                 <a className={css.link}>
                   <span>{item.title}</span>

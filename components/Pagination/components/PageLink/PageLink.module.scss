@@ -15,6 +15,12 @@
   color: #e24242;
   text-decoration: none;
   display: block;
-  padding: .35em 0.65em;
+  padding: .2em .5em;
   border-bottom: solid 2px transparent;
+}
+
+@media (max-width: 480px) {
+  .link {
+    padding: .2em .3em;
+  }
 }

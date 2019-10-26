@@ -36,17 +36,17 @@ const list = [
 class Submenu extends PureComponent {
   render() {
     return (
-      <div className={css.container}>
-        <div className={css.list}>
-          {list.map((item, idx) => {
-            return (
+      <ul className={css.list}>
+        {list.map((item, idx) => {
+          return (
+            <li itemProp="itemListElement" className={css.item}>
               <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
                 <a className={css.link}>{item.title}</a>
               </Link>
-            );
-          })}
-        </div>
-      </div>
+            </li>
+          );
+        })}
+      </ul>
     );
   }
 }

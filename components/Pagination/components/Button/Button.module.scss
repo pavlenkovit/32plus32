@@ -1,3 +1,36 @@
 .button {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0;
+  margin-bottom: 0.15em;
+  letter-spacing: 0.05em;
+  &:hover {
+    color: #e24242;
+    & .icon {
+      & path {
+        fill: #e24242;
+      }
+    }
+  }
+}
+
+.icon {
+  margin: 0 8px;
+  & path {
+    transition: .15s ease-out;
+    fill: #333;
+  }
+  &Rotate {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    & span {
+      display: none;
+    }
+  }
 }

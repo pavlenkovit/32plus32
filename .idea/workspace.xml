@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/t.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/ArrowPrevIcon.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Share/Share.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Share/Share.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Share/Share.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Share/Share.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TrainsList/components/Train/Train.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pagination/Pagination.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/Pagination.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pagination/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/components/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pagination/components/Button/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/components/Button/Button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/nav.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,34 +25,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Post/Post.jsx">
+        <entry file="file://$PROJECT_DIR$/components/Layout/Layout.container.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
+        <entry file="file://$PROJECT_DIR$/store/reducers/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+            <state relative-caret-position="408">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Share/Share.module.scss">
+        <entry file="file://$PROJECT_DIR$/constants/nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="51">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -54,10 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/author</find>
-      <find>static/</find>
-      <find>Author</find>
-      <find>#ea0000</find>
       <find>mapStateTo</find>
       <find>Subm</find>
       <find>pagin</find>
@@ -84,6 +99,10 @@
       <find>Share</find>
       <find>sidebarHeight</find>
       <find>ww</find>
+      <find>itemtype</find>
+      <find>Вперед</find>
+      <find>medi</find>
+      <find>closeMenu</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/components/Author</dir>
@@ -100,18 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Search/Search.jsx" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx" />
-        <option value="$PROJECT_DIR$/components/Pagination/Pagination.jsx" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss" />
-        <option value="$PROJECT_DIR$/components/MenuButton/MenuButton.jsx" />
-        <option value="$PROJECT_DIR$/components/MenuButton/MenuButton.module.scss" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/Header.module.scss" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton/index.js" />
-        <option value="$PROJECT_DIR$/store/reducers/app.js" />
-        <option value="$PROJECT_DIR$/components/Layout/components/Header/Header.container.js" />
-        <option value="$PROJECT_DIR$/components/Layout/components/MobileMenu/index.js" />
-        <option value="$PROJECT_DIR$/components/Layout/Layout.container.js" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.container.js" />
         <option value="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton/MenuButton.module.scss" />
@@ -120,10 +127,8 @@
         <option value="$PROJECT_DIR$/icons/CloseIcon.jsx" />
         <option value="$PROJECT_DIR$/pages/_document.js" />
         <option value="$PROJECT_DIR$/next.config.js" />
-        <option value="$PROJECT_DIR$/components/Layout/Layout.jsx" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/style.scss" />
-        <option value="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/Sidebar/Sidebar.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/FooterList/FooterList.jsx" />
@@ -151,6 +156,20 @@
         <option value="$PROJECT_DIR$/components/Post/Post.jsx" />
         <option value="$PROJECT_DIR$/components/Share/Share.jsx" />
         <option value="$PROJECT_DIR$/components/Share/Share.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx" />
+        <option value="$PROJECT_DIR$/icons/ArrowNextIcon.jsx" />
+        <option value="$PROJECT_DIR$/components/Pagination/components/Button/Button.jsx" />
+        <option value="$PROJECT_DIR$/components/Pagination/Pagination.jsx" />
+        <option value="$PROJECT_DIR$/icons/ArrowPrevIcon.jsx" />
+        <option value="$PROJECT_DIR$/components/Pagination/Pagination.module.scss" />
+        <option value="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" />
+        <option value="$PROJECT_DIR$/components/Pagination/components/Button/Button.module.scss" />
+        <option value="$PROJECT_DIR$/components/Layout/Layout.jsx" />
+        <option value="$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx" />
+        <option value="$PROJECT_DIR$/constants/nav.js" />
       </list>
     </option>
   </component>
@@ -167,6 +186,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,7 +203,43 @@
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Post" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +249,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,19 +260,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/Share/components" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Footer/components" />
-      <recent name="$PROJECT_DIR$/constants" />
-      <recent name="$PROJECT_DIR$/components/Layout/components" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/components/Layout/components/MobileMenu" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Search" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Share/components" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Footer/components" />
+      <recent name="$PROJECT_DIR$/constants" />
+      <recent name="$PROJECT_DIR$/components/Layout/components" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,11 +415,13 @@
       <workItem from="1571575962448" duration="630000" />
       <workItem from="1571857321945" duration="37000" />
       <workItem from="1572075072936" duration="3129000" />
+      <workItem from="1572078515843" duration="24000" />
+      <workItem from="1572081102401" duration="3108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211938000" />
+    <option name="totallyTimeSpent" value="215070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,7 +436,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22832723" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23321123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -405,109 +462,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/MobileMenu/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/Header.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton/MenuButton.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton/MenuButton.container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton/MenuButton.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icons/CloseIcon.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_document.js" />
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/trainings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.container.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -532,40 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Footer/components/FooterList/FooterList.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -587,13 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="69" selection-start-line="69" selection-end-line="69" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -642,16 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,9 +695,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Share/Share.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/Post/Post.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
+        <state relative-caret-position="727">
           <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
@@ -802,20 +719,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Share/Share.jsx">
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        <state relative-caret-position="566">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Share/Share.module.scss">
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/ArrowIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons/ArrowPrevIcon.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/PostPreview/PostPreview.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="69" selection-start-line="69" selection-end-line="69" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/Pagination.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/components/Button/Button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/components/Button/Button.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/Pagination.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/Layout.container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/reducers/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Layout/components/MobileMenu/MobileMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
