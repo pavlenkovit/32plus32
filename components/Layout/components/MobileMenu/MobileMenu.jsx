@@ -1,12 +1,19 @@
 import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Link from 'next/link';
+
 import css from './MobileMenu.module.scss';
 import { CSSTransition } from 'react-transition-group';
 import CloseIcon from '../../../../icons/CloseIcon';
 import nav from '../../../../constants/nav';
-import Link from 'next/link';
-import ArrowIcon from '../Header/components/Nav/Nav';
 
-const MobileMenu = ({ menuIsActive, closeMenu }) => {
+const MobileMenu = () => {
+  const { menuIsActive } = useSelector(state => state.app);
+  const dispatch = useDispatch();
+
+  const closeMenu = () => {
+    dispatch({ type: 'CLOSE_MENU' });
+  };
 
   useEffect(() => {
     document.querySelector('body').style.overflow = '';

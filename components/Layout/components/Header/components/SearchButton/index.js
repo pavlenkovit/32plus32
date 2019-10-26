@@ -1,1 +1,1 @@
-export { default } from './SearchButton.container';
+export { default } from './SearchButton';

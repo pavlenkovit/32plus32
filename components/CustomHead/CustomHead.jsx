@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 
 const CustomHead = (props) => {
   const {
@@ -21,14 +20,6 @@ const CustomHead = (props) => {
       <meta name="keywords" content={keywords} />
     </Head>
   );
-};
-
-CustomHead.propTypes = {
-  title: PropTypes.string,
-  img: PropTypes.string,
-  description: PropTypes.string,
-  url: PropTypes.string,
-  keywords: PropTypes.string,
 };
 
 export default CustomHead;

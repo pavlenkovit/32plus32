@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import css from './Submenu.module.scss';
 import Link from 'next/link';
 
@@ -33,22 +33,20 @@ const list = [
   },
 ];
 
-class Submenu extends PureComponent {
-  render() {
-    return (
-      <ul className={css.list}>
-        {list.map((item, idx) => {
-          return (
-            <li itemProp="itemListElement" className={css.item}>
-              <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
-                <a className={css.link}>{item.title}</a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
-}
+const Submenu = () => {
+  return (
+    <ul className={css.list}>
+      {list.map((item, idx) => {
+        return (
+          <li key={idx} itemProp="itemListElement" className={css.item}>
+            <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
+              <a className={css.link}>{item.title}</a>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
 
 export default Submenu;

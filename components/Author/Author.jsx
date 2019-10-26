@@ -10,7 +10,7 @@ const Author = (props) => {
   const as = `/user/${slug}`;
 
   return (
-    <div className={css.container} itemScope itemType="http://schema.org/Person">
+    <div className={css.container} itemProp="author" itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
         <a className={css.imgLink}>
           <img className={css.img} src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
@@ -18,10 +18,10 @@ const Author = (props) => {
       </Link>
       <div className={css.content}>
         <Link href={href} as={as}>
-          <a className={css.name} itemProp="name">{name}</a>
+          <a className={css.name} itemProp="url"><span itemProp="name">{name}</span></a>
         </Link>
         {date && (
-          <time className={css.date} dateTime={date}>
+          <time className={css.date} itemProp="dateCreated" dateTime={date}>
             {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
           </time>
         )}

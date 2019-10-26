@@ -10,16 +10,13 @@ const Post = (props) => {
   const { title, content, date, fimg_url, _embedded: { author, 'wp:term': term } } = props;
 
   const updateWindowWidth = () => {
-    console.log(window.innerWidth);
     updWindowWidth(window.innerWidth);
   };
 
   useEffect(() => {
-    console.log('use start');
     updateWindowWidth();
     window.addEventListener('resize', updateWindowWidth);
     return () => {
-      console.log('use end');
       window.removeEventListener('resize', updateWindowWidth);
     }
   }, []);
@@ -39,10 +36,10 @@ const Post = (props) => {
       </div>
       {fimg_url && (
         <div className={css.imgWrapper}>
-          <img className={css.img} src={fimg_url} alt="" />
+          <img className={css.img} src={fimg_url} alt={title.rendered} itemProp="image" />
         </div>
       )}
-      <div className={css.content} dangerouslySetInnerHTML={{__html: content.rendered}} />
+      <div itemProp="articleBody" className={css.content} dangerouslySetInnerHTML={{__html: content.rendered}} />
       {ww > 1350 ? (
         <StickyContainer>
           <Share />

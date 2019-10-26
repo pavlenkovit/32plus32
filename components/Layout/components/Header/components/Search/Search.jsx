@@ -1,12 +1,19 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Router from 'next/router';
 import css from './Search.module.scss';
 import Container from '../../../../../Container';
 import SearchIcon from '../../../../../../icons/SearchIcon';
 
-const Search = ({ closeSearch }) => {
+const Search = () => {
+  const dispatch = useDispatch();
   const [value, onChange] = useState('');
   const container = useRef(null);
+
+  const closeSearch = () => {
+    dispatch({ type: 'CLOSE_SEARCH' });
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
     onChange('');

@@ -7,8 +7,8 @@ const FooterList = ({ list }) => {
     <div className={css.container}>
       {list.map((item, idx) => {
         return (
-          <div className={css.item}>
-            <Link key={idx} href={item.href} as={item.as}>
+          <div key={idx} className={css.item}>
+            <Link href={item.href} as={item.as}>
               <a className={css.link}>{item.title}</a>
             </Link>
           </div>

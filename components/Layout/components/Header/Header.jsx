@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 import Nav from './components/Nav';
 import css from './Header.module.scss';
@@ -8,7 +9,9 @@ import Logo from './components/Logo';
 import Search from './components/Search';
 import MenuButton from './components/MenuButton';
 
-const Header = ({ isMobile, searchIsActive }) => {
+const Header = () => {
+  const { isMobile, searchIsActive } = useSelector(state => state.app);
+
   return (
     <header className={css.container}>
       <Container>
