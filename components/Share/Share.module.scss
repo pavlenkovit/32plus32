@@ -1,34 +1,33 @@
-.wrapper {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  bottom: 15px;
-  width: 50px;
-}
-
-.container {
+.list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 100vh;
 
-  &.fixedTop {
-    position: fixed;
-    top: 0;
-    transform: translateZ(0);
-  }
+  &.inline {
+    flex-direction: row;
+    justify-content: center;
 
-  &.fixedBottom {
-    position: fixed;
-    bottom: 0;
-    transform: translateZ(0);
+    & .button {
+      flex-direction: row;
+    }
+
+    & .info {
+      margin-top: 0;
+      margin-left: 9px;
+
+      &:after {
+        left: -4px;
+        top: calc(50% - 4px);
+        border-width: 4px 4px 4px 0;
+        border-color: transparent #ebebeb transparent transparent;
+      }
+    }
   }
 }
 
 .item {
   margin: 0 3px 1px 0;
+  position: relative;
 }
 
 .button {
