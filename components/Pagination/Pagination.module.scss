@@ -10,13 +10,3 @@
   display: flex;
   padding: 0 10px;
 }
-
-.dots {
-  padding: .2em .35em;
-}
-
-@media (max-width: 480px) {
-  .dots {
-    padding: .2em .2em;
-  }
-}

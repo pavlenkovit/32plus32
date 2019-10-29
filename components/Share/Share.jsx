@@ -28,13 +28,13 @@ const Share = ({ isInline = false }) => {
       <div className={css.item}>
         <button onClick={shareVk} className={css.button}>
           <VkIcon size={23} className={css.icon} />
-          <div className={css.info}>33</div>
+          <div className={css.info}>11</div>
         </button>
       </div>
       <div className={css.item}>
         <button onClick={shareFb} className={css.button}>
           <FbIcon className={css.icon} />
-          <div className={css.info}>313</div>
+          <div className={css.info}>5</div>
         </button>
       </div>
       <div className={css.item}>

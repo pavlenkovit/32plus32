@@ -47,9 +47,6 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
         />
       )}
       <div className={css.list}>
-        {pages[0] !== 1 && (
-          <div className={css.dots}>...</div>
-        )}
         {pages.map((page) => (
           <PageLink
             key={page}
@@ -60,9 +57,6 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
             {page}
           </PageLink>
         ))}
-        {pages[pages.length - 1] !== total && (
-          <div className={css.dots}>...</div>
-        )}
       </div>
       {activePage < total && (
         <Button

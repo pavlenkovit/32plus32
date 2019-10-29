@@ -27,6 +27,8 @@
 }
 
 .content {
+  margin-bottom: 30px;
+
   & :global(.table-responsive) {
     width: 100%;
     overflow-x: auto;
@@ -52,6 +54,15 @@
       border-top: none;
       font-size: 0.9em;
     }
+  }
+
+  & :global(a) {
+    max-width: 100%;
+  }
+
+  & :global(img) {
+    height: auto;
+    max-width: 100%;
   }
 
 }
