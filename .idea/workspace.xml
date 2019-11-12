@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b818a339-d766-4ef7-99f8-32f724c3c7a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Pagination/Pagination.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/Pagination.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/components/PageLink/PageLink.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Post/Post.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post/Post.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Share/Share.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Share/Share.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t.html" beforeDir="false" afterPath="$PROJECT_DIR$/t.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Post/Post.module.scss">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+            <state relative-caret-position="425">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -31,7 +26,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vkIcon</find>
       <find>media</find>
       <find>table</find>
       <find>console.log</find>
@@ -61,6 +55,7 @@
       <find>isFixedTop</find>
       <find>Submenu</find>
       <find>getDa</find>
+      <find>`</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/components/Author</dir>
@@ -77,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/Layout/components/Footer/Footer.jsx" />
         <option value="$PROJECT_DIR$/components/Layout/components/Footer/components/Social/Social.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/Layout.module.scss" />
         <option value="$PROJECT_DIR$/components/Layout/components/Sidebar/Sidebar.jsx" />
@@ -128,6 +122,7 @@
         <option value="$PROJECT_DIR$/t.html" />
         <option value="$PROJECT_DIR$/components/Share/Share.jsx" />
         <option value="$PROJECT_DIR$/components/Post/Post.module.scss" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -144,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,31 +149,7 @@
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
               <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Share" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Share" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="32plus32-next" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="32plus32-next" type="b2602c69:ProjectViewProjectNode" />
@@ -194,6 +164,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,19 +176,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/icons" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/MobileMenu" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Search" />
-      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/SearchButton" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/Share/components" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Footer/components" />
       <recent name="$PROJECT_DIR$/constants" />
       <recent name="$PROJECT_DIR$/components/Layout/components" />
       <recent name="$PROJECT_DIR$/components/Layout/components/Header/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/icons" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/MobileMenu" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/MenuButton" />
+      <recent name="$PROJECT_DIR$/components/Layout/components/Header/components/Search" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,12 +339,16 @@
       <workItem from="1572264071975" duration="177000" />
       <workItem from="1572330162576" duration="761000" />
       <workItem from="1572357873399" duration="33000" />
-      <workItem from="1572362353012" duration="369000" />
+      <workItem from="1572362353012" duration="729000" />
+      <workItem from="1572445243125" duration="1060000" />
+      <workItem from="1572641705845" duration="3474000" />
+      <workItem from="1573220366059" duration="473000" />
+      <workItem from="1573222432753" duration="188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220555000" />
+    <option name="totallyTimeSpent" value="226110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +363,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25335777" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,7 +376,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15510204" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20306122" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -414,37 +389,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/PostsList/PostsList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/date-fns/typings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="312" column="22" lean-forward="true" selection-start-line="312" selection-start-column="22" selection-end-line="312" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Share/components/StickyContainer/StickyContainer.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/Nav.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Layout/components/Header/components/Nav/components/Submenu/Submenu.module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -796,10 +740,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/Post/Post.module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="416">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>
