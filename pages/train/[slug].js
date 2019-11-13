@@ -12,7 +12,12 @@ const TrainPage = (props) => {
   const { train } = props;
   console.log(train);
 
-  const title = ReactHtmlParser(train.title.rendered);
+  const renderTitle = ReactHtmlParser(train.title.rendered);
+
+  const matchDates = renderTitle[0].match(/\b\d*\.\d*\.\d*\b/ig);
+  const dateStr = matchDates[0];
+
+  const title = `Тренировка по классическому двоеборью на ${dateStr}`;
 
   return (
     <>
@@ -27,10 +32,10 @@ const TrainPage = (props) => {
             href: '/trainings',
             as: '/trainings',
           },
-          { title }
+          { title: dateStr }
         ]}
       />
-      <Post {...train} />
+      <Post {...train} title={{ rendered: title }} />
     </>
   );
 };
