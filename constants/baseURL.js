@@ -1,1 +1,1 @@
-export default 'https://api.32plus32.ru/wp-json/wp/v2';
+export default 'http://api.32plus32.ru/wp-json/wp/v2';

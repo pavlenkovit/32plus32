@@ -23,18 +23,21 @@ const Share = ({ isInline = false }) => {
     });
   };
 
+  const vkCount = 0;
+  const fbCount = 0;
+
   return (
     <div className={cn(css.list, { [css.inline]: isInline })}>
       <div className={css.item}>
         <button onClick={shareVk} className={css.button}>
           <VkIcon size={23} className={css.icon} />
-          <div className={css.info}>11</div>
+          <div className={css.info}>{vkCount}</div>
         </button>
       </div>
       <div className={css.item}>
         <button onClick={shareFb} className={css.button}>
           <FbIcon className={css.icon} />
-          <div className={css.info}>5</div>
+          <div className={css.info}>{fbCount}</div>
         </button>
       </div>
       <div className={css.item}>
