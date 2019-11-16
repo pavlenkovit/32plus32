@@ -314,7 +314,9 @@ const trains = [
   'trenirovka-po-dvoeboryu-na-1-05-17',
 ];
 
-const redirects = [];
+const redirects = [
+  { from: '/category/dvoeborie', to: '/trainings' }
+];
 
 posts.forEach((post) => {
   redirects.push({

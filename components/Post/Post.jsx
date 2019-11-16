@@ -3,6 +3,8 @@ import css from './Post.module.scss';
 import Author from '../Author';
 import Share from '../Share';
 import StickyContainer from '../Share/components/StickyContainer';
+import TopArticle from '../../yandexRTB/TopArticle';
+import BottomArticle from '../../yandexRTB/BottomArticle';
 
 const Post = (props) => {
 
@@ -39,7 +41,13 @@ const Post = (props) => {
           <img className={css.img} src={fimg_url} alt={title.rendered} itemProp="image" />
         </div>
       )}
+      <div className={css.ad}>
+        <TopArticle />
+      </div>
       <div itemProp="articleBody" className={css.content} dangerouslySetInnerHTML={{__html: content.rendered}} />
+      <div className={css.ad}>
+        <BottomArticle />
+      </div>
       {ww > 1350 ? (
         <StickyContainer>
           <Share />
