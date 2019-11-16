@@ -7,6 +7,8 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const redirects = [
+  { from: '/normativy-po-girevomu-sportu', to: '/page/normativy-po-girevomu-sportu' },
+  { from: '/informaciya-o-trenirovkax-kak-polzovatsya-planom', to: '/page/informaciya-o-trenirovkax-kak-polzovatsya-planom' },
   { from: '/xvost-drakona-uprazhnenie-s-girej-na-press', to: '/post/xvost-drakona-uprazhnenie-s-girej-na-press' },
 ];
 

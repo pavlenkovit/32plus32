@@ -19,7 +19,7 @@ export default class MyApp extends App {
             <script dangerouslySetInnerHTML={{ __html: `
                 window.fbAsyncInit = function() {
                   FB.init({
-                    appId: '509265456539260',
+                    appId: '446552789570835',
                     autoLogAppEvents: true,
                     xfbml: true,
                     version: 'v4.0',
