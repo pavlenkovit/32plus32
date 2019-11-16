@@ -1,10 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
-
 @font-face {
   font-family: 'Handel Gothic';
   src: url('/static/fonts/HandelGothicRegular.ttf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-Italic.ttf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-MediumItalic.ttf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-Bold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/roboto/Roboto-BoldItalic.ttf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
 
 body {
   margin: 0;
