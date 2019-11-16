@@ -20,6 +20,7 @@ const Share = ({ isInline = false }) => {
       method: 'share',
       href: window.location.href,
     }, (response) => {
+      console.log(response);
     });
   };
 

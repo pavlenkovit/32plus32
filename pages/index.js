@@ -7,7 +7,6 @@ import Pagination from '../components/Pagination';
 
 const Index = (props) => {
   const { posts, totalPages, page } = props;
-  console.log(posts, 'posts');
 
   const description = 'Сайт о гиревом спорте. Тренировочный план, полезные статьи, техника и описание упражнений с гирями';
   const keywords = 'гиревой спорт, тренировки гиревой спорт, гири, нормативы гиревой спорт';
