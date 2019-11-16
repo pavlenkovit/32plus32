@@ -94,7 +94,22 @@ const Footer = () => {
             </FooterSidebar>
           </div>
           <div className={css.copy}>
-            © <Link href="/"><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.
+            <div className={css.text}>© <Link href="/"><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.</div>
+            <div>
+              <script type="text/javascript" dangerouslySetInnerHTML={{
+                __html: `
+                  document.write('<a href="//www.liveinternet.ru/click" '+
+                  'target="_blank"><img src="//counter.yadro.ru/hit?t14.5;r'+
+                  escape(document.referrer)+((typeof(screen)=='undefined')?'':
+                  ';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+                  screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+                  ';h'+escape(document.title.substring(0,150))+';'+Math.random()+
+                  '" alt="" title="LiveInternet: показано число просмотров за 24'+
+                  ' часа, посетителей за 24 часа и за сегодня" '+
+                  'border="0" width="88" height="31"><\\/a>')
+                `}}
+              />
+            </div>
           </div>
         </div>
       </Container>

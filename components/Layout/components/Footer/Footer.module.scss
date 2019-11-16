@@ -13,6 +13,8 @@
 .copy {
   margin-bottom: 15px;
   letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
   & a {
     color: inherit;
     text-decoration: none;
@@ -21,4 +23,8 @@
       text-decoration: underline;
     }
   }
+}
+
+.text {
+  margin-right: 10px;
 }
