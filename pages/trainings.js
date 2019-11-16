@@ -35,7 +35,7 @@ const TrainingsPage = ({ trainings, totalPages, page }) => {
 TrainingsPage.getInitialProps = async (context) => {
   const { query: { page: p } } = context;
   const page = p ? +p : 1;
-  const res = await fetch(`${baseURL}/posts?categories=77&page=${page}&_embed`);
+  const res = await fetch(`${baseURL}/posts?categories=77&page=${page}&per_page=20&_embed`);
   const trainings = await res.json();
   const totalPages = +res.headers.get('X-WP-TotalPages');
   return { trainings, totalPages, page };
