@@ -7,5 +7,4 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-RewriteCond %{REQUEST_URI} ^/uprazhnenia-s-girey-na-press/$
-RewriteRule ^.*$ https://32plus32.ru/post/uprazhnenia-s-girey-na-press? [R=301,L]
+Redirect 301 "xvost-drakona-uprazhnenie-s-girej-na-press/" "/post/xvost-drakona-uprazhnenie-s-girej-na-press/"
