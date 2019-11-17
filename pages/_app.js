@@ -21,6 +21,7 @@ export default class MyApp extends App {
             <link rel="manifest" href="/static/favicons/site.webmanifest" />
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="theme-color" content="#ffffff" />
+            <meta httpEquiv="Cache-Control" content="max-age=31536000, must-revalidate" />
             <script dangerouslySetInnerHTML={{ __html: `
                 window.fbAsyncInit = function() {
                   FB.init({

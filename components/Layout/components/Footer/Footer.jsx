@@ -96,6 +96,7 @@ const Footer = () => {
           <div className={css.copy}>
             <div className={css.text}>© <Link href="/"><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.</div>
             <div>
+              {/* LiveInternet counter */}
               <script type="text/javascript" dangerouslySetInnerHTML={{
                 __html: `
                   document.write('<a href="//www.liveinternet.ru/click" '+
@@ -109,6 +110,7 @@ const Footer = () => {
                   'border="0" width="88" height="31"><\\/a>')
                 `}}
               />
+              {/* /LiveInternet */}
             </div>
           </div>
         </div>

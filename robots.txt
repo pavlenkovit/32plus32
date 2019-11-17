@@ -1,8 +1,4 @@
 User-agent: *
-Disallow: /wp-admin/
-Host: www.32plus32.ru
+Host: 32plus32.ru
 
-Sitemap: http://32plus32.ru/xmlsitemap.xml
-
-Allow: /rsssitemap.xml
-Allow: /htmlsitemap.htm
+Sitemap: https://32plus32.ru/sitemap.xml

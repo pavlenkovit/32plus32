@@ -1,5 +1,5 @@
 {
-  "name": "32plus32-next",
+  "name": "32plus32",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -47,12 +47,16 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.0",
+    "dateformat": "^3.0.3",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.5",
-    "lint-staged": "^9.2.5"
+    "lint-staged": "^9.2.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "xmlbuilder": "^13.0.2"
   }
 }
