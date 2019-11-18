@@ -10,7 +10,6 @@ import getMeta from '../../utils/getMeta';
 
 const TrainPage = (props) => {
   const { train } = props;
-  console.log(train);
 
   const renderTitle = ReactHtmlParser(train.title.rendered);
 

@@ -315,6 +315,13 @@ const trains = [
 
 const redirects = [
   { from: '/category/dvoeborie', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-sentyabr-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-avgust-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-iyul-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-iyun-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-maj-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-aprel-2019', to: '/trainings' },
+  { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-mart-2019-raspisanie', to: '/trainings' },
   { from: '/page/karta-saita', to: '/blog' }
 ];
 
