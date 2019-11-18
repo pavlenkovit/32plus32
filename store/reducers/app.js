@@ -2,7 +2,7 @@ import { handleActions } from 'redux-actions';
 import * as actions from '../actions';
 
 const initial = {
-  isMobile: true,
+  isMobile: false,
   menuIsActive: false,
   searchIsActive: false,
 };
