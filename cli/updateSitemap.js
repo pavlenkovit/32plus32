@@ -23,6 +23,10 @@ const arr = [
     loc: `${site}/trainings`,
     lastmod: date,
   },
+  {
+    loc: `${site}/blog`,
+    lastmod: date,
+  },
 ];
 
 const pushPost = (list) => {

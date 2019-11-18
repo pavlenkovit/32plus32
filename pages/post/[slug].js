@@ -20,7 +20,16 @@ const PostPage = (props) => {
         title={title}
         { ...getMeta(post) }
       />
-      <Breadcrumbs items={[{ title }]} />
+      <Breadcrumbs
+        items={[
+          {
+            title: 'Блог',
+            href: '/blog',
+            as: '/blog',
+          },
+          { title },
+        ]}
+      />
       <Post {...post} />
     </>
   );

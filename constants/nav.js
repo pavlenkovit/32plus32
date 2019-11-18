@@ -1,8 +1,7 @@
 export default [
   {
-    href: '/page/[slug]',
-    as: '/page/karta-saita',
-    title: 'Статьи',
+    href: '/blog',
+    title: 'Блог',
     arrow: true,
   },
   {

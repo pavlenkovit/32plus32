@@ -60,7 +60,6 @@ const pages = [
   'authors',
   'normativy-po-girevomu-sportu',
   'kontakty',
-  'karta-saita',
 ];
 
 const trains = [
@@ -315,7 +314,8 @@ const trains = [
 ];
 
 const redirects = [
-  { from: '/category/dvoeborie', to: '/trainings' }
+  { from: '/category/dvoeborie', to: '/trainings' },
+  { from: '/page/karta-saita', to: '/blog' }
 ];
 
 posts.forEach((post) => {
