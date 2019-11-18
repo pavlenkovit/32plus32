@@ -323,8 +323,8 @@ const redirects = [
   { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-aprel-2019', to: '/trainings' },
   { from: '/post/trenirovki-po-girevomu-dvoeboryu-na-mart-2019-raspisanie', to: '/trainings' },
   { from: '/page/karta-saita', to: '/blog' },
-  { from: 'https://32plus32.ru/post/zabros-dvux-gir-na-grud-frontalnyj-prised', to: 'https://vk.com/video-52965338_456239048' },
-  { from: 'https://32plus32.ru/post/ryvok-s-vypadom-v-polozhenii-fiksacii', to: 'https://vk.com/video-52965338_456239047' },
+  { from: '/post/zabros-dvux-gir-na-grud-frontalnyj-prised', to: 'https://vk.com/video-52965338_456239048' },
+  { from: '/post/ryvok-s-vypadom-v-polozhenii-fiksacii', to: 'https://vk.com/video-52965338_456239047' },
 ];
 
 posts.forEach((post) => {
