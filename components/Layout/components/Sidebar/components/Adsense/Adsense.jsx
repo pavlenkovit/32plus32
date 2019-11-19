@@ -2,6 +2,7 @@ import React from 'react';
 import css from './Adsense.module.scss';
 
 const Adsense = () => {
+  return null;
   return (
     <>
       <div className={css.widget}>

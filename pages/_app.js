@@ -22,6 +22,7 @@ export default class MyApp extends App {
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="theme-color" content="#ffffff" />
             <meta httpEquiv="Cache-Control" content="max-age=31536000, must-revalidate" />
+            <script data-ad-client="ca-pub-2490800653471089" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
             <script dangerouslySetInnerHTML={{ __html: `
                 window.fbAsyncInit = function() {
                   FB.init({

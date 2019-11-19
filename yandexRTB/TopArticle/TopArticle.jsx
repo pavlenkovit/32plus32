@@ -1,6 +1,7 @@
 import React from 'react';
 
 const TopArticle = () => {
+  return null;
   return (
     <>
       {/* Yandex.RTB R-A-332263-2 */}
