@@ -2,7 +2,37 @@ import React from 'react';
 import css from './Adsense.module.scss';
 
 const Adsense = () => {
-  return null;
+  return (
+    <>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+      {/* sidebar 1 */}
+      <ins
+        className="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2490800653471089"
+         data-ad-slot="6185717328"
+         data-ad-format="auto"
+         data-full-width-responsive="true"
+      />
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+      {/* sidebar 2 */}
+      <ins
+        className="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2490800653471089"
+         data-ad-slot="5527596993"
+         data-ad-format="auto"
+         data-full-width-responsive="true"
+      />
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </>
+  );
   return (
     <>
       <div className={css.widget}>
