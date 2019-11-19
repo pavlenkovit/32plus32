@@ -5,6 +5,7 @@ import Ad2 from '../Ad2';
 import Ad3 from '../Ad3';
 
 const Adsense = () => {
+
   return (
     <>
       <div className={css.widget}>
