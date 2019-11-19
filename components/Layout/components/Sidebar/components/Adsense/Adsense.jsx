@@ -1,111 +1,16 @@
 import React from 'react';
 import css from './Adsense.module.scss';
+import Ad1 from '../Ad1';
+import Ad2 from '../Ad2';
 
 const Adsense = () => {
   return (
     <>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-      {/* sidebar 1 */}
-      <ins
-        className="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2490800653471089"
-         data-ad-slot="6185717328"
-         data-ad-format="auto"
-         data-full-width-responsive="true"
-      />
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-      {/* sidebar 2 */}
-      <ins
-        className="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2490800653471089"
-         data-ad-slot="5527596993"
-         data-ad-format="auto"
-         data-full-width-responsive="true"
-      />
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </>
-  );
-  return (
-    <>
       <div className={css.widget}>
-        {/* Yandex.RTB R-A-332263-1 */}
-        <div id="yandex_rtb_R-A-332263-1" />
-        <script type="text/javascript" dangerouslySetInnerHTML={{
-          __html: `
-            (function(w, d, n, s, t) {
-                w[n] = w[n] || [];
-                w[n].push(function() {
-                    Ya.Context.AdvManager.render({
-                        blockId: "R-A-332263-1",
-                        renderTo: "yandex_rtb_R-A-332263-1",
-                        async: true
-                    });
-                });
-                t = d.getElementsByTagName("script")[0];
-                s = d.createElement("script");
-                s.type = "text/javascript";
-                s.src = "//an.yandex.ru/system/context.js";
-                s.async = true;
-                t.parentNode.insertBefore(s, t);
-            })(this, this.document, "yandexContextAsyncCallbacks");
-          `}}
-        />
+        <Ad1 />
       </div>
       <div className={css.widget}>
-        {/* Yandex.RTB R-A-332263-4 */}
-        <div id="yandex_rtb_R-A-332263-4" />
-        <script type="text/javascript" dangerouslySetInnerHTML={{
-          __html: `
-            (function(w, d, n, s, t) {
-                w[n] = w[n] || [];
-                w[n].push(function() {
-                    Ya.Context.AdvManager.render({
-                        blockId: "R-A-332263-4",
-                        renderTo: "yandex_rtb_R-A-332263-4",
-                        async: true
-                    });
-                });
-                t = d.getElementsByTagName("script")[0];
-                s = d.createElement("script");
-                s.type = "text/javascript";
-                s.src = "//an.yandex.ru/system/context.js";
-                s.async = true;
-                t.parentNode.insertBefore(s, t);
-            })(this, this.document, "yandexContextAsyncCallbacks");
-          `}}
-        />
-      </div>
-      <div className={css.widget}>
-        {/* Yandex.RTB R-A-332263-5 */}
-        <div id="yandex_rtb_R-A-332263-5" />
-        <script type="text/javascript" dangerouslySetInnerHTML={{
-          __html: `
-            (function(w, d, n, s, t) {
-                w[n] = w[n] || [];
-                w[n].push(function() {
-                    Ya.Context.AdvManager.render({
-                        blockId: "R-A-332263-5",
-                        renderTo: "yandex_rtb_R-A-332263-5",
-                        async: true
-                    });
-                });
-                t = d.getElementsByTagName("script")[0];
-                s = d.createElement("script");
-                s.type = "text/javascript";
-                s.src = "//an.yandex.ru/system/context.js";
-                s.async = true;
-                t.parentNode.insertBefore(s, t);
-            })(this, this.document, "yandexContextAsyncCallbacks");
-          `}}
-        />
+        <Ad2 />
       </div>
     </>
   );
