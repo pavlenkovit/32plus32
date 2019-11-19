@@ -34,7 +34,7 @@ const MobileMenu = () => {
       }}
       unmountOnExit
     >
-      <div className={css.container}>
+      <div className={css.container} onClick={closeMenu}>
         <button onClick={closeMenu} className={css.closeButton}>
           <CloseIcon className={css.closeIcon} color="#333" />
         </button>

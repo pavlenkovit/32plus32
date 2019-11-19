@@ -19,7 +19,7 @@ const TrainingsPage = ({ trainings, totalPages, page }) => {
         description={description}
         keywords={keywords}
       />
-      <Breadcrumbs items={[{ title }]} />
+      <Breadcrumbs items={[{ title: 'Тренировки (ДВ)' }]} />
       <MainTitle>{title}</MainTitle>
       <TrainsList trainings={trainings} />
       <Pagination

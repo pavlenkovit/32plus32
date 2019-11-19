@@ -27,7 +27,7 @@ const TrainPage = (props) => {
       <Breadcrumbs
         items={[
           {
-            title: 'Тренировки по классическому двоеборью',
+            title: 'Тренировки (ДВ)',
             href: '/trainings',
             as: '/trainings',
           },

@@ -14,7 +14,6 @@ const PostPreview = ({ post }) => {
   const getImgPath = () => {
     if (featuredmedia) {
       const { sizes } = featuredmedia[0].media_details;
-      console.log(sizes);
       if (sizes.medium_large) {
         return sizes.medium_large.source_url;
       }

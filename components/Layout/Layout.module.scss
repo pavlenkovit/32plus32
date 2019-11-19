@@ -12,6 +12,10 @@
   min-height: 100vh;
 }
 
+.breadCrumbs {
+  margin-top: 66px;
+}
+
 .inner {
   display: flex;
 }
@@ -24,4 +28,10 @@
 .sidebar {
   width: 300px;
   margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .breadCrumbs {
+    margin-top: 48px;
+  }
 }

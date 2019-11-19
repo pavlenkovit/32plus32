@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       {isMobile && <MobileMenu />}
       <div id="header">
         <Header />
-        <div id="breadcrumbs" />
+        <div id="breadcrumbs" className={css.breadCrumbs} />
       </div>
       <main className={css.main}>
         <Container>

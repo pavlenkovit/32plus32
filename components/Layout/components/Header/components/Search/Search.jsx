@@ -23,7 +23,7 @@ const Search = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (container.current && !container.current.contains(event.target)) {
+      if (container.current && !container.current.contains(event.target) && event.target.id !== 'toggle-search') {
         closeSearch();
       }
     };

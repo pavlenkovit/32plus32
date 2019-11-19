@@ -14,7 +14,7 @@ const SearchButton = () => {
   };
 
   return (
-    <button className={css.button} onClick={toggleSearch}>
+    <button className={css.button} onClick={toggleSearch} id="toggle-search">
       {searchIsActive ? (
         <CloseIcon className={css.icon} />
       ) : (

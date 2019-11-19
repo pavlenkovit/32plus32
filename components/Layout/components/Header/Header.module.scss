@@ -1,14 +1,22 @@
 .container {
   background: #000;
   color: #fff;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  height: 66px;
+  & > div:first-child {
+    height: 100%;
+  }
 }
 
 .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  height: 100%;
 }
 
 .left {
@@ -35,4 +43,10 @@
 .mobileWrapper {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 48px;
+  }
 }
