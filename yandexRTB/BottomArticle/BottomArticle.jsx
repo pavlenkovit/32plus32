@@ -1,33 +1,20 @@
 import React from 'react';
 
-const BottomArticle = () => {
-  return null;
-  return (
-    <>
-      {/* Yandex.RTB R-A-332263-3 */}
-      <div id="yandex_rtb_R-A-332263-3" />
-      <script type="text/javascript" dangerouslySetInnerHTML={{
-        __html: `
-          (function(w, d, n, s, t) {
-              w[n] = w[n] || [];
-              w[n].push(function() {
-                  Ya.Context.AdvManager.render({
-                      blockId: "R-A-332263-3",
-                      renderTo: "yandex_rtb_R-A-332263-3",
-                      async: true
-                  });
-              });
-              t = d.getElementsByTagName("script")[0];
-              s = d.createElement("script");
-              s.type = "text/javascript";
-              s.src = "//an.yandex.ru/system/context.js";
-              s.async = true;
-              t.parentNode.insertBefore(s, t);
-          })(this, this.document, "yandexContextAsyncCallbacks");
-        `}}
-      />
-    </>
-  );
-};
+export default class BottomArticle extends React.Component {
+  componentDidMount() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
 
-export default BottomArticle;
+  render() {
+    return (
+      <ins
+        className='adsbygoogle'
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-2490800653471089"
+        data-ad-slot="5553832941"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+    );
+  }
+}
