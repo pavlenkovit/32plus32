@@ -9,12 +9,6 @@ const initial = {
 };
 
 export default handleActions({
-  [actions.checkIsMobile](state, { payload }) {
-    // const { isMobile } = payload;
-    // return { ...state, isMobile };
-    return state;
-  },
-
   [actions.toggleMenu](state) {
     return {
       ...state,

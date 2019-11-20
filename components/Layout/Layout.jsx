@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -12,16 +12,6 @@ import '../../style.scss';
 
 const Layout = ({ children }) => {
   const { isMobile } = useSelector(state => state.app);
-  const dispatch = useDispatch();
-
-  const handleResize = () => {
-    dispatch({ type: 'CHECK_IS_MOBILE', payload: { isMobile: window.innerWidth <= 992 } });
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    handleResize();
-  }, []);
 
   return (
     <div className={css.wrapper}>
