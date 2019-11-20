@@ -4,6 +4,7 @@ import baseURL from '../constants/baseURL';
 import CustomHead from '../components/CustomHead';
 import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
+import MainTitle from '../components/MainTitle';
 
 const Index = (props) => {
   const { posts, totalPages, page } = props;
@@ -16,8 +17,8 @@ const Index = (props) => {
       <CustomHead
         description={description}
         keywords={keywords}
-        img=""
       />
+      <MainTitle>Сайт о гиревом спорте 32PLUS32</MainTitle>
       <PostsList posts={posts} />
       <Pagination
         total={totalPages}
