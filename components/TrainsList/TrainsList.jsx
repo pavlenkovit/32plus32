@@ -11,12 +11,10 @@ const TrainsList = ({ trainings }) => {
       <div className={cn(css.ad, css.adTop)}>
         <TopArticle />
       </div>
-      <div className={css.container}>
+      <div>
         {trainings.map(train => {
           return (
-            <div key={train.id} className={css.item}>
-              <Train {...train} />
-            </div>
+            <Train key={train.id} {...train} />
           );
         })}
       </div>
