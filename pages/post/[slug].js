@@ -10,14 +10,13 @@ import getMeta from '../../utils/getMeta';
 
 const PostPage = (props) => {
   const { post } = props;
-  console.log(post);
-
   const title = ReactHtmlParser(post.title.rendered);
 
   return (
     <>
       <CustomHead
         title={title}
+        url={`/post/${post.slug}`}
         { ...getMeta(post) }
       />
       <Breadcrumbs

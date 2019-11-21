@@ -6,7 +6,6 @@ import Post from '../../components/Post';
 import ReactHtmlParser from 'react-html-parser';
 import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import getMeta from '../../utils/getMeta';
 
 const TrainPage = (props) => {
   const { train } = props;
@@ -17,12 +16,17 @@ const TrainPage = (props) => {
   const dateStr = matchDates[0];
 
   const title = `Тренировка по классическому двоеборью на ${dateStr}`;
+  const description = `Тренировка по гиревому спорту по классическому двоеборью на ${dateStr}`;
+  const keywords = 'тренировка по гиревому спорту, гиревой спорт план';
+  const url = `/train/${train.slug}`;
 
   return (
     <>
       <CustomHead
         title={title}
-        { ...getMeta(train) }
+        description={description}
+        keywords={keywords}
+        url={url}
       />
       <Breadcrumbs
         items={[

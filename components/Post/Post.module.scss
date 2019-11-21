@@ -70,3 +70,17 @@
 .ad {
   margin: 15px 0;
 }
+
+@media (max-width: 768px) {
+  .content {
+    margin-bottom: 30px;
+
+    & :global(.table-responsive) {
+      margin: 0 -15px;
+      width: auto;
+    }
+
+    & :global(.table) {
+    }
+  }
+}

@@ -10,14 +10,13 @@ import getMeta from '../../utils/getMeta';
 
 const SimplePage = (props) => {
   const { page } = props;
-  console.log(page);
-
   const title = ReactHtmlParser(page.title.rendered);
 
   return (
     <>
       <CustomHead
         title={title}
+        url={`/page/${page.slug}`}
         { ...getMeta(page) }
       />
       <Breadcrumbs items={[{ title }]} />
