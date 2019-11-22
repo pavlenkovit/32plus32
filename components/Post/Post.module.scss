@@ -65,6 +65,54 @@
     max-width: 100%;
   }
 
+  & :global(.wp-caption) {
+    & a {
+      display: block;
+      & img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  & :global(.frame-wrapper-landscape) {
+    position: relative;
+    padding-bottom: 66%;
+    margin: 1.33em 0;
+    height: 0;
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & :global(.frame-wrapper-rect) {
+    position: relative;
+    padding-bottom: 100%;
+    margin: 1.33em 0;
+    height: 0;
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & :global(.wp-caption-text) {
+    background: #f4f4f4;
+    margin-top: 0;
+    font-style: italic;
+    color: #9B9FA3;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 }
 
 .ad {

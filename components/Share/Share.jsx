@@ -5,7 +5,6 @@ import FbIcon from '../../icons/FbIcon';
 import VkIcon from '../../icons/VkIcon';
 import OkIcon from '../../icons/OkIcon';
 import css from './Share.module.scss';
-import TwitterIcon from '../../icons/TwitterIcon';
 
 const Share = ({ isInline = false }) => {
   const [vkCount, updVkCount] = useState(0);
@@ -82,11 +81,6 @@ const Share = ({ isInline = false }) => {
         <button onClick={shareFb} className={css.button}>
           <FbIcon className={css.icon} />
           {fbCount > 0 &&<div className={css.info}>{fbCount}</div>}
-        </button>
-      </div>
-      <div className={css.item}>
-        <button onClick={() => {}} className={css.button}>
-          <TwitterIcon className={css.icon} />
         </button>
       </div>
       <div className={css.item}>
