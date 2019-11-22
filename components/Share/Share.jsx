@@ -52,7 +52,7 @@ const Share = ({ isInline = false }) => {
 
     const scriptOdnoklassniki = document.createElement('script');
 
-    scriptOdnoklassniki.src = 'https://connect.ok.ru/dk?st.cmd=extLike&uid=1&ref=' + 'https://32plus32.ru' + '&callback=?';
+    scriptOdnoklassniki.src = `https://connect.ok.ru/dk?st.cmd=extLike&uid=1&ref=${window.location.href}&callback=?`;
     scriptOdnoklassniki.async = true;
 
     document.body.appendChild(scriptOdnoklassniki);
