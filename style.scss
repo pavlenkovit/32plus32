@@ -99,3 +99,16 @@ p {
   margin: 1.33em 0;
 }
 
+blockquote {
+  font-style: italic;
+  border-left: solid 3px #333;
+  margin-left: 0;
+  padding-left: 1em;
+  & cite {
+    color: #9B9FA3;
+    & a {
+      color: #9B9FA3;
+      text-decoration: none;
+    }
+  }
+}

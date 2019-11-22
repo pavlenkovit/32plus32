@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 import cn from 'classnames';
 import FbIcon from '../../icons/FbIcon';
 import VkIcon from '../../icons/VkIcon';
@@ -8,7 +9,7 @@ import TwitterIcon from '../../icons/TwitterIcon';
 
 const Share = ({ isInline = false }) => {
   const shareVk = () => {
-    window.open(`http://vk.com/share.php?url=${window.location.href}`, '', 'width=626,height=436');
+    //window.open(`http://vk.com/share.php?url=${window.location.href}`, '', 'width=626,height=436');
   };
 
   const shareOk = () => {
@@ -23,6 +24,13 @@ const Share = ({ isInline = false }) => {
       console.log(response);
     });
   };
+
+  useEffect(() => {
+    axios.get(`https://vk.com/share.php?act=count&index=1&url=${window.location.href}&format=json&callback=?`).then(response => {
+      console.log(`https://vk.com/share.php?act=count&index=1&url=${window.location.href}&format=json&callback=?`);
+      console.log(response);
+    })
+  });
 
   const vkCount = 0;
   const fbCount = 0;

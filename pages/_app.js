@@ -34,6 +34,7 @@ export default class MyApp extends App {
                 };`}}
             />
             <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
+            <script type="text/javascript" src="https://vk.com/js/api/share.js?93" charSet="windows-1251" />
           </Head>
           <Layout>
             <Component {...pageProps} />
