@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import cn from 'classnames';
 import FbIcon from '../../icons/FbIcon';
@@ -8,8 +8,12 @@ import css from './Share.module.scss';
 import TwitterIcon from '../../icons/TwitterIcon';
 
 const Share = ({ isInline = false }) => {
+  const [vkCount, updVkCount] = useState(0);
+  const [fbCount, updFbCount] = useState(0);
+  const [okCount, updOkCount] = useState(0);
+
   const shareVk = () => {
-    //window.open(`http://vk.com/share.php?url=${window.location.href}`, '', 'width=626,height=436');
+    window.open(`http://vk.com/share.php?url=${window.location.href}`, '', 'width=626,height=436');
   };
 
   const shareOk = () => {
@@ -26,14 +30,45 @@ const Share = ({ isInline = false }) => {
   };
 
   useEffect(() => {
-    axios.get(`https://vk.com/share.php?act=count&index=1&url=${window.location.href}&format=json&callback=?`).then(response => {
-      console.log(`https://vk.com/share.php?act=count&index=1&url=${window.location.href}&format=json&callback=?`);
-      console.log(response);
-    })
-  });
+    // подсчет количества репостов vk
+    window.VK = {};
+    window.VK.Share = {};
+    window.VK.Share.count = (index, count) => {
+      updVkCount(count);
+    };
 
-  const vkCount = 0;
-  const fbCount = 0;
+    const scriptVk = document.createElement('script');
+
+    scriptVk.src = `https://vk.com/share.php?act=count&index=1&url=${window.location.href}`;
+    scriptVk.async = true;
+
+    document.body.appendChild(scriptVk);
+
+    // подсчет количества репостов odnoklassniki
+    window.ODKL = {};
+    ODKL.updateCount = (uid, count) => {
+      updOkCount(count);
+    };
+
+    const scriptOdnoklassniki = document.createElement('script');
+
+    scriptOdnoklassniki.src = 'https://connect.ok.ru/dk?st.cmd=extLike&uid=1&ref=' + 'https://32plus32.ru' + '&callback=?';
+    scriptOdnoklassniki.async = true;
+
+    document.body.appendChild(scriptOdnoklassniki);
+
+    // подсчет количества репостов fb
+    axios.get(`https://graph.facebook.com/${window.location.href}`).then(data => {
+      if(data.shares !== undefined) {
+        updFbCount(data.shares)
+      }
+    });
+
+    return () => {
+      document.body.removeChild(scriptVk);
+      document.body.removeChild(scriptOdnoklassniki);
+    }
+  }, []);
 
   return (
     <div className={cn(css.list, { [css.inline]: isInline })}>
@@ -57,6 +92,7 @@ const Share = ({ isInline = false }) => {
       <div className={css.item}>
         <button onClick={shareOk} className={css.button}>
           <OkIcon className={css.icon} />
+          {okCount > 0 &&<div className={css.info}>{okCount}</div>}
         </button>
       </div>
     </div>
