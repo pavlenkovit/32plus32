@@ -17,6 +17,7 @@ const SimplePage = (props) => {
       <CustomHead
         title={title}
         url={`/page/${page.slug}`}
+        type="article"
         { ...getMeta(page) }
       />
       <Breadcrumbs items={[{ title }]} />

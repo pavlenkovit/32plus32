@@ -11,15 +11,17 @@ const Nav = () => {
     <nav itemScope itemType="http://schema.org/SiteNavigationElement" className={css.container}>
       <ul className={css.menu} itemScope itemType="http://schema.org/ItemList">
         {menu.map((item, idx) => (
-          <li itemProp="itemListElement" key={idx} className={css.item}>
-            <Link href={item.href} as={item.as}>
-              <a className={css.link}>
-                <span>{item.title}</span>
-                {item.arrow && (
-                  <ArrowIcon className={css.icon} color="#fff" size={12} />
-                )}
-              </a>
-            </Link>
+          <li key={idx} className={css.item}>
+            <span itemProp="itemListElement" typeof="ListItem">
+              <Link href={item.href} as={item.as}>
+                <a className={css.link} property="item" typeof="WebPage">
+                  <span property="name">{item.title}</span>
+                  {item.arrow && (
+                    <ArrowIcon className={css.icon} color="#fff" size={12} />
+                  )}
+                </a>
+              </Link>
+            </span>
             {item.arrow && <Submenu />}
           </li>
         ))}

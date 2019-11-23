@@ -9,12 +9,12 @@ import Pagination from '../../components/Pagination';
 
 const CategoryPage = (props) => {
   const { category, posts, totalPages, page } = props;
-  console.log(posts, 'posts');
 
   return (
     <>
       <CustomHead
         title={category.name}
+        type="blog.category"
       />
       <Breadcrumbs items={[{ title: category.name }]} />
       <MainTitle>{category.name}</MainTitle>

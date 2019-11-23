@@ -40,7 +40,9 @@ const Submenu = () => {
         return (
           <li key={idx} itemProp="itemListElement" className={css.item}>
             <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
-              <a className={css.link}>{item.title}</a>
+              <a className={css.link} property="item" typeof="WebPage">
+                <span property="name">{item.title}</span>
+              </a>
             </Link>
           </li>
         );

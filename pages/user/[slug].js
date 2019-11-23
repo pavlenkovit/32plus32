@@ -16,6 +16,7 @@ const UserPage = (props) => {
     <>
       <CustomHead
         title={user.name}
+        type="person"
       />
       <Breadcrumbs items={[{ title: user.name }]} />
       <MainTitle>{user.name}</MainTitle>

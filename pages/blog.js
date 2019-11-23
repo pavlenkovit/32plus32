@@ -19,6 +19,7 @@ const Blog = (props) => {
         title={title}
         description={description}
         keywords={keywords}
+        type="blog"
       />
       <Breadcrumbs items={[{ title }]} />
       <MainTitle>{title}</MainTitle>

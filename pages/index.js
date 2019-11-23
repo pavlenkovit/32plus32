@@ -17,6 +17,7 @@ const Index = (props) => {
       <CustomHead
         description={description}
         keywords={keywords}
+        type="website"
       />
       <MainTitle>Сайт о гиревом спорте 32PLUS32</MainTitle>
       <PostsList posts={posts} />

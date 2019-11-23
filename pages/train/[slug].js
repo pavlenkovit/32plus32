@@ -27,6 +27,7 @@ const TrainPage = (props) => {
         description={description}
         keywords={keywords}
         url={url}
+        type="training"
       />
       <Breadcrumbs
         items={[

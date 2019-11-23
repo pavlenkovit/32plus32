@@ -11,24 +11,28 @@ const Breadcrumbs = ({ items }) => {
     return (
       <div className={css.container}>
         <Container>
-          <ul className={css.list}>
-            <li className={css.item}>
+          <ul className={css.list} itemScope itemType="http://schema.org/BreadcrumbList">
+            <li className={css.item} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
               <Link href="/">
-                <a className={css.link}>Главная</a>
+                <a className={css.link} itemProp="item">
+                  <span itemprop="name">Главная</span>
+                </a>
               </Link>
             </li>
             {items.map((item, idx) => {
               return item.href ? (
-                <li key={idx} className={css.item}>
+                <li key={idx} className={css.item} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
                   <Link href={item.href} as={item.as}>
-                    <a className={css.link}>
-                      {item.title}
+                    <a className={css.link} itemProp="item">
+                      <span itemprop="name">{item.title}</span>
                     </a>
                   </Link>
                 </li>
               ) : (
-                <li key={idx} className={css.item}>
-                  {item.title}
+                <li key={idx} className={css.item} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
+                  <span itemProp="item">
+                    <span itemprop="name">{item.title}</span>
+                  </span>
                 </li>
               );
             })}

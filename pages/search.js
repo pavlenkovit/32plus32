@@ -8,7 +8,6 @@ import MainTitle from '../components/MainTitle';
 
 const Index = (props) => {
   const { posts, totalPages, page, s } = props;
-  console.log(posts, 'posts');
 
   return (
     <>
