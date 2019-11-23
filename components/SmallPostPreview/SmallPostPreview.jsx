@@ -6,7 +6,7 @@ import css from './SmallPostPreview.module.scss';
 import DateComponent from './components/DateComponent';
 
 const SmallPostPreview = ({ post }) => {
-  const { slug, title, date, fimg_url, _embedded: { author, 'wp:featuredmedia': featuredmedia } } = post;
+  const { slug, title, date, modified, fimg_url, _embedded: { author, 'wp:featuredmedia': featuredmedia } } = post;
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
 
@@ -25,6 +25,7 @@ const SmallPostPreview = ({ post }) => {
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
+      <meta itemProp="dateModified" content={modified} />
       {featuredmedia && (
         <div className={css.imgWrap}>
           <meta itemProp="image" content={fimg_url} />

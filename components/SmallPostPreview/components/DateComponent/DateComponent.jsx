@@ -5,7 +5,7 @@ import ru from 'date-fns/locale/ru';
 
 const DateComponent = ({ date }) => {
   return (
-    <time className={css.date} itemProp="dateCreated" dateTime={date}>
+    <time className={css.date} dateTime={date}>
       {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
     </time>
   );

@@ -7,7 +7,7 @@ import Categories from './components/Categories';
 import css from './PostPreview.module.scss';
 
 const PostPreview = ({ post }) => {
-  const { slug, title, excerpt, date, fimg_url, _embedded: { author, 'wp:term': term, 'wp:featuredmedia': featuredmedia } } = post;
+  const { slug, title, excerpt, date, modified, fimg_url, _embedded: { author, 'wp:term': term, 'wp:featuredmedia': featuredmedia }, meta: { _aioseop_description } } = post;
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
 
@@ -29,6 +29,8 @@ const PostPreview = ({ post }) => {
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
+      <meta itemProp="dateModified" content={modified} />
+      <meta itemProp="description" content={_aioseop_description ? _aioseop_description[0] : ''} />
       {featuredmedia && (
         <div className={css.imgWrap}>
           <meta itemProp="image" content={fimg_url} />

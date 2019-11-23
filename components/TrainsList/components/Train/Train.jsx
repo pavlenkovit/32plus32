@@ -8,18 +8,20 @@ import TrainIcon from '../../../../icons/TrainIcon';
 import Author from './components/Author';
 import { useSelector } from 'react-redux';
 
-const Train = ({ title, slug, fimg_url, _embedded: { author } }) => {
+const Train = ({ title, slug, date, modified, fimg_url, _embedded: { author } }) => {
   const { day, month, year, weekDay } = getDateByTitle(title);
   const { isMobile } = useSelector(state => state.app);
 
   return (
-    <div className={cn(css.container, { [css.mob]: isMobile })}>
+    <div className={cn(css.container, { [css.mob]: isMobile })} itemScope itemType="http://schema.org/Article">
+      <meta itemProp="datePublished" content={date} />
+      <meta itemProp="dateModified" content={modified} />
       <Author {...author[0]} />
       <div className={css.content}>
         <div className={css.date}>{day}/{month}/{year} ({weekDay})</div>
         <h2 className={css.title}>
           <Link href="train/[slug]" as={`train/${slug}`}>
-            <a>
+            <a itemProp="url headline name">
               <b>Тренировка</b> {isMobile ? 'по ДВ' : 'по классическому двоеборью'}
             </a>
           </Link>

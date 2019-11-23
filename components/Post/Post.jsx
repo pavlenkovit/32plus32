@@ -9,7 +9,7 @@ import BottomArticle from '../../yandexRTB/BottomArticle';
 const Post = (props) => {
 
   const [ww, updWindowWidth] = useState(0);
-  const { title, content, date, fimg_url, _embedded: { author, 'wp:term': term } } = props;
+  const { title, content, date, modified, fimg_url, _embedded: { author, 'wp:term': term } } = props;
 
   const updateWindowWidth = () => {
     updWindowWidth(window.innerWidth);
@@ -39,6 +39,7 @@ const Post = (props) => {
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
+      <meta itemProp="dateModified" content={modified} />
       <h1
         className={css.title}
         dangerouslySetInnerHTML={{__html: title.rendered}}
