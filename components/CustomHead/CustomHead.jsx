@@ -8,6 +8,7 @@ const CustomHead = (props) => {
     img = '/static/img/main.png',
     url = '',
     keywords = '',
+    type,
   } = props;
 
   return (
@@ -18,6 +19,7 @@ const CustomHead = (props) => {
       <meta key="meta-title" property="og:title" content={title} />
       <meta key="meta-description" name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      {type && <meta key="meta-type" property="og:type" content={type} />}
     </Head>
   );
 };

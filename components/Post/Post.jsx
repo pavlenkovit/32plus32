@@ -38,6 +38,7 @@ const Post = (props) => {
 
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
+      <meta itemProp="datePublished" content={date} />
       <h1
         className={css.title}
         dangerouslySetInnerHTML={{__html: title.rendered}}

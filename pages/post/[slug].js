@@ -17,6 +17,7 @@ const PostPage = (props) => {
       <CustomHead
         title={title}
         url={`/post/${post.slug}`}
+        type="article"
         { ...getMeta(post) }
       />
       <Breadcrumbs

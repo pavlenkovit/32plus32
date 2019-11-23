@@ -21,7 +21,7 @@ const Author = (props) => {
           <a className={css.name} itemProp="url"><span itemProp="name">{name}</span></a>
         </Link>
         {date && (
-          <time className={css.date} itemProp="dateCreated" dateTime={date}>
+          <time className={css.date}>
             {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
           </time>
         )}
