@@ -23,6 +23,7 @@ const Post = (props) => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
+        window.location.hash = this.getAttribute('href');
         window.scrollTo({
           top: document.querySelector(this.getAttribute('href')).offsetTop + 30,
           behavior: 'smooth',
