@@ -18,6 +18,18 @@ const Post = (props) => {
   useEffect(() => {
     updateWindowWidth();
     window.addEventListener('resize', updateWindowWidth);
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        window.scrollTo({
+          top: document.querySelector(this.getAttribute('href')).offsetTop + 30,
+          behavior: 'smooth',
+        });
+      });
+    });
+
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
     }

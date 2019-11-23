@@ -106,9 +106,23 @@ blockquote {
   padding-left: 1em;
   & cite {
     color: #9B9FA3;
-    & a {
-      color: #9B9FA3;
-      text-decoration: none;
-    }
   }
+}
+
+figure {
+  margin: 1.33em 0;
+  & img {
+    display: block;
+  }
+}
+
+figcaption {
+  background: #f4f4f4;
+  margin-top: 0;
+  font-style: italic;
+  color: #9B9FA3;
+  padding: 0.5em 1em;
+  font-size: 0.85em;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
