@@ -16,9 +16,10 @@ const Train = ({ title, slug, date, modified, fimg_url, _embedded: { author } })
     <div className={cn(css.container, { [css.mob]: isMobile })} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
       <meta itemProp="dateModified" content={modified} />
+      <meta itemProp="description" content={`Тренировка по гиревому спорту по классическому двоеборью на ${day}/${month}/${year}`} />
       <Author {...author[0]} />
       <div className={css.content}>
-        <div className={css.date}>{day}/{month}/{year} ({weekDay})</div>
+        <div className={css.date}>{`${day}/${month}/${year} (${weekDay})`}</div>
         <h2 className={css.title}>
           <Link href="train/[slug]" as={`train/${slug}`}>
             <a itemProp="url headline name">
