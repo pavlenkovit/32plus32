@@ -29,10 +29,8 @@ const Breadcrumbs = ({ items }) => {
                   </Link>
                 </li>
               ) : (
-                <li key={idx} className={css.item} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                  <span itemProp="item">
-                    <span itemprop="name">{item.title}</span>
-                  </span>
+                <li key={idx} className={css.item}>
+                  {item.title}
                 </li>
               );
             })}
