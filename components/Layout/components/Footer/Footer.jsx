@@ -116,7 +116,7 @@ const Footer = () => {
                   });
                 `}}
               />
-              <noscript><div><img src="https://mc.yandex.ru/watch/34136935" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+              <noscript><div><img src="https://mc.yandex.ru/watch/34136935" style={{ position: 'absolute', left: '-9999px' }} alt="" /></div></noscript>
               {/* /Yandex.Metrika counter */}
             </div>
           </div>
