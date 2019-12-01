@@ -1,41 +1,40 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs'); // модуль для работы с файловой системой
+const path = require('path'); // модуль для преобразования пути
+const minimist = require('minimist'); // модуль для преобразования строки аргументов в объект
 
-const minimist = require('minimist');
-const args = minimist(process.argv, {
-  alias: { path: 'p' },
+const args = minimist(process.argv);
+
+const srcPath = [__dirname, '..', 'src']; // путь до папки src текущего проекта
+const arrPath = args.path.split('/'); // разбиваем путь из аргумента командной строки на массив
+const componentName = arrPath[arrPath.length - 1]; // последний элемент - название компонента
+
+// создание директорий из аргумента (при необходимости)
+const currentArray = [];
+arrPath.forEach(element => {
+  currentArray.push(element);
+  const currentResolvePath = path.resolve(...srcPath, ...currentArray);
+  if (!fs.existsSync(currentResolvePath)) { // проверка - существует такая директория или нет?
+    fs.mkdirSync(currentResolvePath); // если нет, то создаем новую
+  }
 });
 
-const arrPath = args.path.split('/');
-const componentName = arrPath.splice(-1, 1)[0];
+const componentPath = [...srcPath, ...arrPath];
 
-fs.mkdirSync(path.resolve(__dirname, '..', ...arrPath, componentName));
-
+// создание компонента
 const componentCode = `import React from 'react';
-import css from './${componentName}.module.scss';
-
+import './${componentName}.module.scss';
 const ${componentName} = () => {
   return (
-    <div className={css.container}>
+    <div className={s.container}>
     </div>
   );
 };
+export default ${componentName};`;
+fs.writeFileSync(path.resolve(...componentPath, `${componentName}.jsx`), componentCode);
 
-export default ${componentName};
-`;
+// создание индексного файла
+const indexCode = `export { default } from './${componentName}';`;
+fs.writeFileSync(path.resolve(...componentPath, 'index.js'), indexCode);
 
-fs.writeFileSync(
-  path.resolve(__dirname, '..', ...arrPath, componentName, `${componentName}.jsx`),
-  componentCode,
-);
-
-fs.writeFileSync(
-  path.resolve(__dirname, '..', ...arrPath, componentName, 'index.js'),
-  `export { default } from './${componentName}';
-`,
-);
-
-fs.writeFileSync(
-  path.resolve(__dirname, '..', ...arrPath, componentName, `${componentName}.module.scss`), '',
-);
-
+// создание файла стилей
+fs.writeFileSync(path.resolve(...componentPath, `${componentName}.module.scss`), '');

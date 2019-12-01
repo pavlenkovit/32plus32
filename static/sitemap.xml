@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://32plus32.ru/</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/blog</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/page/informaciya-o-trenirovkax-kak-polzovatsya-planom</loc>
@@ -30,47 +30,67 @@
   </url>
   <url>
     <loc>https://32plus32.ru/category/null</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/vosstanovlenie</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/lichnosti</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/nauchnye-stati</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/novosti</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/dvoeborie</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/planirovanie-trenirovok</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/tehnika</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/trenirovki</loc>
-    <lastmod>2019-11-26</lastmod>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/upragneniya</loc>
+    <lastmod>2019-12-01</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/train/dv-30-11-19</loc>
+    <lastmod>2019-11-29</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/train/dv-29-11-19</loc>
+    <lastmod>2019-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/train/dv-28-11-19</loc>
+    <lastmod>2019-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/train/dv-27-11-19</loc>
     <lastmod>2019-11-26</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/train/dv-26-11-19</loc>
     <lastmod>2019-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/nekotorye-aspekty-sovershenstvovaniya-texniki-vypolneniya-uprazhnenij-v-girevom-sporte</loc>
+    <lastmod>2019-12-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/train/dv-25-11-19</loc>
@@ -1246,10 +1266,6 @@
   </url>
   <url>
     <loc>https://32plus32.ru/post/krossfit-i-girevoy-sport</loc>
-    <lastmod>2019-11-23</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/post/silovaya-podgotovka-girevika</loc>
     <lastmod>2019-11-23</lastmod>
   </url>
 </urlset>
