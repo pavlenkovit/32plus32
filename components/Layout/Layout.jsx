@@ -3,10 +3,11 @@ import { useSelector } from 'react-redux';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import css from './Layout.module.scss';
 import Container from '../Container';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
+
+import { Main, Wrapper, Inner, SidebarWrapper, Content, BreadCrumbs } from './Layout.styled';
 
 import '../../style.scss';
 
@@ -14,28 +15,28 @@ const Layout = ({ children }) => {
   const { isMobile } = useSelector(state => state.app);
 
   return (
-    <div className={css.wrapper}>
+    <Wrapper>
       {isMobile && <MobileMenu />}
       <div id="header">
         <Header />
-        <div id="breadcrumbs" className={css.breadCrumbs} />
+        <BreadCrumbs id="breadcrumbs" />
       </div>
-      <main className={css.main}>
+      <Main>
         <Container>
-          <div className={css.inner}>
-            <div className={css.content}>
+          <Inner>
+            <Content>
               {children}
-            </div>
+            </Content>
             {!isMobile && (
-              <div className={css.sidebar}>
+              <SidebarWrapper>
                 <Sidebar />
-              </div>
+              </SidebarWrapper>
             )}
-          </div>
+          </Inner>
         </Container>
-      </main>
+      </Main>
       <Footer />
-    </div>
+    </Wrapper>
   );
 };
 

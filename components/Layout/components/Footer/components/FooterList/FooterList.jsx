@@ -1,17 +1,17 @@
 import React from 'react';
-import css from './FooterList.module.scss';
 import Link from 'next/link';
+import { Item } from './FooterList.styled';
 
 const FooterList = ({ list }) => {
   return (
-    <div className={css.container}>
+    <div>
       {list.map((item, idx) => {
         return (
-          <div key={idx} className={css.item}>
+          <Item key={idx}>
             <Link href={item.href} as={item.as}>
-              <a className={css.link}>{item.title}</a>
+              <a>{item.title}</a>
             </Link>
-          </div>
+          </Item>
         );
       })}
     </div>

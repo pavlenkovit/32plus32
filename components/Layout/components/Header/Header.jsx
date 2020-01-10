@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { CSSTransition } from 'react-transition-group';
 import Nav from './components/Nav';
 import css from './Header.module.scss';
 import Container from '../../../Container';
@@ -35,19 +34,7 @@ const Header = () => {
           )}
         </div>
       </Container>
-      <CSSTransition
-        in={searchIsActive}
-        timeout={200}
-        classNames={{
-          enter: css.enter,
-          enterActive: css.enterActive,
-          exit: css.exit,
-          exitActive: css.exitActive,
-        }}
-        unmountOnExit
-      >
-        <Search />
-      </CSSTransition>
+      {searchIsActive && <Search />}
     </header>
   );
 };

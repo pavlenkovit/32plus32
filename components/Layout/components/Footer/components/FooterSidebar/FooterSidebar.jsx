@@ -1,12 +1,12 @@
 import React from 'react';
-import css from './FooterSidebar.module.scss';
+import { Wrapper, Title } from './FooterSidebar.styled';
 
 const FooterSidebar = ({ title, children }) => {
   return (
-    <aside className={css.container}>
-      <h2 className={css.title}>{title}</h2>
+    <Wrapper>
+      <Title>{title}</Title>
       {children}
-    </aside>
+    </Wrapper>
   );
 };
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import css from './Author.module.scss';
 import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
+
+import { Wrapper, ImgLink, Img, Name, DateContainer, Content } from './Author.styled';
 
 const Author = (props) => {
   const { name, slug, date } = props;
@@ -10,23 +11,23 @@ const Author = (props) => {
   const as = `/user/${slug}`;
 
   return (
-    <div className={css.container} itemProp="author" itemScope itemType="http://schema.org/Person">
+    <Wrapper itemProp="author" itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
-        <a className={css.imgLink}>
-          <img className={css.img} src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
-        </a>
+        <ImgLink>
+          <Img src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
+        </ImgLink>
       </Link>
-      <div className={css.content}>
+      <Content>
         <Link href={href} as={as}>
-          <a className={css.name} itemProp="url"><span itemProp="name">{name}</span></a>
+          <Name itemProp="url"><span itemProp="name">{name}</span></Name>
         </Link>
         {date && (
-          <time className={css.date} dateTime={date}>
+          <DateContainer dateTime={date}>
             {format(new Date(date), 'D MMMM YYYY', { locale: ru })}
-          </time>
+          </DateContainer>
         )}
-      </div>
-    </div>
+      </Content>
+    </Wrapper>
   );
 };
 

@@ -1,10 +1,12 @@
-.container {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
+`;
 
-.link {
+export const Link = styled.a`
   display: block;
   padding: 7px;
   margin-right: 2px;
@@ -17,11 +19,10 @@
       fill: #fff;
     }
   }
-}
-
-.icon {
-  display: block;
-  & path {
-    transition: fill .15s ease-out;
+  & svg {
+    display: block;
+    & path {
+      transition: fill .15s ease-out;
+    }
   }
-}
+`;

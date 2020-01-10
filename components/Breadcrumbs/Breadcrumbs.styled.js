@@ -1,19 +1,21 @@
-.container {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   background: #f4f4f4;
   padding: 10px 0;
   font-size: 0.9em;
   color: #9B9FA3;
-}
+`;
 
-.list {
+export const List = styled.ul`
   display: flex;
   margin: 0;
   list-style: none;
   padding: 0;
   overflow: hidden;
-}
+`;
 
-.item {
+export const Item = styled.li`
   white-space: nowrap;
   &:after {
     content: '/';
@@ -28,8 +30,7 @@
       content: '';
     }
   }
-}
-
-.link {
-  white-space: nowrap;
-}
+  & a {
+    white-space: nowrap;
+  }
+`;

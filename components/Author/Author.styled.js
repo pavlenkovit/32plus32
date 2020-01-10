@@ -1,12 +1,14 @@
-.container {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   font-size: .7em;
   letter-spacing: .035em;
   line-height: 1;
-}
+`;
 
-.imgLink {
+export const ImgLink = styled.div`
   display: block;
   height: 30px;
   width: 30px;
@@ -14,27 +16,27 @@
   border-radius: 50%;
   margin-right: 12px;
   position: relative;
-}
+`;
 
-.img {
+export const Img = styled.img`
   width: 100%;
   height: 100%;
   display: block;
   border-radius: 50%;
-}
+`;
 
-.content {
+export const Content = styled.div`
   padding-top: 2px;
-}
+`;
 
-.name {
+export const Name = styled.a`
   display: block;
   color: #333;
   text-decoration: none;
-}
+`;
 
-.date {
+export const DateContainer = styled.time`
   color: #9B9FA3;
   display: block;
   margin-top: 5px;
-}
+`;

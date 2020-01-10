@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 import * as actions from '../actions';
-import { isMobile } from "react-device-detect";
+import { isMobile } from 'react-device-detect';
 
 const initial = {
   isMobile: isMobile,
