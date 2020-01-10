@@ -1,4 +1,7 @@
-.container {
+import styled from 'styled-components';
+import device from '../../../../constants/device';
+
+export const Wrapper = styled.header`
   background: #000;
   color: #fff;
   position: fixed;
@@ -10,27 +13,24 @@
   & > div:first-child {
     height: 100%;
   }
-}
+  @media ${device.tablet} {
+    height: 48px;
+  }
+`;
 
-.inner {
+export const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-}
+`;
 
-.left {
+export const Left = styled.div`
   display: flex;
   align-items: center;
-}
+`;
 
-.mobileWrapper {
+export const MobileWrapper = styled.div`
   display: flex;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  .container {
-    height: 48px;
-  }
-}
+`;

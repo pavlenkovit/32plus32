@@ -1,6 +1,6 @@
-$main-color: #fff;
+import styled from 'styled-components';
 
-.burger {
+export const Burger = styled.div`
   padding: 10px;
   margin: -15px -10px -15px 0;
   width: 24px;
@@ -8,26 +8,18 @@ $main-color: #fff;
   box-sizing: content-box;
   cursor: pointer;
   z-index: 1;
-}
+`;
 
-.inner {
+export const Inner = styled.div`
   position: relative;
   width: 24px;
   height: 18px;
-}
+`;
 
-.line {
+export const Line = styled.div`
   width: 100%;
   height: 2px;
   position: absolute;
-  background: $main-color;
-  &.top {
-    top: 0;
-  }
-  &.center {
-    top: 8px;
-  }
-  &.bottom {
-    top: 16px;
-  }
-}
+  background: #fff;
+  top: ${({ top }) => top}px;
+`;

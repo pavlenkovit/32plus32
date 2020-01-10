@@ -361,7 +361,7 @@ app.prepare()
 
     server.get('/sitemap.xml', (req, res) => (
       res.status(200).sendFile('sitemap.xml', {
-        root: __dirname + '/static/',
+        root: __dirname + '/public/',
         headers: {
           'Content-Type': 'text/xml;charset=UTF-8',
         }

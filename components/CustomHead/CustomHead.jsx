@@ -5,7 +5,7 @@ const CustomHead = (props) => {
   const {
     title = 'Гиревой спорт',
     description = 'Сайт о гиревом спорте',
-    img = '/static/img/main.png',
+    img = '/public/img/main.png',
     url = '',
     keywords = '',
     type,

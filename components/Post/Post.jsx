@@ -42,7 +42,7 @@ const Post = (props) => {
     elements.forEach(el => {
       el.setAttribute('data-src', el.getAttribute('src'));
       el.setAttribute('data-srcset', el.getAttribute('srcset'));
-      el.setAttribute('src', '/static/img/dummy.png');
+      el.setAttribute('src', '/public/img/dummy.png');
       el.removeAttribute('srcset');
     });
     updateContent(wrapper.outerHTML);

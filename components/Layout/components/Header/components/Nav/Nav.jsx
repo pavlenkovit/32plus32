@@ -8,7 +8,7 @@ import Submenu from './components/Submenu';
 
 const Nav = () => {
   return (
-    <nav itemScope itemType="http://schema.org/SiteNavigationElement" className={css.container}>
+    <nav itemScope itemType="http://schema.org/SiteNavigationElement">
       <ul className={css.menu} itemScope itemType="http://schema.org/ItemList">
         {menu.map((item, idx) => (
           <li key={idx} className={css.item}>

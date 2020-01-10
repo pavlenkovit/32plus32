@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 
 import { Wrapper, ImgLink, Img, Name, DateContainer, Content } from './Author.styled';
 
-const Author = (props) => {
-  const { name, slug, date } = props;
+interface IProps {
+  name: string;
+  slug: string;
+  date?: string;
+}
+
+const Author: FC<IProps> = ({ name, slug, date }) => {
   const href = '/user/[slug]';
   const as = `/user/${slug}`;
 
@@ -14,7 +19,7 @@ const Author = (props) => {
     <Wrapper itemProp="author" itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
         <ImgLink>
-          <Img src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
+          <Img src={`/avatars/${slug}.jpg`} alt={name} itemProp="image" />
         </ImgLink>
       </Link>
       <Content>

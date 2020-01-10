@@ -31,8 +31,7 @@ const Index = (props) => {
   );
 };
 
-Index.getInitialProps = async (context) => {
-  const { query: { page: p } } = context;
+Index.getInitialProps = async ({ query: { page: p } }) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?categories_exclude=77&page=${page}&_embed`);
   const posts = await res.json();

@@ -1,41 +1,42 @@
-import React from 'react';
+import * as React from 'react';
 import { useSelector } from 'react-redux';
 import Nav from './components/Nav';
-import css from './Header.module.scss';
 import Container from '../../../Container';
 import SearchButton from './components/SearchButton';
 import Logo from './components/Logo';
 import Search from './components/Search';
 import MenuButton from './components/MenuButton';
 
-const Header = () => {
-  const { isMobile, searchIsActive } = useSelector(state => state.app);
+import { Wrapper, Inner, Left, MobileWrapper } from './Header.styled';
+
+const Header: React.FC = () => {
+  const { isMobile, searchIsActive } = useSelector((state: any) => state.app);
 
   return (
-    <header className={css.container}>
+    <Wrapper>
       <Container>
-        <div className={css.inner}>
+        <Inner>
           {isMobile ? (
             <>
               <Logo />
-              <div className={css.mobileWrapper}>
+              <MobileWrapper>
                 <SearchButton />
                 <MenuButton />
-              </div>
+              </MobileWrapper>
             </>
           ) : (
             <>
-              <div className={css.left}>
+              <Left>
                 <Logo />
                 <Nav />
-              </div>
+              </Left>
               <SearchButton />
             </>
           )}
-        </div>
+        </Inner>
       </Container>
       {searchIsActive && <Search />}
-    </header>
+    </Wrapper>
   );
 };
 

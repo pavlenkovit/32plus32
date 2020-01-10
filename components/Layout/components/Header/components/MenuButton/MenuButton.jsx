@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import cn from 'classnames';
-import css from './MenuButton.module.scss';
+import { Burger, Inner, Line } from './MenuButton.styled';
 
 const MenuButton = () => {
   const dispatch = useDispatch();
@@ -11,13 +10,13 @@ const MenuButton = () => {
   };
 
   return (
-    <div className={css.burger} onClick={toggleMenu}>
-      <div className={css.inner}>
-        <div className={cn(css.line, css.top)} />
-        <div className={cn(css.line, css.center)} />
-        <div className={cn(css.line, css.bottom)} />
-      </div>
-    </div>
+    <Burger onClick={toggleMenu}>
+      <Inner>
+        <Line top={0} />
+        <Line top={8} />
+        <Line top={16} />
+      </Inner>
+    </Burger>
   );
 };
 

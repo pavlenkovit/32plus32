@@ -16,9 +16,9 @@ class Wod extends Component {
     return (
       <div className={css.main}>
         <div className={cn(css.container, { [css.rect]: isRect })}>
-          <img className={css.img} src="/static/img/kettlebell.png" alt=""/>
+          <img className={css.img} src="/public/img/kettlebell.png" alt=""/>
           <div className={css.topContent}>
-            <img className={css.authorImg} src="/static/avatars/sergey_rudnev.jpg" alt=""/>
+            <img className={css.authorImg} src="/public/avatars/sergey_rudnev.jpg" alt=""/>
               <div>
               <div className={css.date}>{day}/{month}/20{year} ({weekDay})</div>
               {!isTrain ? (
