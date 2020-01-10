@@ -3,12 +3,11 @@ import css from './Post.module.scss';
 import Author from '../Author';
 import Share from '../Share';
 import StickyContainer from '../Share/components/StickyContainer';
-import TopArticle from '../../yandexRTB/TopArticle';
-import BottomArticle from '../../yandexRTB/BottomArticle';
 
 const Post = (props) => {
 
   const [ww, updWindowWidth] = useState(0);
+  const [newContent, updateContent] = useState(null);
   const { title, content, date, modified, fimg_url, _embedded: { author, 'wp:term': term } } = props;
 
   const updateWindowWidth = () => {
@@ -36,6 +35,47 @@ const Post = (props) => {
     }
   }, []);
 
+  useEffect(() => {
+    const wrapper= document.createElement('div');
+    wrapper.innerHTML= content.rendered;
+    const elements = wrapper.querySelectorAll('img');
+    elements.forEach(el => {
+      el.setAttribute('data-src', el.getAttribute('src'));
+      el.setAttribute('data-srcset', el.getAttribute('srcset'));
+      el.setAttribute('src', '/static/img/dummy.png');
+      el.removeAttribute('srcset');
+    });
+    updateContent(wrapper.outerHTML);
+  }, [content]);
+
+  useEffect(() => {
+    if (newContent) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.map(entry => {
+          const el = entry.target;
+          if (!el.getAttribute('data-src')) {
+            observer.unobserve(el);
+          }
+          if (entry.isIntersecting && el.getAttribute('data-src')) {
+            el.setAttribute('src', el.getAttribute('data-src'));
+            el.setAttribute('srcset', el.getAttribute('data-srcset'));
+            el.removeAttribute('data-src');
+            el.removeAttribute('data-srcset');
+          }
+        })
+      }, {
+        rootMargin: '0px',
+        threshold: 0.15,
+      });
+
+      const elements = document.querySelectorAll('#post-container img');
+
+      elements.forEach(el => {
+        observer.observe(el);
+      });
+    }
+  }, [newContent]);
+
   return (
     <article className={css.container} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
@@ -56,13 +96,12 @@ const Post = (props) => {
           <img className={css.img} src={fimg_url} alt={title.rendered} itemProp="image" />
         </div>
       )}
-      <div className={css.ad}>
-        <TopArticle />
-      </div>
-      <div itemProp="articleBody" className={css.content} dangerouslySetInnerHTML={{__html: content.rendered}} />
-      <div className={css.ad}>
-        <BottomArticle />
-      </div>
+      <div
+        itemProp="articleBody"
+        id="post-container"
+        className={css.content}
+        dangerouslySetInnerHTML={{ __html: newContent }}
+      />
       {ww > 1350 ? (
         <StickyContainer>
           <Share />
