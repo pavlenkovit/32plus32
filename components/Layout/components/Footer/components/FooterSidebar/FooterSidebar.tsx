@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Wrapper, Title } from './FooterSidebar.styled';
 
-const FooterSidebar = ({ title, children }) => {
+interface IProps {
+  title: string;
+}
+
+const FooterSidebar: FC<IProps> = ({ title, children }) => {
   return (
     <Wrapper>
       <Title>{title}</Title>

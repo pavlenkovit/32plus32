@@ -16,7 +16,11 @@ export const Inner = styled.div`
   height: 18px;
 `;
 
-export const Line = styled.div`
+interface ILine {
+  top: number;
+}
+
+export const Line = styled.div < ILine > `
   width: 100%;
   height: 2px;
   position: absolute;

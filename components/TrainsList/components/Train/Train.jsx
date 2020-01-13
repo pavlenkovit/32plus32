@@ -4,7 +4,6 @@ import css from './Train.module.scss';
 import Link from 'next/link';
 import ArrowIcon from '../../../../icons/ArrowIcon';
 import getDateByTitle from '../../../../utils/getDateByTitle';
-import TrainIcon from '../../../../icons/TrainIcon';
 import Author from './components/Author';
 import { useSelector } from 'react-redux';
 
@@ -19,23 +18,21 @@ const Train = ({ title, slug, date, modified, fimg_url, _embedded: { author } })
       <meta itemProp="description" content={`Тренировка по гиревому спорту по классическому двоеборью на ${day}/${month}/${year}`} />
       <Author {...author[0]} />
       <div className={css.content}>
-        <div className={css.date}>{`${day}/${month}/${year} (${weekDay})`}</div>
-        <h2 className={css.title}>
+        <div className={css.titleLine}>
+          <h2 className={css.title}>
+            <Link href="train/[slug]" as={`train/${slug}`}>
+              <a itemProp="url headline name">
+                {`${day}/${month}/${year} (${weekDay})`}
+              </a>
+            </Link>
+          </h2>
           <Link href="train/[slug]" as={`train/${slug}`}>
-            <a itemProp="url headline name">
-              <b>Тренировка</b> {isMobile ? 'по ДВ' : 'по классическому двоеборью'}
+            <a className={css.action}>
+              <span>Тренироваться</span>
+              <ArrowIcon className={css.arrowIcon} size={10} color="#e24242" />
             </a>
           </Link>
-        </h2>
-        <Link href="train/[slug]" as={`train/${slug}`}>
-          <a className={css.action}>
-            <span>Тренироваться</span>
-            <ArrowIcon className={css.arrowIcon} size={10} color="#e24242" />
-          </a>
-        </Link>
-      </div>
-      <div className={css.iconWrap}>
-        <TrainIcon size={isMobile ? 30 : 40} color="#9B9FA3" />
+        </div>
       </div>
     </div>
   );

@@ -22,8 +22,11 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "react/jsx-one-expression-per-line": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "arrow-body-style": "off",
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
     "no-console": [
       "error",
       {

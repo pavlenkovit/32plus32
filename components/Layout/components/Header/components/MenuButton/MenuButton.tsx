@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { useDispatch } from 'react-redux';
 import { Burger, Inner, Line } from './MenuButton.styled';
 
-const MenuButton = () => {
+const MenuButton: FC = () => {
   const dispatch = useDispatch();
 
   const toggleMenu = () => {

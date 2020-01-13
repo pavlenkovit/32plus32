@@ -14,7 +14,7 @@ const Author = (props) => {
   return (
     <Link href={href} as={as}>
       <a className={cn(css.imgLink, { [css.mob]: isMobile })} itemProp="author" itemScope itemType="http://schema.org/Person">
-        <img className={css.img} src={`/static/avatars/${slug}.jpg`} alt={name} itemProp="image" />
+        <img className={css.img} src={`/avatars/${slug}.jpg`} alt={name} itemProp="image" />
       </a>
     </Link>
   );

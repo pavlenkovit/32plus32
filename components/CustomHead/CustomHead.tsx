@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Head from 'next/head';
 
-const CustomHead = (props) => {
+interface IProps {
+  title?: string;
+  description?: string;
+  img?: string;
+  url?: string;
+  keywords?: string;
+  type?: string;
+}
+
+const CustomHead: FC<IProps> = (props) => {
   const {
     title = 'Гиревой спорт',
     description = 'Сайт о гиревом спорте',

@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "lint": "eslint './{components,scenes,pages}/**/*.{.ts,.tsx}'",
+    "lint": "eslint './{components,scenes,pages,icons}/**/*.{.ts,.tsx}'",
     "cc": "node cli/component.js --path"
   },
   "eslintConfig": {
@@ -28,6 +28,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/react-dom": "^16.9.4",
     "@types/react-redux": "^7.1.5",
     "@types/styled-components": "^4.4.2",
     "@zeit/next-sass": "^1.0.1",

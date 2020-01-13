@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Item = styled.div`
+export default styled.div`
   display: block;
   & > a {
     color: inherit;

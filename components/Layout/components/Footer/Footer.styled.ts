@@ -4,7 +4,6 @@ export const ContainerFooter = styled.footer`
   background: #000;
   color: #9B9B9B;
   padding-top: 30px;
-  min-height: 100vh;
 `;
 
 export const Row = styled.div`

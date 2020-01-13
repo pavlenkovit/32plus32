@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import VkIcon from '../../../../../../icons/VkIcon';
 import FbIcon from '../../../../../../icons/FbIcon';
 import OkIcon from '../../../../../../icons/OkIcon';
 import InstaIcon from '../../../../../../icons/InstaIcon';
 import { Wrapper, Link } from './Social.styled';
 
-const Social = () => {
+const Social: FC = () => {
   return (
     <Wrapper>
       <Link href="https://vk.com/32plus32" target="_blank">

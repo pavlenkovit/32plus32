@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const OkIcon = ({ size = 15, color = '#333', className }) => {
+interface IProps {
+  color?: string;
+  size?: number;
+  className?: string;
+}
+
+const OkIcon: FC<IProps> = ({ size = 15, color = '#333', className }) => {
   return (
     <svg className={className} width={size} viewBox="0 0 11 18">
       <g fill={color} fillRule="evenodd">

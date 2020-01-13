@@ -1,4 +1,7 @@
-.logo {
+import styled from 'styled-components';
+import device from '../../../../../../constants/device';
+
+export default styled.a`
   display: block;
   margin-right: 25px;
   font-family: 'Handel Gothic', sans-serif;
@@ -14,11 +17,8 @@
     opacity: 0.65;
     color: inherit;
   }
-}
-
-@media (max-width: 768px) {
-  .logo {
+  @media ${device.tablet} {
     font-size: 26px;
     margin-bottom: -0.2em;
   }
-}
+`;

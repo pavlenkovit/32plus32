@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { FC } from 'react';
+import Head from 'next/head';
 import { useSelector } from 'react-redux';
 
 import Header from './components/Header';
@@ -10,10 +11,9 @@ import MobileMenu from './components/MobileMenu';
 import { Main, Wrapper, Inner, SidebarWrapper, Content, BreadCrumbs } from './Layout.styled';
 
 import '../../style.scss';
-import Head from 'next/head';
 
-const Layout = ({ children }) => {
-  const { isMobile } = useSelector(state => state.app);
+const Layout: FC = ({ children }) => {
+  const { isMobile } = useSelector((state: any) => state.app);
 
   return (
     <Wrapper>
@@ -22,21 +22,25 @@ const Layout = ({ children }) => {
         <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/public/favicons/site.webmanifest" />
+        <title>32PLUS32</title>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
         <meta httpEquiv="Cache-Control" content="max-age=31536000, must-revalidate" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="32PLUS32" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-        <script dangerouslySetInnerHTML={{ __html: `
-                  window.fbAsyncInit = function() {
-                    FB.init({
-                      appId: '446552789570835',
-                      autoLogAppEvents: true,
-                      xfbml: true,
-                      version: 'v4.0',
-                    });
-                  };`}}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.fbAsyncInit = function() {
+                FB.init({
+                  appId: '446552789570835',
+                  autoLogAppEvents: true,
+                  xfbml: true,
+                  version: 'v4.0',
+                });
+              };`,
+          }}
         />
         <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
       </Head>

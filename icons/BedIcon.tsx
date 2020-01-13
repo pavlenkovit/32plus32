@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const BedIcon = ({ color = '#333', size = 14, className }) => {
+interface IProps {
+  color?: string;
+  size?: number;
+  className?: string;
+}
+
+const BedIcon: FC<IProps> = ({ color = '#333', size = 14, className }) => {
   return (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" width={size} viewBox="0 0 490.7 490.7">
       <path d="M436.2 154.6H182.4c-12.4 0-33.1 4.7-33.1 36.6V240h320v-48.8c0-31.8-20.7-36.6-33.1-36.6z" fill={color} />
