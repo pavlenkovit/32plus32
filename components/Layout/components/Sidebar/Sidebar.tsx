@@ -1,21 +1,34 @@
-import React, { PureComponent } from 'react';
-import cn from 'classnames';
-import css from './Sidebar.module.scss';
+import React, { PureComponent, Ref } from 'react';
 import Adsense from './components/Adsense';
 
-class Sidebar extends PureComponent {
-  sidebar = React.createRef();
+import Wrapper from './Sidebar.styled';
+
+interface IState {
+  isFixedTop: boolean;
+  isFixedBottom: boolean;
+  marginTop: number;
+}
+
+class Sidebar extends PureComponent<undefined, IState> {
+  sidebar: Ref<HTMLDivElement> = React.createRef();
 
   lastScrollTop = 0;
+
   isUpdateDirectionTop = false;
+
   sidebarOverflow = false;
+
   downDirectionScroll = true;
 
-  state = {
-    isFixedTop: false,
-    isFixedBottom: false,
-    marginTop: 0,
-  };
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      isFixedTop: false,
+      isFixedBottom: false,
+      marginTop: 0,
+    };
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.setPosition);
@@ -32,7 +45,7 @@ class Sidebar extends PureComponent {
     this.lastScrollTop = st <= 0 ? 0 : st;
   };
 
-  updatePosition = (top, bottom, margin) => {
+  updatePosition = (top: boolean, bottom: boolean, margin: number) => {
     this.setState({
       isFixedTop: top,
       isFixedBottom: bottom,
@@ -43,11 +56,14 @@ class Sidebar extends PureComponent {
   setPosition = () => {
     const { isFixedBottom, isFixedTop } = this.state;
     const y = window.scrollY;
-    const sidebar = this.sidebar.current;
+    // @ts-ignore
+    const sidebar: HTMLDivElement = this.sidebar.current;
     const sidebarHeight = sidebar.offsetHeight;
+    // @ts-ignore
     const parentHeight = sidebar.parentElement.offsetHeight;
     const windowHeight = window.innerHeight;
     const rect = sidebar.getBoundingClientRect();
+    // @ts-ignore
     const offsetTop = document.querySelector('#header').offsetHeight + 30;
 
     this.scrollDirection();
@@ -60,7 +76,6 @@ class Sidebar extends PureComponent {
     }
 
     if (!this.sidebarOverflow) { // если сайдбар меньше высоты экрана
-
       if (y > offsetTop + parentHeight - sidebarHeight - 15) { // долистали до футера
         this.updatePosition(false, false, parentHeight - sidebarHeight);
         return;
@@ -76,7 +91,6 @@ class Sidebar extends PureComponent {
       }
 
       if (this.downDirectionScroll) { // листаем вниз
-
         if (!isFixedBottom && !isFixedTop) {
           if (rect.bottom - windowHeight < 0) {
             this.updatePosition(false, true, 0);
@@ -90,8 +104,7 @@ class Sidebar extends PureComponent {
         }
       }
 
-      if (!this.downDirectionScroll) {  // листаем вверх
-
+      if (!this.downDirectionScroll) { // листаем вверх
         if (!isFixedTop) {
           if (rect.y - 15 > 0) {
             this.updatePosition(true, false, 0);
@@ -112,15 +125,16 @@ class Sidebar extends PureComponent {
 
   render() {
     const { isFixedTop, isFixedBottom, marginTop } = this.state;
-    const classesSidebar = cn(css.sidebar, {
-      [css.fixedTop]: isFixedTop,
-      [css.fixedBottom]: isFixedBottom,
-    });
 
     return (
-      <div ref={this.sidebar} className={classesSidebar} style={{ marginTop }}>
+      <Wrapper
+        ref={this.sidebar}
+        isFixedTop={isFixedTop}
+        isFixedBottom={isFixedBottom}
+        marginTop={marginTop}
+      >
         <Adsense />
-      </div>
+      </Wrapper>
     );
   }
 }

@@ -1,20 +1,21 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, FC } from 'react';
 import { useDispatch } from 'react-redux';
 import Router from 'next/router';
-import css from './Search.module.scss';
 import Container from '../../../../../Container';
 import SearchIcon from '../../../../../../icons/SearchIcon';
 
-const Search = () => {
+import { Wrapper, Inner, Input, Button } from './Search.styled';
+
+const Search: FC = () => {
   const dispatch = useDispatch();
   const [value, onChange] = useState('');
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement>(null);
 
   const closeSearch = () => {
     dispatch({ type: 'CLOSE_SEARCH' });
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
     onChange('');
     closeSearch();
@@ -22,7 +23,7 @@ const Search = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: any) => {
       if (container.current && !container.current.contains(event.target) && event.target.id !== 'toggle-search') {
         closeSearch();
       }
@@ -36,18 +37,18 @@ const Search = () => {
   });
 
   return (
-    <div className={css.container} ref={container}>
+    <Wrapper ref={container}>
       <Container>
         <form onSubmit={onSubmit}>
-          <div className={css.inner}>
-            <input className={css.input} type="text" value={value} placeholder="Найти..." onChange={(e) => { onChange(e.target.value); }} />
-            <button className={css.button} type="submit">
-              <SearchIcon className={css.icon} />
-            </button>
-          </div>
+          <Inner>
+            <Input type="text" value={value} placeholder="Найти..." onChange={(e) => { onChange(e.target.value); }} />
+            <Button type="submit">
+              <SearchIcon />
+            </Button>
+          </Inner>
         </form>
       </Container>
-    </div>
+    </Wrapper>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import css from './Submenu.module.scss';
 import Link from 'next/link';
+
+import { List, Item, LinkElement } from './Submenu.styled';
 
 const list = [
   {
@@ -35,19 +36,19 @@ const list = [
 
 const Submenu = () => {
   return (
-    <ul className={css.list}>
-      {list.map((item, idx) => {
+    <List>
+      {list.map((item) => {
         return (
-          <li key={idx} itemProp="itemListElement" className={css.item}>
-            <Link key={idx} href="/category/[slug]" as={`/category/${item.slug}`}>
-              <a className={css.link} property="item" typeof="WebPage">
+          <Item key={item.slug} itemProp="itemListElement">
+            <Link href="/category/[slug]" as={`/category/${item.slug}`}>
+              <LinkElement property="item" typeof="WebPage">
                 <span property="name">{item.title}</span>
-              </a>
+              </LinkElement>
             </Link>
-          </li>
+          </Item>
         );
       })}
-    </ul>
+    </List>
   );
 };
 

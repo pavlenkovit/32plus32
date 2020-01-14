@@ -1,4 +1,6 @@
-.container {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
@@ -8,13 +10,13 @@
   z-index: 3;
   transition: height .2s ease-out;
   overflow: hidden;
-}
+`;
 
-.inner {
+export const Inner = styled.div`
   display: flex;
-}
+`;
 
-.input {
+export const Input = styled.input`
   flex: 1 1 auto;
   width: 1%;
   padding: 17px 0;
@@ -40,9 +42,9 @@
   &:-ms-input-placeholder {
     color: #f8f8f8;
   }
-}
+`;
 
-.button {
+export const Button = styled.button`
   background: none;
   border: none;
   box-sizing: border-box;
@@ -51,13 +53,12 @@
   padding: .35em;
   cursor: pointer;
   transition: opacity .15s ease-out;
+  & svg {
+    width: 1em;
+    height: 1em;
+    display: block;
+  }
   &:hover {
     opacity: 0.6;
   }
-}
-
-.icon {
-  width: 1em;
-  height: 1em;
-  display: block;
-}
+`;

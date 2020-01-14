@@ -1,4 +1,6 @@
-.list {
+import styled from 'styled-components';
+
+export const List = styled.ul`
   list-style: none;
   margin: 0;
   position: absolute;
@@ -19,13 +21,13 @@
     left: 40px;
     border-bottom: 0.5rem solid #fff;
   }
-}
+`;
 
-.item {
+export const Item = styled.li`
   display: block;
-}
+`;
 
-.link {
+export const LinkElement = styled.a`
   display: block;
   white-space: nowrap;
   letter-spacing: 0.1em;
@@ -39,4 +41,4 @@
   &:hover {
     background: #f4f4f4;
   }
-}
+`;

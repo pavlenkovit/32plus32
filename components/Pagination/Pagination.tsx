@@ -1,17 +1,25 @@
-import React from 'react';
-import css from './Pagination.module.scss';
+import React, { FC } from 'react';
 import PageLink from './components/PageLink';
 import Button from './components/Button';
 
+import { Wrapper, List } from './Pagination.styled';
+
 const maxCount = 5;
 
-const Pagination = ({ total, rootAs, rootHref, activePage }) => {
+interface IProps {
+  total: number;
+  rootAs: string;
+  rootHref: string;
+  activePage: number;
+}
+
+const Pagination: FC<IProps> = ({ total, rootAs, rootHref, activePage }) => {
   if (total === 1) {
     return null;
   }
 
   const getPages = () => {
-    let pages = new Array(total)
+    const pages = new Array(total)
       .fill(0)
       .map((val, idx) => idx + 1);
 
@@ -27,26 +35,27 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
       return pages.slice(0, maxCount);
     }
 
-    return pages.filter(page => page < activePage + maxCount / 2 && page > activePage - maxCount / 2);
+    return pages.filter((page) => page < activePage + maxCount / 2 && page > activePage - maxCount / 2);
   };
 
   const pages = getPages();
 
-  const hrefPath = (page) => `${rootHref}?page=${page}`;
+  const hrefPath = (page: number) => `${rootHref}?page=${page}`;
 
-  const asPath = (page) => `${rootAs}?page=${page}`;
+  const asPath = (page: number) => `${rootAs}?page=${page}`;
 
   return (
-    <div className={css.container}>
+    <Wrapper>
       {activePage > 1 && (
         <Button
           href={hrefPath(activePage - 1)}
           as={asPath(activePage - 1)}
-          text="Назад"
           prev
-        />
+        >
+          Назад
+        </Button>
       )}
-      <div className={css.list}>
+      <List>
         {pages.map((page) => (
           <PageLink
             key={page}
@@ -57,16 +66,17 @@ const Pagination = ({ total, rootAs, rootHref, activePage }) => {
             {page}
           </PageLink>
         ))}
-      </div>
+      </List>
       {activePage < total && (
         <Button
           href={hrefPath(activePage + 1)}
           as={asPath(activePage + 1)}
-          text="Вперед"
           next
-        />
+        >
+          Вперед
+        </Button>
       )}
-    </div>
+    </Wrapper>
   );
 };
 
