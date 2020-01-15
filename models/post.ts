@@ -4,6 +4,9 @@ export interface IPost {
   title: {
     rendered: any;
   };
+  content: {
+    rendered: any;
+  },
   excerpt: any;
   date: any;
   modified: any;
