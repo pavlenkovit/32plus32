@@ -7,11 +7,15 @@ interface IProps {
 }
 
 const PostsList: FC<IProps> = ({ posts }) => {
-  return posts.map((post, idx) => {
-    return (
-      <PostPreview key={idx} post={post} />
-    );
-  });
+  return (
+    <>
+      {posts.map((post, idx) => {
+        return (
+          <PostPreview key={idx} post={post} />
+        );
+      })}
+    </>
+  );
 };
 
 export default PostsList;

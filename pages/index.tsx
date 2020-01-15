@@ -15,9 +15,7 @@ interface IProps {
   totalPages: number;
 }
 
-const Index: NextPage<IProps> = (props) => {
-  const { posts, totalPages, page } = props;
-
+const Index: NextPage<IProps> = ({ posts, totalPages, page }) => {
   const description = 'Сайт о гиревом спорте. Тренировочный план, полезные статьи, техника и описание упражнений с гирями';
   const keywords = 'гиревой спорт, тренировки гиревой спорт, гири, нормативы гиревой спорт';
 

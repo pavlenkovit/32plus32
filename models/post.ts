@@ -1,4 +1,5 @@
 export interface IPost {
+  id: number;
   slug: string;
   title: {
     rendered: any;

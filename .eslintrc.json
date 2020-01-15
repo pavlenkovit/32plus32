@@ -9,6 +9,7 @@
   },
   "rules": {
     "camelcase": ["error", { "allow": ["fimg_url", "_aioseop_description", "_aioseop_keywords"] }],
+    "no-underscore-dangle": "off",
     "import/no-cycle": "off",
     "max-len": "off",
     "object-curly-newline": [

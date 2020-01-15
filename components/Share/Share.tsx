@@ -23,12 +23,16 @@ const Share: FC<IProps> = ({ isInline = false }) => {
   };
 
   const shareFb = () => {
+    // @ts-ignore
     window.FB.ui({ method: 'share', href: window.location.href, }); // eslint-disable-line
   };
 
   useEffect(() => {
+    // @ts-ignore
     window.VK = {}; // eslint-disable-line
+    // @ts-ignore
     window.VK.Share = {}; // eslint-disable-line
+    // @ts-ignore
     window.VK.Share.count = (index: number, count: number) => { // eslint-disable-line
       updVkCount(count);
     };
@@ -40,7 +44,9 @@ const Share: FC<IProps> = ({ isInline = false }) => {
 
     document.body.appendChild(scriptVk);
 
+    // @ts-ignore
     window.ODKL = {};
+    // @ts-ignore
     window.ODKL.updateCount = (uid: number, count: number) => {
       updOkCount(count);
     };
