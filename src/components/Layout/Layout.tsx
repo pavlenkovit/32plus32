@@ -10,7 +10,7 @@ import MobileMenu from './components/MobileMenu';
 
 import Styled from './Layout.styled';
 
-import '../../style.scss';
+import '../../style.css';
 
 const Layout: FC = ({ children }) => {
   const { isMobile } = useSelector((state: any) => state.app);
@@ -22,6 +22,7 @@ const Layout: FC = ({ children }) => {
         <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/public/favicons/site.webmanifest" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet" />
         <title>32PLUS32</title>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />

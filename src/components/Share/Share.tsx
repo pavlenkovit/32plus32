@@ -6,7 +6,7 @@ import OkIcon from '../../icons/OkIcon';
 import Styled from './Share.styled';
 
 interface IProps {
-  isInline: boolean;
+  isInline?: boolean;
 }
 
 const Share: FC<IProps> = ({ isInline = false }) => {
