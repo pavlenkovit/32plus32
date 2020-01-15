@@ -1,4 +1,6 @@
-.link {
+import styled from 'styled-components';
+
+const Link = styled.a`
   color: #797979;
   border: 1px solid #E1E1E1;
   display: inline-block;
@@ -14,4 +16,6 @@
     border: 1px solid #acacac;
     color: #333;
   }
-}
+`;
+
+export default { Link };

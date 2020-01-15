@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import ReactHtmlParser from 'react-html-parser';
 import Author from '../Author';
 import Categories from './components/Categories';
 
-import css from './PostPreview.module.scss';
+import Styled from './PostPreview.styled';
 
-const PostPreview = ({ post }) => {
+interface IProps {
+  post: any;
+}
+
+const PostPreview: FC<IProps> = ({ post }) => {
   const { slug, title, excerpt, date, modified, fimg_url, _embedded: { author, 'wp:term': term, 'wp:featuredmedia': featuredmedia }, meta: { _aioseop_description } } = post;
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
@@ -27,41 +31,38 @@ const PostPreview = ({ post }) => {
   };
 
   return (
-    <article className={css.container} itemScope itemType="http://schema.org/Article">
+    <Styled.Container itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
       <meta itemProp="dateModified" content={modified} />
       <meta itemProp="description" content={_aioseop_description ? _aioseop_description[0] : ''} />
       {featuredmedia && (
-        <div className={css.imgWrap}>
+        <Styled.ImgWrap>
           <meta itemProp="image" content={fimg_url} />
-          <div className={css.imgContainer}>
+          <Styled.ImgContainer>
             <Link href={href} as={as}>
-              <a className={css.imgLink} style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
+              <Styled.ImgLink style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
             </Link>
-          </div>
-        </div>
+          </Styled.ImgContainer>
+        </Styled.ImgWrap>
       )}
-      <div className={css.body}>
-        <h2 className={css.title}>
+      <Styled.Body>
+        <Styled.Title>
           <Link href={href} as={as}>
-            <a className={css.titleLink} itemProp="url headline name">
+            <Styled.TitleLink itemProp="url headline name">
               {ReactHtmlParser(title.rendered)}
-            </a>
+            </Styled.TitleLink>
           </Link>
-        </h2>
-        <div className={css.info}>
+        </Styled.Title>
+        <Styled.Info>
           <Author
             {...author[0]}
             date={date}
           />
-        </div>
-        <div
-          className={css.excerpt}
-          dangerouslySetInnerHTML={{ __html: excerpt.rendered.substring(0,200) + '...' }}
-        />
+        </Styled.Info>
+        <Styled.Excerpt dangerouslySetInnerHTML={{ __html: `${excerpt.rendered.substring(0, 200)}...` }} />
         <Categories list={term[0]} />
-      </div>
-    </article>
+      </Styled.Body>
+    </Styled.Container>
   );
 };
 
