@@ -6,7 +6,7 @@ import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
 import MainTitle from '../components/MainTitle';
 
-const Index = (props) => {
+const Index = (props: any) => {
   const { posts, totalPages, page } = props;
 
   const description = 'Сайт о гиревом спорте. Тренировочный план, полезные статьи, техника и описание упражнений с гирями';
@@ -35,6 +35,7 @@ Index.getInitialProps = async ({ query: { page: p } }) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?categories_exclude=77&page=${page}&_embed`);
   const posts = await res.json();
+  // @ts-ignore
   const totalPages = +res.headers.get('X-WP-TotalPages');
   return { posts, totalPages, page };
 };
