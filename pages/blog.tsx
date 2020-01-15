@@ -1,14 +1,19 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
+
 import baseURL from '../constants/baseURL';
 import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import SmallPostsList from '../components/SmallPostsList';
 import MainTitle from '../components/MainTitle';
+import { IPost } from '../models/post';
 
-const Blog = (props: any) => {
-  const { posts } = props;
+interface IProps {
+  posts: IPost[];
+}
 
+const Blog: NextPage<IProps> = ({ posts }) => {
   const title = 'Блог';
   const description = 'Все статьи по гиревому спорту - тренировки, техника, упражнения, личности, научные статьи';
   const keywords = 'гиревой спорт статьи, статья гиревой спорт, гиревой спорт блог';

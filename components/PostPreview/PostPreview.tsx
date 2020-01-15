@@ -5,9 +5,10 @@ import Author from '../Author';
 import Categories from './components/Categories';
 
 import Styled from './PostPreview.styled';
+import { IPost } from '../../models/post';
 
 interface IProps {
-  post: any;
+  post: IPost;
 }
 
 const PostPreview: FC<IProps> = ({ post }) => {

@@ -1,12 +1,21 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
+
 import baseURL from '../constants/baseURL';
 import CustomHead from '../components/CustomHead';
 import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
 import MainTitle from '../components/MainTitle';
+import { IPost } from '../models/post';
 
-const Index = (props: any) => {
+interface IProps {
+  posts: IPost[];
+  page: number;
+  totalPages: number;
+}
+
+const Index: NextPage<IProps> = (props) => {
   const { posts, totalPages, page } = props;
 
   const description = 'Сайт о гиревом спорте. Тренировочный план, полезные статьи, техника и описание упражнений с гирями';
