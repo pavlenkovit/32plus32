@@ -1,4 +1,6 @@
-.container {
+import styled from 'styled-components';
+
+const Container = styled.article`
   display: flex;
   padding-bottom: 15px;
   &:hover {
@@ -11,23 +13,23 @@
     margin-bottom: 15px;
     border-bottom: solid 1px #d8d8d8;
   }
-}
+`;
 
-.imgWrap {
+const ImgWrap = styled.div`
   width: 110px;
   margin-right: 15px;
-}
+`;
 
-.imgContainer {
+const ImgContainer = styled.div`
   width: 100%;
   height: 0;
   box-sizing: border-box;
   padding: 33.3% 0;
   position: relative;
   overflow: hidden;
-}
+`;
 
-.imgLink {
+const ImgLink = styled.a`
   display: block;
   background-size: cover;
   width: 100%;
@@ -36,20 +38,20 @@
   top: 0;
   left: 0;
   transition: transform .3s ease-out, opacity .2s ease-out;
-}
+`;
 
-.body {
+const Body = styled.div`
   flex: 1 1 auto;
   width: 1%;
-}
+`;
 
-.title {
+const Title = styled.h3`
   margin: 0;
   font-size: 1em;
   font-weight: 500;
-}
+`;
 
-.titleLink {
+const TitleLink = styled.a`
   color: inherit;
   display: block;
   text-decoration: none;
@@ -57,7 +59,6 @@
     color: inherit;
     text-decoration: none;
   }
-}
+`;
 
-@media (max-width: 768px) {
-}
+export default { Container, ImgWrap, ImgContainer, ImgLink, Body, Title, TitleLink };

@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import ReactHtmlParser from 'react-html-parser';
 
-import css from './SmallPostPreview.module.scss';
 import DateComponent from './components/DateComponent';
+import { IPost } from '../../models/post';
+import Styled from './SmallPostPreview.styled';
 
-const SmallPostPreview = ({ post }) => {
+interface IProps {
+  post: IPost;
+}
+
+const SmallPostPreview: FC<IProps> = ({ post }) => {
   const { slug, title, date, modified, fimg_url, _embedded: { author, 'wp:featuredmedia': featuredmedia }, meta: { _aioseop_description } } = post;
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
@@ -16,41 +21,40 @@ const SmallPostPreview = ({ post }) => {
       if (sizes.medium) {
         return sizes.medium.source_url;
       }
-
       return fimg_url;
     }
     return null;
   };
 
   return (
-    <article className={css.container} itemScope itemType="http://schema.org/Article">
+    <Styled.Container itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
       <meta itemProp="dateModified" content={modified} />
       <meta itemProp="description" content={_aioseop_description ? _aioseop_description[0] : ''} />
       {featuredmedia && (
-        <div className={css.imgWrap}>
+        <Styled.ImgWrap>
           <meta itemProp="image" content={fimg_url} />
-          <div className={css.imgContainer}>
+          <Styled.ImgContainer>
             <Link href={href} as={as}>
-              <a className={css.imgLink} style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
+              <Styled.ImgLink style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
             </Link>
-          </div>
-        </div>
+          </Styled.ImgContainer>
+        </Styled.ImgWrap>
       )}
-      <div className={css.body}>
-        <h3 className={css.title}>
+      <Styled.Body>
+        <Styled.Title>
           <Link href={href} as={as}>
-            <a className={css.titleLink} itemProp="url headline name">
+            <Styled.TitleLink itemProp="url headline name">
               {ReactHtmlParser(title.rendered)}
-            </a>
+            </Styled.TitleLink>
           </Link>
-        </h3>
+        </Styled.Title>
         <DateComponent
           {...author[0]}
           date={date}
         />
-      </div>
-    </article>
+      </Styled.Body>
+    </Styled.Container>
   );
 };
 

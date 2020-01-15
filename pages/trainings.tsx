@@ -1,13 +1,22 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
+
 import baseURL from '../constants/baseURL';
 import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
 import TrainsList from '../components/TrainsList';
 import Pagination from '../components/Pagination';
+import { IPost } from '../models/post';
 
-const TrainingsPage = ({ trainings, totalPages, page }) => {
+interface IProps {
+  trainings: IPost[];
+  totalPages: number;
+  page: number;
+}
+
+const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page }) => {
   const title = 'Тренировки по классическому двоеборью';
   const description = 'Тренировочный план по гиревому спорту по классическому двоеборью';
   const keywords = 'тренировки по гиревому спорту, гири тренировки';
@@ -38,6 +47,7 @@ TrainingsPage.getInitialProps = async (context) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?categories=77&page=${page}&per_page=20&_embed`);
   const trainings = await res.json();
+  // @ts-ignore
   const totalPages = +res.headers.get('X-WP-TotalPages');
   return { trainings, totalPages, page };
 };
