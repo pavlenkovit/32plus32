@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   font-size: .7em;
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   line-height: 1;
 `;
 
-export const ImgLink = styled.div`
+const ImgLink = styled.div`
   display: block;
   height: 30px;
   width: 30px;
@@ -18,25 +18,27 @@ export const ImgLink = styled.div`
   position: relative;
 `;
 
-export const Img = styled.img`
+const Img = styled.img`
   width: 100%;
   height: 100%;
   display: block;
   border-radius: 50%;
 `;
 
-export const Content = styled.div`
+const Content = styled.div`
   padding-top: 2px;
 `;
 
-export const Name = styled.a`
+const Name = styled.a`
   display: block;
   color: #333;
   text-decoration: none;
 `;
 
-export const DateContainer = styled.time`
+const Date = styled.time`
   color: #9B9FA3;
   display: block;
   margin-top: 5px;
 `;
+
+export default { Wrapper, ImgLink, Img, Content, Name, Date };

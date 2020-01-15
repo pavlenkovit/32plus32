@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { useDispatch } from 'react-redux';
-import { Burger, Inner, Line } from './MenuButton.styled';
+import Styled from './MenuButton.styled';
 
 const MenuButton: FC = () => {
   const dispatch = useDispatch();
@@ -10,13 +10,13 @@ const MenuButton: FC = () => {
   };
 
   return (
-    <Burger onClick={toggleMenu}>
-      <Inner>
-        <Line top={0} />
-        <Line top={8} />
-        <Line top={16} />
-      </Inner>
-    </Burger>
+    <Styled.Burger onClick={toggleMenu}>
+      <Styled.Inner>
+        <Styled.Line top={0} />
+        <Styled.Line top={8} />
+        <Styled.Line top={16} />
+      </Styled.Inner>
+    </Styled.Burger>
   );
 };
 

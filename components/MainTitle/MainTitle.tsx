@@ -1,9 +1,13 @@
 import React, { FC } from 'react';
-import Title from './MainTitle.styled';
+import Styled from './MainTitle.styled';
 
-const MainTitle: FC = ({ children }) => {
+interface IProps {
+  itemProp?: string;
+}
+
+const MainTitle: FC<IProps> = ({ children, itemProp = '' }) => {
   return (
-    <Title>{children}</Title>
+    <Styled.Title itemProp={itemProp}>{children}</Styled.Title>
   );
 };
 

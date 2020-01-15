@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 
-import { Item, LinkElement } from './PageLink.styled';
+import Styled from './PageLink.styled';
 
 interface IProps {
   href: string;
@@ -11,15 +11,15 @@ interface IProps {
 
 const PageLink: FC<IProps> = ({ children, href, as, isActive = false }) => {
   return (
-    <Item isActive={isActive}>
+    <Styled.Item isActive={isActive}>
       {isActive ? (
-        <LinkElement as="div">{children}</LinkElement>
+        <Styled.Link as="div">{children}</Styled.Link>
       ) : (
         <Link href={href} as={as}>
-          <LinkElement>{children}</LinkElement>
+          <Styled.Link>{children}</Styled.Link>
         </Link>
       )}
-    </Item>
+    </Styled.Item>
   );
 };
 

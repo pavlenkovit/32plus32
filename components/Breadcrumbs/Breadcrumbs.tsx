@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Container from '../Container';
 
-import { Wrapper, List, Item } from './Breadcrumbs.styled';
+import Styled from './Breadcrumbs.styled';
 
 interface IItem {
   title: string;
@@ -31,37 +31,37 @@ const Breadcrumbs: FC<IProps> = ({ items }) => {
   }
 
   return ReactDOM.createPortal((
-    <Wrapper>
+    <Styled.Container>
       <Container>
-        <List itemScope itemType="http://schema.org/BreadcrumbList">
-          <Item itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
+        <Styled.List itemScope itemType="http://schema.org/BreadcrumbList">
+          <Styled.Item itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
             <Link href="/">
               <a itemProp="item">
                 <span itemProp="name">Главная</span>
               </a>
             </Link>
-          </Item>
+          </Styled.Item>
           {items.map((item, idx) => {
             if (item.href) {
               return (
-                <Item key={idx} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
+                <Styled.Item key={idx} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
                   <Link href={item.href} as={item.as}>
                     <a itemProp="item">
                       <span itemProp="name">{item.title}</span>
                     </a>
                   </Link>
-                </Item>
+                </Styled.Item>
               );
             }
             return (
-              <Item key={idx}>
+              <Styled.Item key={idx}>
                 {item.title}
-              </Item>
+              </Styled.Item>
             );
           })}
-        </List>
+        </Styled.List>
       </Container>
-    </Wrapper>
+    </Styled.Container>
   ), root);
 };
 

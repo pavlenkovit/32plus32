@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import device from '../../../../../../constants/device';
 
-export const Wrapper = styled.aside`
+const Container = styled.aside`
   flex: 0 0 25%;
   max-width: 25%;
   padding: 0 15px;
@@ -17,10 +17,12 @@ export const Wrapper = styled.aside`
   }
 `;
 
-export const Title = styled.h2`
+const Title = styled.h2`
   font-size: 0.85em;
   margin: 0 0 0.75em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 `;
+
+export default { Container, Title };

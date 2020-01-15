@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
-export const ContainerFooter = styled.footer`
+const Container = styled.footer`
   background: #000;
   color: #9B9B9B;
   padding-top: 30px;
 `;
 
-export const Row = styled.div`
+const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 `;
 
-export const Copy = styled.div`
+const Copy = styled.div`
   margin-bottom: 15px;
   letter-spacing: 0.05em;
   display: flex;
@@ -30,3 +30,5 @@ export const Copy = styled.div`
     margin-right: 10px;
   }
 `;
+
+export default { Container, Row, Copy };

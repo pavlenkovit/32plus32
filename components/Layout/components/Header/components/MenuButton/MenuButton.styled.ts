@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Burger = styled.div`
+const Burger = styled.div`
   padding: 10px;
   margin: -15px -10px -15px 0;
   width: 24px;
@@ -10,7 +10,7 @@ export const Burger = styled.div`
   z-index: 1;
 `;
 
-export const Inner = styled.div`
+const Inner = styled.div`
   position: relative;
   width: 24px;
   height: 18px;
@@ -20,10 +20,12 @@ interface ILine {
   top: number;
 }
 
-export const Line = styled.div < ILine > `
+const Line = styled.div < ILine > `
   width: 100%;
   height: 2px;
   position: absolute;
   background: #fff;
   top: ${({ top }) => top}px;
 `;
+
+export default { Burger, Inner, Line };

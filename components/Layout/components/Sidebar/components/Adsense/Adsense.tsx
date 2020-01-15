@@ -4,20 +4,20 @@ import Ad1 from './widgets/Ad1';
 import Ad2 from './widgets/Ad2';
 import Ad3 from './widgets/Ad3';
 
-import Widget from './Adsense.styled';
+import Styled from './Adsense.styled';
 
 const Adsense: FC = () => {
   return (
     <>
-      <Widget>
+      <Styled.Widget>
         <Ad1 />
-      </Widget>
-      <Widget>
+      </Styled.Widget>
+      <Styled.Widget>
         <Ad2 />
-      </Widget>
-      <Widget>
+      </Styled.Widget>
+      <Styled.Widget>
         <Ad3 />
-      </Widget>
+      </Styled.Widget>
     </>
   );
 };

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import CloseIcon from '../../../../icons/CloseIcon';
 import nav from '../../../../constants/nav';
 
-import { Wrapper, Button, List, Item, LinkElement } from './MobileMenu.styled';
+import Styled from './MobileMenu.styled';
 
 const MobileMenu: FC = () => {
   const { menuIsActive } = useSelector((state: any) => state.app);
@@ -33,22 +33,22 @@ const MobileMenu: FC = () => {
   }
 
   return (
-    <Wrapper onClick={closeMenu}>
-      <Button onClick={closeMenu}>
+    <Styled.Container onClick={closeMenu}>
+      <Styled.Button onClick={closeMenu}>
         <CloseIcon color="#333" />
-      </Button>
-      <List>
+      </Styled.Button>
+      <Styled.List>
         {nav.map((item, idx) => {
           return (
-            <Item key={idx}>
+            <Styled.Item key={idx}>
               <Link href={item.href} as={item.as}>
-                <LinkElement onClick={closeMenu}>{item.title}</LinkElement>
+                <Styled.Link onClick={closeMenu}>{item.title}</Styled.Link>
               </Link>
-            </Item>
+            </Styled.Item>
           );
         })}
-      </List>
-    </Wrapper>
+      </Styled.List>
+    </Styled.Container>
   );
 };
 

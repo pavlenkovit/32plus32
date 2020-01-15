@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const List = styled.ul`
+const List = styled.ul`
   list-style: none;
   margin: 0;
   position: absolute;
@@ -23,11 +23,11 @@ export const List = styled.ul`
   }
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   display: block;
 `;
 
-export const LinkElement = styled.a`
+const Link = styled.a`
   display: block;
   white-space: nowrap;
   letter-spacing: 0.1em;
@@ -42,3 +42,5 @@ export const LinkElement = styled.a`
     background: #f4f4f4;
   }
 `;
+
+export default { List, Item, Link };

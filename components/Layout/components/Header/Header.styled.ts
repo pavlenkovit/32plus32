@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import device from '../../../../constants/device';
 
-export const Wrapper = styled.header`
+const Container = styled.header`
   background: #000;
   color: #fff;
   position: fixed;
@@ -18,19 +18,21 @@ export const Wrapper = styled.header`
   }
 `;
 
-export const Inner = styled.div`
+const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
 `;
 
-export const Left = styled.div`
+const Left = styled.div`
   display: flex;
   align-items: center;
 `;
 
-export const MobileWrapper = styled.div`
+const MobileWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export default { Container, Inner, Left, MobileWrapper };

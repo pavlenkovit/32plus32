@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import SearchIcon from '../../../../../../icons/SearchIcon';
 import CloseIcon from '../../../../../../icons/CloseIcon';
 
-import Button from './SearchButton.styled';
+import Styled from './SearchButton.styled';
 
 const SearchButton: FC = () => {
   const { searchIsActive } = useSelector((state: any) => state.app);
@@ -15,9 +15,9 @@ const SearchButton: FC = () => {
   };
 
   return (
-    <Button onClick={toggleSearch} id="toggle-search">
+    <Styled.Button onClick={toggleSearch} id="toggle-search">
       {searchIsActive ? <CloseIcon /> : <SearchIcon />}
-    </Button>
+    </Styled.Button>
   );
 };
 

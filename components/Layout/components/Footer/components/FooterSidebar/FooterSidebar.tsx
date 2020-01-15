@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Wrapper, Title } from './FooterSidebar.styled';
+import Styled from './FooterSidebar.styled';
 
 interface IProps {
   title: string;
@@ -7,10 +7,10 @@ interface IProps {
 
 const FooterSidebar: FC<IProps> = ({ title, children }) => {
   return (
-    <Wrapper>
-      <Title>{title}</Title>
+    <Styled.Container>
+      <Styled.Title>{title}</Styled.Title>
       {children}
-    </Wrapper>
+    </Styled.Container>
   );
 };
 

@@ -1,22 +1,15 @@
-.title {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
+import styled from 'styled-components';
 
-.imgWrapper {
+const Info = styled.div`
+  margin-bottom: 25px;
+`;
 
-}
-
-.img {
+const Img = styled.img`
   width: 100%;
   display: block;
-}
+`;
 
-.info {
-  margin-bottom: 25px;
-}
-
-.content {
+const Content = styled.div`
   margin-bottom: 30px;
 
   & :global(.table-responsive) {
@@ -90,18 +83,14 @@
       color: #333;
     }
   }
-}
-
-@media (max-width: 768px) {
-  .content {
+  @media (max-width: 768px) {
     margin-bottom: 30px;
 
     & :global(.table-responsive) {
       margin: 0 -15px;
       width: auto;
     }
-
-    & :global(.table) {
-    }
   }
-}
+`;
+
+export default { Info, Img, Content };

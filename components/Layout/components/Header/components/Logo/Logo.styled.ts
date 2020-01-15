@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import device from '../../../../../../constants/device';
 
-export default styled.a`
+const Logo = styled.a`
   display: block;
   margin-right: 25px;
   font-family: 'Handel Gothic', sans-serif;
@@ -22,3 +22,5 @@ export default styled.a`
     margin-bottom: -0.2em;
   }
 `;
+
+export default { Logo };

@@ -3,24 +3,37 @@ import VkIcon from '../../../../../../icons/VkIcon';
 import FbIcon from '../../../../../../icons/FbIcon';
 import OkIcon from '../../../../../../icons/OkIcon';
 import InstaIcon from '../../../../../../icons/InstaIcon';
-import { Wrapper, Link } from './Social.styled';
+
+import Styled from './Social.styled';
 
 const Social: FC = () => {
+  const socials = [
+    {
+      href: 'https://vk.com/32plus32',
+      icon: VkIcon,
+    },
+    {
+      href: 'https://www.instagram.com/32plus32/',
+      icon: InstaIcon,
+    },
+    {
+      href: 'https://www.facebook.com/32plus32/',
+      icon: FbIcon,
+    },
+    {
+      href: 'https://ok.ru/ok32plus32',
+      icon: OkIcon,
+    },
+  ];
+
   return (
-    <Wrapper>
-      <Link href="https://vk.com/32plus32" target="_blank">
-        <VkIcon color="#9B9B9B" />
-      </Link>
-      <Link href="https://www.instagram.com/32plus32/" target="_blank">
-        <InstaIcon color="#9B9B9B" />
-      </Link>
-      <Link href="https://www.facebook.com/32plus32/" target="_blank">
-        <FbIcon color="#9B9B9B" />
-      </Link>
-      <Link href="https://ok.ru/ok32plus32" target="_blank">
-        <OkIcon color="#9B9B9B" />
-      </Link>
-    </Wrapper>
+    <Styled.Container>
+      {socials.map((item, idx) => (
+        <Styled.Link key={idx} href={item.href} target="_blank">
+          <item.icon color="#9B9B9B" />
+        </Styled.Link>
+      ))}
+    </Styled.Container>
   );
 };
 

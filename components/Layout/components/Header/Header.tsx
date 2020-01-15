@@ -7,36 +7,36 @@ import Logo from './components/Logo';
 import Search from './components/Search';
 import MenuButton from './components/MenuButton';
 
-import { Wrapper, Inner, Left, MobileWrapper } from './Header.styled';
+import Styled from './Header.styled';
 
 const Header: React.FC = () => {
   const { isMobile, searchIsActive } = useSelector((state: any) => state.app);
 
   return (
-    <Wrapper>
+    <Styled.Container>
       <Container>
-        <Inner>
+        <Styled.Inner>
           {isMobile ? (
             <>
               <Logo />
-              <MobileWrapper>
+              <Styled.MobileWrapper>
                 <SearchButton />
                 <MenuButton />
-              </MobileWrapper>
+              </Styled.MobileWrapper>
             </>
           ) : (
             <>
-              <Left>
+              <Styled.Left>
                 <Logo />
                 <Nav />
-              </Left>
+              </Styled.Left>
               <SearchButton />
             </>
           )}
-        </Inner>
+        </Styled.Inner>
       </Container>
       {searchIsActive && <Search />}
-    </Wrapper>
+    </Styled.Container>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import Item from './FooterList.styled';
+
+import Styled from './FooterList.styled';
 
 interface IItem {
   title: string;
@@ -17,11 +18,11 @@ const FooterList: FC<IProps> = ({ list }) => {
     <div>
       {list.map((item, idx) => {
         return (
-          <Item key={idx}>
+          <Styled.List key={idx}>
             <Link href={item.href} as={item.as}>
               <a>{item.title}</a>
             </Link>
-          </Item>
+          </Styled.List>
         );
       })}
     </div>

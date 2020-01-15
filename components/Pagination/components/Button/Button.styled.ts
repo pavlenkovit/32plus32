@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.a`
+const Link = styled.a`
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -29,3 +29,5 @@ export default styled.a`
     }
   }
 `;
+
+export default { Link };

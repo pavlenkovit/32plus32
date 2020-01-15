@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LinkElement = styled.a`
+export const Link = styled.a`
   color: #e24242;
   text-decoration: none;
   display: block;
@@ -15,7 +15,7 @@ interface IItem {
 export const Item = styled.div < IItem > `
   margin-right: 5px;
   ${({ isActive }) => isActive && (
-    `& ${LinkElement} {
+    `& ${Link} {
       color: #333;
       border-color: #333;
     }`
@@ -24,3 +24,5 @@ export const Item = styled.div < IItem > `
     margin-right: 0;
   }
 `;
+
+export default { Link, Item };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   position: absolute;
   top: 100%;
   left: 0;
@@ -12,11 +12,11 @@ export const Wrapper = styled.div`
   overflow: hidden;
 `;
 
-export const Inner = styled.div`
+const Inner = styled.div`
   display: flex;
 `;
 
-export const Input = styled.input`
+const Input = styled.input`
   flex: 1 1 auto;
   width: 1%;
   padding: 17px 0;
@@ -44,7 +44,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
   background: none;
   border: none;
   box-sizing: border-box;
@@ -62,3 +62,5 @@ export const Button = styled.button`
     opacity: 0.6;
   }
 `;
+
+export default { Container, Inner, Input, Button };

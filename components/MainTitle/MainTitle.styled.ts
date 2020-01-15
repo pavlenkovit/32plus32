@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export default styled.h1`
+const Title = styled.h1`
   margin-top: 0;
   margin-bottom: 1em;
 `;
+
+export default { Title };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { List, Item, LinkElement } from './Submenu.styled';
+import Styled from './Submenu.styled';
 
 const list = [
   {
@@ -36,19 +36,19 @@ const list = [
 
 const Submenu = () => {
   return (
-    <List>
+    <Styled.List>
       {list.map((item) => {
         return (
-          <Item key={item.slug} itemProp="itemListElement">
+          <Styled.Item key={item.slug} itemProp="itemListElement">
             <Link href="/category/[slug]" as={`/category/${item.slug}`}>
-              <LinkElement property="item" typeof="WebPage">
+              <Styled.Link property="item" typeof="WebPage">
                 <span property="name">{item.title}</span>
-              </LinkElement>
+              </Styled.Link>
             </Link>
-          </Item>
+          </Styled.Item>
         );
       })}
-    </List>
+    </Styled.List>
   );
 };
 

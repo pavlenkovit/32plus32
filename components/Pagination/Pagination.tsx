@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import PageLink from './components/PageLink';
 import Button from './components/Button';
 
-import { Wrapper, List } from './Pagination.styled';
+import Styled from './Pagination.styled';
 
 const maxCount = 5;
 
@@ -45,7 +45,7 @@ const Pagination: FC<IProps> = ({ total, rootAs, rootHref, activePage }) => {
   const asPath = (page: number) => `${rootAs}?page=${page}`;
 
   return (
-    <Wrapper>
+    <Styled.Container>
       {activePage > 1 && (
         <Button
           href={hrefPath(activePage - 1)}
@@ -55,7 +55,7 @@ const Pagination: FC<IProps> = ({ total, rootAs, rootHref, activePage }) => {
           Назад
         </Button>
       )}
-      <List>
+      <Styled.List>
         {pages.map((page) => (
           <PageLink
             key={page}
@@ -66,7 +66,7 @@ const Pagination: FC<IProps> = ({ total, rootAs, rootHref, activePage }) => {
             {page}
           </PageLink>
         ))}
-      </List>
+      </Styled.List>
       {activePage < total && (
         <Button
           href={hrefPath(activePage + 1)}
@@ -76,7 +76,7 @@ const Pagination: FC<IProps> = ({ total, rootAs, rootHref, activePage }) => {
           Вперед
         </Button>
       )}
-    </Wrapper>
+    </Styled.Container>
   );
 };
 

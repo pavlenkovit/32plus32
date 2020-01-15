@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   background: #f4f4f4;
   padding: 10px 0;
   font-size: 0.9em;
   color: #9B9FA3;
 `;
 
-export const List = styled.ul`
+const List = styled.ul`
   display: flex;
   margin: 0;
   list-style: none;
@@ -15,7 +15,7 @@ export const List = styled.ul`
   overflow: hidden;
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   white-space: nowrap;
   &:after {
     content: '/';
@@ -34,3 +34,5 @@ export const Item = styled.li`
     white-space: nowrap;
   }
 `;
+
+export default { Container, List, Item };

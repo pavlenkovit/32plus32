@@ -8,7 +8,7 @@ import Container from '../Container';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
-import { Main, Wrapper, Inner, SidebarWrapper, Content, BreadCrumbs } from './Layout.styled';
+import Styled from './Layout.styled';
 
 import '../../style.scss';
 
@@ -16,7 +16,7 @@ const Layout: FC = ({ children }) => {
   const { isMobile } = useSelector((state: any) => state.app);
 
   return (
-    <Wrapper>
+    <Styled.Container>
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png" />
@@ -47,24 +47,22 @@ const Layout: FC = ({ children }) => {
       {isMobile && <MobileMenu />}
       <div id="header">
         <Header />
-        <BreadCrumbs id="breadcrumbs" />
+        <Styled.BreadCrumbs id="breadcrumbs" />
       </div>
-      <Main>
+      <Styled.Main>
         <Container>
-          <Inner>
-            <Content>
-              {children}
-            </Content>
+          <Styled.Inner>
+            <Styled.Content>{children}</Styled.Content>
             {!isMobile && (
-              <SidebarWrapper>
+              <Styled.Sidebar>
                 <Sidebar />
-              </SidebarWrapper>
+              </Styled.Sidebar>
             )}
-          </Inner>
+          </Styled.Inner>
         </Container>
-      </Main>
+      </Styled.Main>
       <Footer />
-    </Wrapper>
+    </Styled.Container>
   );
 };
 

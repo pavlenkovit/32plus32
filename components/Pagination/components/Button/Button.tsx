@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import ArrowPrevIcon from '../../../../icons/ArrowPrevIcon';
 
-import ButtonElement from './Button.styled';
+import Styled from './Button.styled';
 
 interface IProps {
   href: string;
@@ -14,11 +14,11 @@ interface IProps {
 const Button: FC<IProps> = ({ children, href, as, prev = false, next = false }) => {
   return (
     <Link href={href} as={as}>
-      <ButtonElement>
+      <Styled.Link>
         {prev && <ArrowPrevIcon />}
         <span>{children}</span>
         {next && <ArrowPrevIcon prev />}
-      </ButtonElement>
+      </Styled.Link>
     </Link>
   );
 };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,9 @@ export const Wrapper = styled.div`
   font-size: 0.9em;
 `;
 
-export const List = styled.div`
+const List = styled.div`
   display: flex;
   padding: 0 10px;
 `;
+
+export default { Container, List };

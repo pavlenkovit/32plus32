@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export default styled.div`
+const Widget = styled.div`
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
   }
 `;
+
+export default { Widget };

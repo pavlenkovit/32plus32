@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.button`
+const Button = styled.button`
   display: block;
   padding: .35em;
   background: none;
@@ -21,3 +21,5 @@ export default styled.button`
     opacity: 0.6;
   }
 `;
+
+export default { Button };

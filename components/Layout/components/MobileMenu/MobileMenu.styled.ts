@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   position: fixed;
   left: 0;
   top: -70px;
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.35);
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
   font-size: 1em;
   border: none;
   outline: none;
@@ -31,7 +31,7 @@ export const Button = styled.button`
   }
 `;
 
-export const List = styled.ul`
+const List = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,16 +40,18 @@ export const List = styled.ul`
   width: 100%;
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
   }
 `;
 
-export const LinkElement = styled.a`
+const Link = styled.a`
   text-decoration: none;
   display: block;
   text-align: center;
   color: #333;
 `;
+
+export default { Container, Button, List, Item, Link };

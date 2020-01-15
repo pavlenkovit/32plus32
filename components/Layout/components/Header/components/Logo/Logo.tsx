@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import Wrapper from './Logo.styled';
+import Styled from './Logo.styled';
 
 const Logo: FC = () => {
   return (
     <Link href="/">
-      <Wrapper>32PLUS32</Wrapper>
+      <Styled.Logo>32PLUS32</Styled.Logo>
     </Link>
   );
 };

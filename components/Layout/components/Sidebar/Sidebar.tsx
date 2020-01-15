@@ -1,7 +1,7 @@
 import React, { PureComponent, Ref } from 'react';
 import Adsense from './components/Adsense';
 
-import Wrapper from './Sidebar.styled';
+import Styled from './Sidebar.styled';
 
 interface IState {
   isFixedTop: boolean;
@@ -9,7 +9,7 @@ interface IState {
   marginTop: number;
 }
 
-class Sidebar extends PureComponent<undefined, IState> {
+class Sidebar extends PureComponent<{}, IState> {
   sidebar: Ref<HTMLDivElement> = React.createRef();
 
   lastScrollTop = 0;
@@ -127,14 +127,14 @@ class Sidebar extends PureComponent<undefined, IState> {
     const { isFixedTop, isFixedBottom, marginTop } = this.state;
 
     return (
-      <Wrapper
+      <Styled.Container
         ref={this.sidebar}
         isFixedTop={isFixedTop}
         isFixedBottom={isFixedBottom}
         marginTop={marginTop}
       >
         <Adsense />
-      </Wrapper>
+      </Styled.Container>
     );
   }
 }

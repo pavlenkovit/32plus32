@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import Wrapper from './Container.styled';
+import Styled from './Container.styled';
 
 const Container: FC = ({ children }) => {
   return (
-    <Wrapper>
+    <Styled.Wrapper>
       {children}
-    </Wrapper>
+    </Styled.Wrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+const List = styled.div`
   display: block;
   & > a {
     color: inherit;
@@ -11,3 +11,5 @@ export default styled.div`
     }
   }
 `;
+
+export default { List };

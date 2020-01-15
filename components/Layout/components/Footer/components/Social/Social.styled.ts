@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 `;
 
-export const Link = styled.a`
+const Link = styled.a`
   display: block;
   padding: 7px;
   margin-right: 2px;
@@ -26,3 +26,5 @@ export const Link = styled.a`
     }
   }
 `;
+
+export default { Container, Link };

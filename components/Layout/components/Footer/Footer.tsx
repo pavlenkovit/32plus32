@@ -6,13 +6,13 @@ import FooterSidebar from './components/FooterSidebar';
 import FooterList from './components/FooterList';
 import Social from './components/Social';
 
-import { ContainerFooter, Row, Copy } from './Footer.styled';
+import Styled from './Footer.styled';
 
 const Footer: FC = () => {
   return (
-    <ContainerFooter>
+    <Styled.Container>
       <Container>
-        <Row>
+        <Styled.Row>
           <FooterSidebar title="Статьи">
             <FooterList
               list={[
@@ -83,8 +83,8 @@ const Footer: FC = () => {
           <FooterSidebar title="Мы в соцсетях">
             <Social />
           </FooterSidebar>
-        </Row>
-        <Copy>
+        </Styled.Row>
+        <Styled.Copy>
           <span>© <Link href="/"><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.</span>
           <div>
             {/* Yandex.Metrika counter */}
@@ -106,9 +106,9 @@ const Footer: FC = () => {
             <noscript><div><img src="https://mc.yandex.ru/watch/34136935" style={{ position: 'absolute', left: '-9999px' }} alt="" /></div></noscript>
             {/* /Yandex.Metrika counter */}
           </div>
-        </Copy>
+        </Styled.Copy>
       </Container>
-    </ContainerFooter>
+    </Styled.Container>
   );
 };
 

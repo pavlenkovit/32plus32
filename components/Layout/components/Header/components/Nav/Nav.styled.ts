@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Menu = styled.ul`
+const Menu = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0 10px 0 0;
@@ -9,7 +9,7 @@ export const Menu = styled.ul`
   font-size: 15px;
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   position: relative;
   & > ul {
     opacity: 0;
@@ -25,7 +25,7 @@ export const Item = styled.li`
   }
 `;
 
-export const LinkElement = styled.a`
+const Link = styled.a`
   padding: 0.75em 1em;
   letter-spacing: 0.1em;
   font-weight: 500;
@@ -55,3 +55,5 @@ export const LinkElement = styled.a`
     margin-right: 0.35em;
   }
 `;
+
+export default { Menu, Item, Link };

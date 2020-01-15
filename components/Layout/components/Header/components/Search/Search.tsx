@@ -4,7 +4,7 @@ import Router from 'next/router';
 import Container from '../../../../../Container';
 import SearchIcon from '../../../../../../icons/SearchIcon';
 
-import { Wrapper, Inner, Input, Button } from './Search.styled';
+import Styled from './Search.styled';
 
 const Search: FC = () => {
   const dispatch = useDispatch();
@@ -37,18 +37,18 @@ const Search: FC = () => {
   });
 
   return (
-    <Wrapper ref={container}>
+    <Styled.Container ref={container}>
       <Container>
         <form onSubmit={onSubmit}>
-          <Inner>
-            <Input type="text" value={value} placeholder="Найти..." onChange={(e) => { onChange(e.target.value); }} />
-            <Button type="submit">
+          <Styled.Inner>
+            <Styled.Input type="text" value={value} placeholder="Найти..." onChange={(e) => { onChange(e.target.value); }} />
+            <Styled.Button type="submit">
               <SearchIcon />
-            </Button>
-          </Inner>
+            </Styled.Button>
+          </Styled.Inner>
         </form>
       </Container>
-    </Wrapper>
+    </Styled.Container>
   );
 };
 

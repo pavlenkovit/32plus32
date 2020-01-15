@@ -6,7 +6,7 @@ interface IProps {
   isFixedBottom: boolean;
 }
 
-export default styled.div < IProps > `
+const Container = styled.div < IProps > `
   width: 300px;
   padding-bottom: 15px;
   margin-top: ${({ marginTop }) => marginTop}px;
@@ -21,3 +21,5 @@ export default styled.div < IProps > `
     'bottom: 0;'
   )}
 `;
+
+export default { Container };
