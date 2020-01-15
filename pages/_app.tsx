@@ -1,8 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import App from 'next/app';
-import createStore from '../store';
 import { ThemeProvider } from 'styled-components';
+
+import createStore from '../store';
+import Layout from '../components/Layout';
 
 const store = createStore();
 
@@ -11,8 +13,6 @@ const theme = {
     primary: '#0070f3',
   },
 };
-
-import Layout from '../components/Layout';
 
 export default class MyApp extends App {
   render() {
@@ -25,6 +25,6 @@ export default class MyApp extends App {
           </Layout>
         </ThemeProvider>
       </Provider>
-    )
+    );
   }
 }

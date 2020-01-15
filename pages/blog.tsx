@@ -6,7 +6,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import SmallPostsList from '../components/SmallPostsList';
 import MainTitle from '../components/MainTitle';
 
-const Blog = (props) => {
+const Blog = (props: any) => {
   const { posts } = props;
 
   const title = 'Блог';
