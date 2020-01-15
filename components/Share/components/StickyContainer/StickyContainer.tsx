@@ -1,15 +1,24 @@
-import React, { PureComponent } from 'react';
-import css from './StickyContainer.module.scss';
-import cn from 'classnames';
+import React, { PureComponent, Ref } from 'react';
+import Styled from './StickyContainer.styled';
 
-class StickyContainer extends PureComponent {
-  sidebar = React.createRef();
+interface IState {
+  isFixedTop: boolean;
+  isFixedBottom: boolean;
+  marginTop: number;
+}
 
-  state = {
-    isFixedTop: false,
-    isFixedBottom: false,
-    marginTop: 0,
-  };
+class StickyContainer extends PureComponent<{}, IState> {
+  sidebar: Ref<HTMLDivElement> = React.createRef();
+
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      isFixedTop: false,
+      isFixedBottom: false,
+      marginTop: 0,
+    };
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.setPosition);
@@ -20,7 +29,7 @@ class StickyContainer extends PureComponent {
     window.removeEventListener('scroll', this.setPosition);
   }
 
-  updatePosition = (top, bottom, margin) => {
+  updatePosition = (top: boolean, bottom: boolean, margin: number) => {
     this.setState({
       isFixedTop: top,
       isFixedBottom: bottom,
@@ -30,9 +39,14 @@ class StickyContainer extends PureComponent {
 
   setPosition = () => {
     const y = window.scrollY;
+    if (!this.sidebar) {
+      return;
+    }
+    // @ts-ignore
     const sidebar = this.sidebar.current;
     const sidebarHeight = sidebar.offsetHeight;
     const parentHeight = sidebar.parentElement.offsetHeight;
+    // @ts-ignore
     const offsetTop = document.querySelector('#header').offsetHeight + 30;
 
     if (y < offsetTop - 15) { // в зоне хедера
@@ -52,17 +66,18 @@ class StickyContainer extends PureComponent {
     const { isFixedTop, isFixedBottom, marginTop } = this.state;
     const { children } = this.props;
 
-    const classesSidebar = cn(css.container, {
-      [css.fixedTop]: isFixedTop,
-      [css.fixedBottom]: isFixedBottom,
-    });
-
     return (
-      <div className={css.wrapper}>
-        <div ref={this.sidebar} className={classesSidebar} style={{ marginTop }}>
+      <Styled.Container>
+        <Styled.Inner
+          ref={this.sidebar}
+          style={{ marginTop }}
+          isFixedTop={isFixedTop}
+          isFixedBottom={isFixedBottom}
+          marginTop={marginTop}
+        >
           {children}
-        </div>
-      </div>
+        </Styled.Inner>
+      </Styled.Container>
     );
   }
 }
