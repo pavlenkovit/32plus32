@@ -1,40 +1,41 @@
-import React from 'react';
-import cn from 'classnames';
-import css from './Train.module.scss';
+import React, { FC } from 'react';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
+
 import ArrowIcon from '../../../../icons/ArrowIcon';
 import getDateByTitle from '../../../../utils/getDateByTitle';
 import Author from './components/Author';
-import { useSelector } from 'react-redux';
+import { IPost } from '../../../../models/post';
+import Styled from './Train.styled';
 
-const Train = ({ title, slug, date, modified, fimg_url, _embedded: { author } }) => {
+const Train: FC<IPost> = ({ title, slug, date, modified, _embedded: { author } }) => {
   const { day, month, year, weekDay } = getDateByTitle(title);
-  const { isMobile } = useSelector(state => state.app);
+  const { isMobile } = useSelector((state: any) => state.app);
 
   return (
-    <div className={cn(css.container, { [css.mob]: isMobile })} itemScope itemType="http://schema.org/Article">
+    <Styled.Container isMobile={isMobile} itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
       <meta itemProp="dateModified" content={modified} />
       <meta itemProp="description" content={`Тренировка по гиревому спорту по классическому двоеборью на ${day}/${month}/${year}`} />
       <Author {...author[0]} />
-      <div className={css.content}>
-        <div className={css.titleLine}>
-          <h2 className={css.title}>
+      <Styled.Content>
+        <Styled.TitleLine>
+          <Styled.Title>
             <Link href="train/[slug]" as={`train/${slug}`}>
               <a itemProp="url headline name">
                 {`${day}/${month}/${year} (${weekDay})`}
               </a>
             </Link>
-          </h2>
+          </Styled.Title>
           <Link href="train/[slug]" as={`train/${slug}`}>
-            <a className={css.action}>
+            <Styled.Action>
               <span>Тренироваться</span>
-              <ArrowIcon className={css.arrowIcon} size={10} color="#e24242" />
-            </a>
+              <ArrowIcon size={10} color="#e24242" />
+            </Styled.Action>
           </Link>
-        </div>
-      </div>
-    </div>
+        </Styled.TitleLine>
+      </Styled.Content>
+    </Styled.Container>
   );
 };
 
