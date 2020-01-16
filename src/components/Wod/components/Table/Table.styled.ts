@@ -10,11 +10,11 @@ const Wrapper = styled.div < IWrapper > `
     margin-top: 50px;
     opacity: 0.75;
   `}
-  & :global(.table-responsive) {
+  & .table-responsive {
     margin: 0 -15px;
   }
 
-  & :global(.table) {
+  & .table {
     border-collapse: collapse;
     margin: -1px -1px 0;
     min-width: calc(100% + 2px);

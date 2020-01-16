@@ -7,20 +7,11 @@ import MainTitle from '../MainTitle';
 import Styled from './Post.styled';
 import handleObservers from './utils/handleObservers';
 import initDataSrc from './utils/initDataSrc';
+import { IPost } from '../../models/wp';
 
-interface IProps {
-  title: any;
-  content: any;
-  date: string;
-  modified: string;
-  fimg_url: string;
-  _embedded: any;
-}
-
-const Post: FC<IProps> = (props) => {
+const Post: FC<IPost> = ({ title, content, date, modified, fimg_url, _embedded: { author } }) => {
   const [ww, updWindowWidth] = useState(0);
   const [newContent, updateContent] = useState(null);
-  const { title, content, date, modified, fimg_url, _embedded: { author } } = props;
 
   const updateWindowWidth = () => {
     updWindowWidth(window.innerWidth);
@@ -82,11 +73,12 @@ const Post: FC<IProps> = (props) => {
         // @ts-ignore
         dangerouslySetInnerHTML={{ __html: newContent }}
       />
-      {ww > 1350 ? (
+      {ww > 1350 && (
         <StickyContainer>
           <Share />
         </StickyContainer>
-      ) : (
+      )}
+      {(ww <= 1350 && ww !== 0) && (
         <Share isInline />
       )}
     </article>

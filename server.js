@@ -349,35 +349,33 @@ trains.forEach((train) => {
   });
 });
 
-app.prepare()
-  .then(() => {
-    const server = express();
+app.prepare().then(() => {
+  const server = express();
 
-    redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
-      server[method](from, (req, res) => {
-        res.redirect(type, to);
-      })
-    });
-
-    server.get('/sitemap.xml', (req, res) => (
-      res.status(200).sendFile('sitemap.xml', {
-        root: __dirname + '/public/',
-        headers: {
-          'Content-Type': 'text/xml;charset=UTF-8',
-        }
-      })
-    ));
-
-    server.get('*', (req, res) => {
-      return handle(req, res);
-    });
-
-    server.listen(port, err => {
-      if (err) throw err;
-      console.log(`> Ready on http://localhost:${port}`);
+  redirects.forEach(({ from, to, type = 301, method = 'get' }) => {
+    server[method](from, (req, res) => {
+      res.redirect(type, to);
     })
-  })
-  .catch(ex => {
-    console.error(ex.stack);
-    process.exit(1);
   });
+
+  server.get('/sitemap.xml', (req, res) => (
+    res.status(200).sendFile('sitemap.xml', {
+      root: __dirname + '/public/',
+      headers: {
+        'Content-Type': 'text/xml;charset=UTF-8',
+      }
+    })
+  ));
+
+  server.get('*', (req, res) => {
+    return handle(req, res);
+  });
+
+  server.listen(port, err => {
+    if (err) throw err;
+    console.log(`> Ready on http://localhost:${port}`);
+  })
+}).catch(ex => {
+  console.error(ex.stack);
+  process.exit(1);
+});

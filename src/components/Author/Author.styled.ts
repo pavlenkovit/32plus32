@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   line-height: 1;
 `;
 
-const ImgLink = styled.div`
+const ImgLink = styled.a`
   display: block;
   height: 30px;
   width: 30px;

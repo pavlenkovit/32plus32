@@ -12,12 +12,12 @@ const Img = styled.img`
 const Content = styled.div`
   margin-bottom: 30px;
 
-  & :global(.table-responsive) {
+  & .table-responsive {
     width: 100%;
     overflow-x: auto;
   }
 
-  & :global(.table) {
+  & .table {
     border-collapse: collapse;
     margin: 15px 0;
     min-width: 100%;
@@ -39,16 +39,16 @@ const Content = styled.div`
     }
   }
 
-  & :global(a) {
+  & a {
     max-width: 100%;
   }
 
-  & :global(img) {
+  & img {
     height: auto;
     max-width: 100%;
   }
 
-  & :global(.frame-wrapper-landscape) {
+  & .frame-wrapper-landscape {
     position: relative;
     padding-bottom: 66%;
     margin: 1.33em 0;
@@ -62,7 +62,7 @@ const Content = styled.div`
     }
   }
 
-  & :global(.frame-wrapper-rect) {
+  & .frame-wrapper-rect {
     position: relative;
     padding-bottom: 100%;
     margin: 1.33em 0;
@@ -76,7 +76,7 @@ const Content = styled.div`
     }
   }
 
-  & :global(.anchor-link) {
+  & .anchor-link {
     color: #9B9FA3;
     text-decoration: none;
     &:hover {
@@ -86,7 +86,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
     margin-bottom: 30px;
 
-    & :global(.table-responsive) {
+    & .table-responsive {
       margin: 0 -15px;
       width: auto;
     }
