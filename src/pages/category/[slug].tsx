@@ -1,13 +1,23 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
+
 import baseURL from '../../constants/baseURL';
 import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import MainTitle from '../../components/MainTitle';
 import PostsList from '../../components/PostsList';
 import Pagination from '../../components/Pagination';
+import { ICategory, IPost } from '../../models/wp';
+import getTotalPages from '../../utils/getTotalPages';
+import { IPaginationProps } from '../../models/pagination';
 
-const CategoryPage = (props) => {
+interface IProps extends IPaginationProps {
+  category: ICategory;
+  posts: IPost[];
+}
+
+const CategoryPage: NextPage<IProps> = (props) => {
   const { category, posts, totalPages, page } = props;
 
   return (
@@ -22,7 +32,7 @@ const CategoryPage = (props) => {
       <Pagination
         total={totalPages}
         activePage={page}
-        rootHref={'/category/[slug]'}
+        rootHref="/category/[slug]"
         rootAs={`/category/${category.slug}`}
       />
     </>
@@ -38,7 +48,7 @@ CategoryPage.getInitialProps = async (context) => {
   const category = dataCat && dataCat.length > 0 ? dataCat[0] : null;
   const resPosts = await fetch(`${baseURL}/posts?categories=${category.id}&page=${page}&_embed`);
   const posts = await resPosts.json();
-  const totalPages = +resPosts.headers.get('X-WP-TotalPages');
+  const totalPages = getTotalPages(resPosts);
 
   return { category, posts, totalPages, page };
 };

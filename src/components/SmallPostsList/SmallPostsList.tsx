@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import SmallPostPreview from '../SmallPostPreview';
 import Styled from './SmallPostsList.styled';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 
 interface IProps {
   posts: IPost[];

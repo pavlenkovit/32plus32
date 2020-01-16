@@ -10,8 +10,6 @@ import MobileMenu from './components/MobileMenu';
 
 import Styled from './Layout.styled';
 
-import '../../style.css';
-
 const Layout: FC = ({ children }) => {
   const { isMobile } = useSelector((state: any) => state.app);
 

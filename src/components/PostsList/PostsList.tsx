@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import PostPreview from '../PostPreview';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 
 interface IProps {
   posts: IPost[];

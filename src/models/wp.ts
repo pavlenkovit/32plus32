@@ -2,10 +2,10 @@ export interface IPost {
   id: number;
   slug: string;
   title: {
-    rendered: any;
+    rendered: string;
   };
   content: {
-    rendered: any;
+    rendered: string;
   },
   excerpt: any;
   date: any;
@@ -13,4 +13,14 @@ export interface IPost {
   fimg_url: string;
   _embedded: any;
   meta: any;
+}
+
+export interface ICategory {
+  name: string;
+  slug: string;
+}
+
+export interface IUser {
+  name: string;
+  slug: string;
 }

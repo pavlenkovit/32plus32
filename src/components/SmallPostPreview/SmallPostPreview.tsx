@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import ReactHtmlParser from 'react-html-parser';
 
 import DateComponent from './components/DateComponent';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 import Styled from './SmallPostPreview.styled';
 
 interface IProps {
@@ -45,7 +44,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
         <Styled.Title>
           <Link href={href} as={as}>
             <Styled.TitleLink itemProp="url headline name">
-              {ReactHtmlParser(title.rendered)}
+              {title.rendered}
             </Styled.TitleLink>
           </Link>
         </Styled.Title>

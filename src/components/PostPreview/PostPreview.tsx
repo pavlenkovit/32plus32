@@ -1,11 +1,10 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import ReactHtmlParser from 'react-html-parser';
 import Author from '../Author';
 import Categories from './components/Categories';
 
 import Styled from './PostPreview.styled';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 
 interface IProps {
   post: IPost;
@@ -50,7 +49,7 @@ const PostPreview: FC<IProps> = ({ post }) => {
         <Styled.Title>
           <Link href={href} as={as}>
             <Styled.TitleLink itemProp="url headline name">
-              {ReactHtmlParser(title.rendered)}
+              {title.rendered}
             </Styled.TitleLink>
           </Link>
         </Styled.Title>

@@ -7,7 +7,7 @@ import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import SmallPostsList from '../components/SmallPostsList';
 import MainTitle from '../components/MainTitle';
-import { IPost } from '../models/post';
+import { IPost } from '../models/wp';
 
 interface IProps {
   posts: IPost[];

@@ -1,11 +1,7 @@
 const withImages = require('next-images');
-const withSass = require('@zeit/next-sass');
+const withCSS = require('@zeit/next-css');
 
-module.exports = withImages(withSass({
+module.exports = withImages(withCSS({
   target: 'serverless',
-  cssModules: true,
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: "[hash:base64:5]__[local]",
-  },
+  cssModules: false,
 }));

@@ -1,4 +1,15 @@
-.wrapper {
+import styled from 'styled-components';
+
+interface IWrapper {
+  isRelax: boolean;
+}
+
+const Wrapper = styled.div < IWrapper > `
+  ${({ isRelax }) => isRelax && `
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0.75;
+  `}
   & :global(.table-responsive) {
     margin: 0 -15px;
   }
@@ -34,11 +45,6 @@
   p {
     margin: 10px 0;
   }
+`;
 
-}
-
-.relax {
-  text-align: center;
-  margin-top: 50px;
-  opacity: 0.75;
-}
+export default { Wrapper };

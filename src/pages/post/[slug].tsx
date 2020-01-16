@@ -1,16 +1,20 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
 
 import baseURL from '../../constants/baseURL';
 import Post from '../../components/Post';
-import ReactHtmlParser from 'react-html-parser';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import CustomHead from '../../components/CustomHead';
 import getMeta from '../../utils/getMeta';
+import { IPost } from '../../models/wp';
 
-const PostPage = (props) => {
-  const { post } = props;
-  const title = ReactHtmlParser(post.title.rendered);
+interface IProps {
+  post: IPost;
+}
+
+const PostPage: NextPage<IProps> = ({ post }) => {
+  const title = post.title.rendered;
 
   return (
     <>
@@ -18,7 +22,7 @@ const PostPage = (props) => {
         title={title}
         url={`/post/${post.slug}`}
         type="article"
-        { ...getMeta(post) }
+        {...getMeta(post)}
       />
       <Breadcrumbs
         items={[

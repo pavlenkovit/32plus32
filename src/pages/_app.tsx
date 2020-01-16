@@ -6,6 +6,8 @@ import { ThemeProvider } from 'styled-components';
 import createStore from '../store';
 import Layout from '../components/Layout';
 
+import '../styles/style.css';
+
 const store = createStore();
 
 const theme = {

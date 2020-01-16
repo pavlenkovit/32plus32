@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 
 import baseURL from '../constants/baseURL';
 import Wod from '../components/Wod';
-import { IPost } from '../models/post';
+import { IPost } from '../models/wp';
 
 interface IProps {
   trainings: IPost[]

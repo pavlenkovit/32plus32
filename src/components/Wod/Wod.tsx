@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import Table from './components/Table';
 import getDateByTitle from '../../utils/getDateByTitle';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 import Styled from './Wod.styled';
 
 const Wod: FC<IPost> = ({ content, title }) => {

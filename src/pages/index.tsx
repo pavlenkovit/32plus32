@@ -7,12 +7,12 @@ import CustomHead from '../components/CustomHead';
 import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
 import MainTitle from '../components/MainTitle';
-import { IPost } from '../models/post';
+import { IPost } from '../models/wp';
+import getTotalPages from '../utils/getTotalPages';
+import { IPaginationProps } from '../models/pagination';
 
-interface IProps {
+interface IProps extends IPaginationProps {
   posts: IPost[];
-  page: number;
-  totalPages: number;
 }
 
 const Index: NextPage<IProps> = ({ posts, totalPages, page }) => {
@@ -42,8 +42,7 @@ Index.getInitialProps = async ({ query: { page: p } }) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?categories_exclude=77&page=${page}&_embed`);
   const posts = await res.json();
-  // @ts-ignore
-  const totalPages = +res.headers.get('X-WP-TotalPages');
+  const totalPages = getTotalPages(res);
   return { posts, totalPages, page };
 };
 

@@ -8,12 +8,12 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
 import TrainsList from '../components/TrainsList';
 import Pagination from '../components/Pagination';
-import { IPost } from '../models/post';
+import { IPost } from '../models/wp';
+import getTotalPages from '../utils/getTotalPages';
+import { IPaginationProps } from '../models/pagination';
 
-interface IProps {
+interface IProps extends IPaginationProps {
   trainings: IPost[];
-  totalPages: number;
-  page: number;
 }
 
 const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page }) => {
@@ -47,8 +47,7 @@ TrainingsPage.getInitialProps = async (context) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?categories=77&page=${page}&per_page=20&_embed`);
   const trainings = await res.json();
-  // @ts-ignore
-  const totalPages = +res.headers.get('X-WP-TotalPages');
+  const totalPages = getTotalPages(res);
   return { trainings, totalPages, page };
 };
 

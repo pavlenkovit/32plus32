@@ -1,10 +1,5 @@
-import ReactHtmlParser from 'react-html-parser';
-
 export default (title: { rendered: any }) => {
-  const renderTitle = ReactHtmlParser(title.rendered);
-
-  // @ts-ignore
-  const matchDates = renderTitle[0].match(/\b\d*\.\d*\.\d*\b/ig);
+  const matchDates = title.rendered.match(/\b\d*\.\d*\.\d*\b/ig);
   const dateStr = matchDates[0];
   const [day, month, year] = dateStr.split('.');
 

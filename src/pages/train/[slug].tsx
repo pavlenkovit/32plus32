@@ -1,19 +1,20 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
+import { NextPage } from 'next';
 
 import baseURL from '../../constants/baseURL';
 import Post from '../../components/Post';
-import ReactHtmlParser from 'react-html-parser';
 import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import { IPost } from '../../models/wp';
 
-const TrainPage = (props) => {
-  const { train } = props;
+interface IProps {
+  train: IPost;
+}
 
-  const renderTitle = ReactHtmlParser(train.title.rendered);
-
-  const matchDates = renderTitle[0].match(/\b\d*\.\d*\.\d*\b/ig);
-  const dateStr = matchDates[0];
+const TrainPage: NextPage<IProps> = ({ train }) => {
+  const matchDates = train.title.rendered.match(/\b\d*\.\d*\.\d*\b/ig);
+  const dateStr = matchDates ? matchDates[0] : '???';
 
   const title = `Тренировка по классическому двоеборью на ${dateStr}`;
   const description = `Тренировка по гиревому спорту по классическому двоеборью на ${dateStr}`;
@@ -36,7 +37,7 @@ const TrainPage = (props) => {
             href: '/trainings',
             as: '/trainings',
           },
-          { title: dateStr }
+          { title: dateStr },
         ]}
       />
       <Post {...train} title={{ rendered: title }} />

@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import ArrowIcon from '../../../../icons/ArrowIcon';
 import getDateByTitle from '../../../../utils/getDateByTitle';
 import Author from './components/Author';
-import { IPost } from '../../../../models/post';
+import { IPost } from '../../../../models/wp';
 import Styled from './Train.styled';
 
 const Train: FC<IPost> = ({ title, slug, date, modified, _embedded: { author } }) => {

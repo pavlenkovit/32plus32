@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Train from './components/Train';
-import { IPost } from '../../models/post';
+import { IPost } from '../../models/wp';
 
 interface IProps {
   trainings: IPost[];

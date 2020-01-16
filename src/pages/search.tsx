@@ -7,12 +7,12 @@ import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
-import { IPost } from '../models/post';
+import { IPost } from '../models/wp';
+import getTotalPages from '../utils/getTotalPages';
+import { IPaginationProps } from '../models/pagination';
 
-interface IProps {
+interface IProps extends IPaginationProps {
   posts: IPost[];
-  totalPages: number;
-  page: number;
   s: any;
 }
 
@@ -42,8 +42,7 @@ Search.getInitialProps = async ({ query: { page: p, s } }) => {
   const page = p ? +p : 1;
   const res = await fetch(`${baseURL}/posts?search=${s}&page=${page}&_embed`);
   const posts = await res.json();
-  // @ts-ignore
-  const totalPages = +res.headers.get('X-WP-TotalPages');
+  const totalPages = getTotalPages(res);
   return { posts, totalPages, page, s };
 };
 
