@@ -36,6 +36,7 @@ a {
   color: #e24242;
   text-decoration: underline;
   transition: color .15s ease-out;
+  cursor: pointer;
 }
 
 a:hover {
