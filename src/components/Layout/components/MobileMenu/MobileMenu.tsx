@@ -6,9 +6,10 @@ import CloseIcon from '../../../../icons/CloseIcon';
 import nav from '../../../../constants/nav';
 
 import Styled from './MobileMenu.styled';
+import { IState } from '../../../../store/reducers';
 
 const MobileMenu: FC = () => {
-  const { menuIsActive } = useSelector((state: any) => state.app);
+  const { menuIsActive } = useSelector((state: IState) => state.app);
   const dispatch = useDispatch();
 
   const closeMenu = () => {

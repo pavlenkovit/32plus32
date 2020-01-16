@@ -7,10 +7,11 @@ import getDateByTitle from '../../../../utils/getDateByTitle';
 import Author from './components/Author';
 import { IPost } from '../../../../models/wp';
 import Styled from './Train.styled';
+import { IState } from '../../../../store/reducers';
 
 const Train: FC<IPost> = ({ title, slug, date, modified, _embedded: { author } }) => {
   const { day, month, year, weekDay } = getDateByTitle(title);
-  const { isMobile } = useSelector((state: any) => state.app);
+  const { isMobile } = useSelector((state: IState) => state.app);
 
   return (
     <Styled.Container isMobile={isMobile} itemScope itemType="http://schema.org/Article">

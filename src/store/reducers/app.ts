@@ -1,36 +1,42 @@
 import { handleActions } from 'redux-actions';
-import * as actions from '../actions';
 import { isMobile } from 'react-device-detect';
+import * as actions from '../actions';
 
-const initial = {
-  isMobile: isMobile,
+export interface IAppState {
+  isMobile: boolean;
+  menuIsActive: boolean;
+  searchIsActive: boolean;
+}
+
+const initial: IAppState = {
+  isMobile,
   menuIsActive: false,
   searchIsActive: false,
 };
 
 export default handleActions({
-  [actions.toggleMenu](state) {
+  [actions.toggleMenu.toString()](state) {
     return {
       ...state,
       menuIsActive: !state.menuIsActive,
     };
   },
 
-  [actions.closeMenu](state) {
+  [actions.closeMenu.toString()](state) {
     return {
       ...state,
       menuIsActive: false,
     };
   },
 
-  [actions.toggleSearch](state) {
+  [actions.toggleSearch.toString()](state) {
     return {
       ...state,
       searchIsActive: !state.searchIsActive,
     };
   },
 
-  [actions.closeSearch](state) {
+  [actions.closeSearch.toString()](state) {
     return {
       ...state,
       searchIsActive: false,

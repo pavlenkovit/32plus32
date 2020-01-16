@@ -9,9 +9,10 @@ import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
 import Styled from './Layout.styled';
+import { IState } from '../../store/reducers';
 
 const Layout: FC = ({ children }) => {
-  const { isMobile } = useSelector((state: any) => state.app);
+  const { isMobile } = useSelector((state: IState) => state.app);
 
   return (
     <Styled.Container>

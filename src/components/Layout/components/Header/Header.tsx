@@ -8,9 +8,10 @@ import Search from './components/Search';
 import MenuButton from './components/MenuButton';
 
 import Styled from './Header.styled';
+import { IState } from '../../../../store/reducers';
 
 const Header: React.FC = () => {
-  const { isMobile, searchIsActive } = useSelector((state: any) => state.app);
+  const { isMobile, searchIsActive } = useSelector((state: IState) => state.app);
 
   return (
     <Styled.Container>

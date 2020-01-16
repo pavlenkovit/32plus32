@@ -5,9 +5,10 @@ import SearchIcon from '../../../../../../icons/SearchIcon';
 import CloseIcon from '../../../../../../icons/CloseIcon';
 
 import Styled from './SearchButton.styled';
+import { IState } from '../../../../../../store/reducers';
 
 const SearchButton: FC = () => {
-  const { searchIsActive } = useSelector((state: any) => state.app);
+  const { searchIsActive } = useSelector((state: IState) => state.app);
   const dispatch = useDispatch();
 
   const toggleSearch = () => {
