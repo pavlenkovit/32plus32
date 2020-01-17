@@ -11,7 +11,7 @@ export default (content: string): string => {
     if (srcset) {
       el.setAttribute('data-srcset', srcset);
     }
-    el.setAttribute('src', '/public/img/dummy.png');
+    el.setAttribute('src', '/img/dummy.png');
     el.removeAttribute('srcset');
   });
   return wrapper.outerHTML;

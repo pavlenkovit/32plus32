@@ -91,12 +91,13 @@ const More = styled.div`
 `;
 
 const Brand = styled.div`
-  font-family: 'Handel Gothic';
-  font-size: 1.25em;
   position: absolute;
   bottom: 6px;
   right: 15px;
   z-index: 2;
+  & img {
+    width: 70px;
+  }
 `;
 
 const Buttons = styled.div`

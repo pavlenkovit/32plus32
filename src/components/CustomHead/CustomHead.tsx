@@ -14,7 +14,7 @@ const CustomHead: FC<IProps> = (props) => {
   const {
     title = 'Гиревой спорт',
     description = 'Сайт о гиревом спорте',
-    img = '/public/img/main.png',
+    img = '/img/main.png',
     url = '',
     keywords = '',
     type,

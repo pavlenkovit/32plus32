@@ -14,9 +14,9 @@ const Wod: FC<IPost> = ({ content, title }) => {
   return (
     <Styled.Main>
       <Styled.Container isRect={isRect}>
-        <Styled.Img src="/public/img/kettlebell.png" alt="" />
+        <Styled.Img src="/img/kettlebell.png" alt="" />
         <Styled.TopContent>
-          <Styled.AuthorImg src="/public/avatars/sergey_rudnev.jpg" alt="" />
+          <Styled.AuthorImg src="/avatars/sergey_rudnev.jpg" alt="" />
           <div>
             <Styled.Date>{day}/{month}/20{year} ({weekDay})</Styled.Date>
             {!isTrain ? (
@@ -38,7 +38,9 @@ const Wod: FC<IPost> = ({ content, title }) => {
             Продолжение тренировки на сайте
           </Styled.More>
         )}
-        <Styled.Brand>32PLUS32</Styled.Brand>
+        <Styled.Brand>
+          <img src="/img/logo.png" alt="32PLUS32" />
+        </Styled.Brand>
       </Styled.Container>
       <Styled.Buttons>
         <button type="button" onClick={() => { toggleTrain(!isTrain); }}>Тренировка?</button>
