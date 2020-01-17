@@ -4,26 +4,68 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    td, th {
+      border: solid 1px #585858;
+      padding: 7px;
+    }
+
+    .hide td:last-child {
+      opacity: 0;
+    }
+    #toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-<p>
-  <b>Summer</b> 00:02 --> 00:03</p>
-<p>
-  What is on Jessica's
-  Instagram again.</p>
-<p>
-  <b>Morty</b> 00:03 --> 00:04</p>
-<p>
-  Get out of here,
-  jerk!</p>
-<p>
-  <b>Jerry</b> 00:04 --> 00:06</p>
-<p>
-  What's so embarrassing,
-  Morty?</p>
-<p>
-  Sharing it with your family
-  might help.</p>
+<button id="toggle">toggle</button>
+<table class="hide">
+  <tbody>
+  <tr>
+    <th>Time</th>
+    <th>Person</th>
+    <th>Eng</th>
+    <th>Rus</th>
+  </tr>
+  <tr>
+    <td>00:02 --> 00:03</td>
+    <td>Summer</td>
+    <td>
+      <p>
+        What is on Jessica's
+        Instagram again.</p>
+    </td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>00:03 --> 00:04</td>
+    <td>Morty</td>
+    <td>
+      <p>
+        Get out of here,
+        jerk!</p>
+    </td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>00:04 --> 00:06</td>
+    <td>Jerry</td>
+    <td>
+      <p>
+        What's so embarrassing,
+        Morty?</p>
+      <p>
+        Sharing it with your family
+        might help.</p>
+    </td>
+    <td>?</td>
+  </tr>
+  </tbody>
+</table>
 <p>
   <b>Beth</b> 00:07 --> 00:09</p>
 <p>
@@ -1547,5 +1589,12 @@
   this opportunity.</p>
 <p><b>???</b> 00:22:24 --> 00:22:26
   Did you get any of that?</p>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#toggle').addEventListener('click', () => {
+      document.querySelector('table').classList.toggle('hide');
+    });
+  });
+</script>
 </body>
 </html>
