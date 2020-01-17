@@ -1,6 +1,7 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import { NextPage } from 'next';
+import ReactHTMLParser from 'react-html-parser';
 
 import baseURL from '../../constants/baseURL';
 import Post from '../../components/Post';
@@ -14,7 +15,7 @@ interface IProps {
 }
 
 const PostPage: NextPage<IProps> = ({ post }) => {
-  const title = post.title.rendered;
+  const title = ReactHTMLParser(post.title.rendered)[0];
 
   return (
     <>

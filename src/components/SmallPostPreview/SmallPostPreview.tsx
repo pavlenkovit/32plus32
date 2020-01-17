@@ -1,9 +1,12 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
+import ReactHTMLParser from 'react-html-parser';
 
 import DateComponent from './components/DateComponent';
 import { IPost } from '../../models/wp';
 import Styled from './SmallPostPreview.styled';
+import getImgPath from '../../utils/getImgPath';
+import useAsImgStyle from '../../hooks/useAsImgStyle';
 
 interface IProps {
   post: IPost;
@@ -11,19 +14,11 @@ interface IProps {
 
 const SmallPostPreview: FC<IProps> = ({ post }) => {
   const { slug, title, date, modified, fimg_url, _embedded: { author, 'wp:featuredmedia': featuredmedia }, meta: { _aioseop_description } } = post;
+  const renderedTitle = ReactHTMLParser(title.rendered);
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
-
-  const getImgPath = () => {
-    if (featuredmedia) {
-      const { sizes } = featuredmedia[0].media_details;
-      if (sizes.medium) {
-        return sizes.medium.source_url;
-      }
-      return fimg_url;
-    }
-    return null;
-  };
+  const imgPath = getImgPath(featuredmedia, fimg_url, 'medium');
+  const imgParams = useAsImgStyle(imgPath);
 
   return (
     <Styled.Container itemScope itemType="http://schema.org/Article">
@@ -35,7 +30,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
           <meta itemProp="image" content={fimg_url} />
           <Styled.ImgContainer>
             <Link href={href} as={as}>
-              <Styled.ImgLink style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
+              <Styled.ImgLink {...imgParams} itemProp="url" />
             </Link>
           </Styled.ImgContainer>
         </Styled.ImgWrap>
@@ -44,7 +39,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
         <Styled.Title>
           <Link href={href} as={as}>
             <Styled.TitleLink itemProp="url headline name">
-              {title.rendered}
+              {renderedTitle}
             </Styled.TitleLink>
           </Link>
         </Styled.Title>

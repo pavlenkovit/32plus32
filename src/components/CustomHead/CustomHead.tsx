@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Head from 'next/head';
 
 interface IProps {
-  title?: string;
+  title?: any;
   description?: string;
   img?: string;
   url?: string;

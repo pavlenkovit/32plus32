@@ -4,6 +4,7 @@ import { format } from 'date-fns';
 import ru from 'date-fns/locale/ru';
 
 import Styled from './Author.styled';
+import useImgParams from '../../hooks/useImgParams';
 
 interface IProps {
   name: string;
@@ -12,6 +13,8 @@ interface IProps {
 }
 
 const Author: FC<IProps> = ({ name, slug, date }) => {
+  const imgSrc = `/avatars/${slug}.jpg`;
+  const imgParams = useImgParams(imgSrc, '/img/author.png');
   const href = '/user/[slug]';
   const as = `/user/${slug}`;
 
@@ -19,7 +22,7 @@ const Author: FC<IProps> = ({ name, slug, date }) => {
     <Styled.Wrapper itemProp="author" itemScope itemType="http://schema.org/Person">
       <Link href={href} as={as}>
         <Styled.ImgLink>
-          <Styled.Img src={`/avatars/${slug}.jpg`} alt={name} itemProp="image" />
+          <Styled.Img {...imgParams} alt={name} itemProp="image" />
         </Styled.ImgLink>
       </Link>
       <Styled.Content>

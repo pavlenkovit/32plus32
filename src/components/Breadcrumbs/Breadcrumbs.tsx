@@ -7,7 +7,7 @@ import Container from '../Container';
 import Styled from './Breadcrumbs.styled';
 
 interface IItem {
-  title: string;
+  title: any;
   href?: string;
   as?: string;
 }

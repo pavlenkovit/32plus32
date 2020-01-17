@@ -1,61 +1,32 @@
-import React, { useEffect, useState, FC } from 'react';
+import React, { FC, useRef } from 'react';
+import ReactHTMLParser from 'react-html-parser';
+
 import Author from '../Author';
 import Share from '../Share';
 import StickyContainer from '../Share/components/StickyContainer';
 import MainTitle from '../MainTitle';
+import { IPost } from '../../models/wp';
+import useImgParams from '../../hooks/useImgParams';
+import useWindowWidth from '../../hooks/useWindowWidth';
+import useContent from '../../hooks/useContent';
+import useHandleObservers from '../../hooks/useHandleObservers';
 
 import Styled from './Post.styled';
-import handleObservers from './utils/handleObservers';
-import initDataSrc from './utils/initDataSrc';
-import { IPost } from '../../models/wp';
 
 const Post: FC<IPost> = ({ title, content, date, modified, fimg_url, _embedded: { author } }) => {
-  const [ww, updWindowWidth] = useState(0);
-  const [newContent, updateContent] = useState(null);
+  const renderedTitle: any = ReactHTMLParser(title.rendered)[0];
+  const newContent = useContent(content.rendered);
+  const imgParams = useImgParams(fimg_url);
+  const windowWidth = useWindowWidth();
+  const container = useRef<HTMLDivElement>(null);
 
-  const updateWindowWidth = () => {
-    updWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    updateWindowWidth();
-    window.addEventListener('resize', updateWindowWidth);
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        // @ts-ignore
-        window.location.hash = this.getAttribute('href');
-        window.scrollTo({
-          // @ts-ignore
-          top: document.querySelector(this.getAttribute('href')).offsetTop + 30,
-          behavior: 'smooth',
-        });
-      });
-    });
-
-    return () => {
-      window.removeEventListener('resize', updateWindowWidth);
-    };
-  }, []);
-
-  useEffect(() => {
-    // @ts-ignore
-    updateContent(initDataSrc(content.rendered));
-  }, [content]);
-
-  useEffect(() => {
-    if (newContent) {
-      handleObservers(document.querySelectorAll('#post-container img'));
-    }
-  }, [newContent]);
+  useHandleObservers(container.current, newContent);
 
   return (
     <article itemScope itemType="http://schema.org/Article">
       <meta itemProp="datePublished" content={date} />
       <meta itemProp="dateModified" content={modified} />
-      <MainTitle itemProp="headline name">{title.rendered}</MainTitle>
+      <MainTitle itemProp="headline name">{renderedTitle}</MainTitle>
       <Styled.Info>
         <Author
           {...author[0]}
@@ -64,21 +35,21 @@ const Post: FC<IPost> = ({ title, content, date, modified, fimg_url, _embedded: 
       </Styled.Info>
       {fimg_url && (
         <div>
-          <Styled.Img src={fimg_url} alt={title.rendered} itemProp="image" />
+          <Styled.Img {...imgParams} alt={renderedTitle} itemProp="image" />
         </div>
       )}
       <Styled.Content
         itemProp="articleBody"
-        id="post-container"
+        ref={container}
         // @ts-ignore
         dangerouslySetInnerHTML={{ __html: newContent }}
       />
-      {ww > 1350 && (
+      {windowWidth > 1350 && (
         <StickyContainer>
           <Share />
         </StickyContainer>
       )}
-      {(ww <= 1350 && ww !== 0) && (
+      {(windowWidth && windowWidth <= 1350) && (
         <Share isInline />
       )}
     </article>

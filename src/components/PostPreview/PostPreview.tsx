@@ -1,10 +1,14 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
+import ReactHTMLParser from 'react-html-parser';
+
 import Author from '../Author';
 import Categories from './components/Categories';
 
 import Styled from './PostPreview.styled';
 import { IPost } from '../../models/wp';
+import getImgPath from '../../utils/getImgPath';
+import useAsImgStyle from '../../hooks/useAsImgStyle';
 
 interface IProps {
   post: IPost;
@@ -12,23 +16,11 @@ interface IProps {
 
 const PostPreview: FC<IProps> = ({ post }) => {
   const { slug, title, excerpt, date, modified, fimg_url, _embedded: { author, 'wp:term': term, 'wp:featuredmedia': featuredmedia }, meta: { _aioseop_description } } = post;
+  const renderTitle = ReactHTMLParser(title.rendered);
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
-
-  const getImgPath = () => {
-    if (featuredmedia) {
-      const { sizes } = featuredmedia[0].media_details;
-      if (sizes.medium_large) {
-        return sizes.medium_large.source_url;
-      }
-
-      if (sizes['keratin-featured-image-archive']) {
-        return sizes['keratin-featured-image-archive'].source_url;
-      }
-      return fimg_url;
-    }
-    return null;
-  };
+  const imgPath = getImgPath(featuredmedia, fimg_url, 'medium_large');
+  const imgParams = useAsImgStyle(imgPath);
 
   return (
     <Styled.Container itemScope itemType="http://schema.org/Article">
@@ -40,7 +32,7 @@ const PostPreview: FC<IProps> = ({ post }) => {
           <meta itemProp="image" content={fimg_url} />
           <Styled.ImgContainer>
             <Link href={href} as={as}>
-              <Styled.ImgLink style={{ backgroundImage: `url(${getImgPath()})` }} itemProp="url" />
+              <Styled.ImgLink {...imgParams} itemProp="url" />
             </Link>
           </Styled.ImgContainer>
         </Styled.ImgWrap>
@@ -49,7 +41,7 @@ const PostPreview: FC<IProps> = ({ post }) => {
         <Styled.Title>
           <Link href={href} as={as}>
             <Styled.TitleLink itemProp="url headline name">
-              {title.rendered}
+              {renderTitle}
             </Styled.TitleLink>
           </Link>
         </Styled.Title>
