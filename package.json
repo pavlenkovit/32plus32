@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
-    "lint": "eslint './{components,scenes,pages}/**/*.{.ts,.tsx}'",
+    "lint": "eslint './{components,scenes,pages,icons}/**/*.{.ts,.tsx}'",
     "cc": "node cli/component.js --path"
   },
   "eslintConfig": {
@@ -28,26 +28,33 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-html-parser": "^2.0.1",
+    "@types/react-redux": "^7.1.5",
+    "@types/redux-actions": "^2.6.1",
+    "@types/styled-components": "^4.4.2",
+    "@zeit/next-css": "^1.0.1",
     "axios": "^0.19.0",
     "babel-eslint": "^10.0.3",
     "classnames": "^2.2.6",
     "date-fns": "^1.30.1",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.0.6",
+    "next": "^9.1.7",
     "next-images": "^1.1.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^16.12.0",
     "react-device-detect": "^1.9.10",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.12.0",
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.1.0",
-    "react-transition-group": "^4.3.0",
     "redux": "^4.0.1",
-    "redux-actions": "^2.6.5"
+    "redux-actions": "^2.6.5",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "@types/node": "^13.1.6",
+    "@types/react": "^16.9.17",
+    "babel-plugin-styled-components": "^1.10.6",
     "cross-env": "^6.0.0",
     "dateformat": "^3.0.3",
     "eslint": "^6.4.0",
@@ -60,6 +67,7 @@
     "node-sass": "^4.13.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
+    "typescript": "^3.7.4",
     "xmlbuilder": "^13.0.2"
   }
 }
