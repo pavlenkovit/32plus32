@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import device from '../../../../constants/device';
 
 const Title = styled.h2`
   margin: 0 8px 0 0;
@@ -13,13 +14,14 @@ const Title = styled.h2`
       color: #e24242;
     }
   }
+  @media ${device.tablet} {
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 0.25em;
+  }
 `;
 
-interface IContainer {
-  isMobile: boolean;
-}
-
-const Container = styled.div < IContainer > `
+const Container = styled.div`
   padding-bottom: 15px;
   margin-bottom: 15px;
   position: relative;
@@ -31,14 +33,6 @@ const Container = styled.div < IContainer > `
   &:not(:last-child) {
     border-bottom: 1px solid #dee2e6;
   }
-  
-  ${({ isMobile }) => isMobile && `
-    & ${Title} {
-      font-size: 1.2em;
-      width: 100%;
-      margin-bottom: 0.25em;
-    }
-  `}
 `;
 
 const Content = styled.div`

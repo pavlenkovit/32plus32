@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import { useSelector } from 'react-redux';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -9,10 +8,10 @@ import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
 import Styled from './Layout.styled';
-import { IState } from '../../store/reducers';
+import useWindowWidth from '../../hooks/useWindowWidth';
 
 const Layout: FC = ({ children }) => {
-  const { isMobile } = useSelector((state: IState) => state.app);
+  const windowWidth = useWindowWidth();
 
   return (
     <Styled.Container>
@@ -44,7 +43,7 @@ const Layout: FC = ({ children }) => {
         />
         <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
       </Head>
-      {isMobile && <MobileMenu />}
+      {(windowWidth !== 0 && windowWidth <= 768) && <MobileMenu />}
       <div id="header">
         <Header />
         <Styled.BreadCrumbs id="breadcrumbs" />
@@ -53,11 +52,9 @@ const Layout: FC = ({ children }) => {
         <Container>
           <Styled.Inner>
             <Styled.Content>{children}</Styled.Content>
-            {!isMobile && (
-              <Styled.Sidebar>
-                <Sidebar />
-              </Styled.Sidebar>
-            )}
+            <Styled.Sidebar>
+              {(windowWidth > 768) && <Sidebar />}
+            </Styled.Sidebar>
           </Styled.Inner>
         </Container>
       </Styled.Main>

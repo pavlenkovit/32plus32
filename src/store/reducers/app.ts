@@ -1,15 +1,12 @@
 import { handleActions } from 'redux-actions';
-import { isMobile } from 'react-device-detect';
 import * as actions from '../actions';
 
 export interface IAppState {
-  isMobile: boolean;
   menuIsActive: boolean;
   searchIsActive: boolean;
 }
 
 const initial: IAppState = {
-  isMobile,
   menuIsActive: false,
   searchIsActive: false,
 };

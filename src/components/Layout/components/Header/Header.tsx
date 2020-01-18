@@ -9,15 +9,17 @@ import MenuButton from './components/MenuButton';
 
 import Styled from './Header.styled';
 import { IState } from '../../../../store/reducers';
+import useWindowWidth from '../../../../hooks/useWindowWidth';
 
 const Header: React.FC = () => {
-  const { isMobile, searchIsActive } = useSelector((state: IState) => state.app);
+  const { searchIsActive } = useSelector((state: IState) => state.app);
+  const windowWidth = useWindowWidth();
 
   return (
     <Styled.Container>
       <Container>
         <Styled.Inner>
-          {isMobile ? (
+          {(windowWidth !== 0 && windowWidth <= 768) && (
             <>
               <Logo />
               <Styled.MobileWrapper>
@@ -25,7 +27,8 @@ const Header: React.FC = () => {
                 <MenuButton />
               </Styled.MobileWrapper>
             </>
-          ) : (
+          )}
+          {windowWidth > 768 && (
             <>
               <Styled.Left>
                 <Logo />

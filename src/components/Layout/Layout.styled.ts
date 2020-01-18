@@ -34,6 +34,9 @@ const Content = styled.div`
 const Sidebar = styled.div`
   width: 300px;
   margin-left: 30px;
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 export default { Container, Main, BreadCrumbs, Inner, Content, Sidebar };
