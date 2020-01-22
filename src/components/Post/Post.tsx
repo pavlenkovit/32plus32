@@ -13,7 +13,8 @@ import useHandleObservers from '../../hooks/useHandleObservers';
 
 import Styled from './Post.styled';
 
-const Post: FC<IPost> = ({ title, content, date, modified, fimg_url, _embedded: { author } }) => {
+const Post: FC<IPost> = (props) => {
+  const { title, content, date, modified, fimg_url, _embedded: { author } } = props;
   const renderedTitle: any = ReactHTMLParser(title.rendered)[0];
   const newContent = useContent(content.rendered);
   const imgParams = useImgParams(fimg_url);

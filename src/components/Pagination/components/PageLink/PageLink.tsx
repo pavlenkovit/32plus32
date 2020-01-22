@@ -15,7 +15,7 @@ const PageLink: FC<IProps> = ({ children, href, as, isActive = false }) => {
       {isActive ? (
         <Styled.Link as="div">{children}</Styled.Link>
       ) : (
-        <Link href={href} as={as}>
+        <Link href={href} as={as} passHref>
           <Styled.Link>{children}</Styled.Link>
         </Link>
       )}

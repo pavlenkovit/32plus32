@@ -42,7 +42,7 @@ const MobileMenu: FC = () => {
         {nav.map((item, idx) => {
           return (
             <Styled.Item key={idx}>
-              <Link href={item.href} as={item.as}>
+              <Link href={item.href} as={item.as} passHref>
                 <Styled.Link onClick={closeMenu}>{item.title}</Styled.Link>
               </Link>
             </Styled.Item>

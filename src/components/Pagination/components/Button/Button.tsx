@@ -13,7 +13,7 @@ interface IProps {
 
 const Button: FC<IProps> = ({ children, href, as, prev = false, next = false }) => {
   return (
-    <Link href={href} as={as}>
+    <Link href={href} as={as} passHref>
       <Styled.Link>
         {prev && <ArrowPrevIcon />}
         <span>{children}</span>

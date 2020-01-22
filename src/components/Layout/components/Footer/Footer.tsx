@@ -85,7 +85,7 @@ const Footer: FC = () => {
           </FooterSidebar>
         </Styled.Row>
         <Styled.Copy>
-          <span>© <Link href="/"><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.</span>
+          <span>© <Link href="/" passHref><a>32PLUS32.RU</a></Link>, 2015-2019. Все права защищены.</span>
           <div>
             {/* Yandex.Metrika counter */}
             <script

@@ -40,7 +40,7 @@ const Submenu = () => {
       {list.map((item) => {
         return (
           <Styled.Item key={item.slug} itemProp="itemListElement">
-            <Link href="/category/[slug]" as={`/category/${item.slug}`}>
+            <Link href="/category/[slug]" as={`/category/${item.slug}`} passHref>
               <Styled.Link property="item" typeof="WebPage">
                 <span property="name">{item.title}</span>
               </Styled.Link>

@@ -16,7 +16,7 @@ const Author: FC<IProps> = ({ name, slug }) => {
   const as = `/user/${slug}`;
 
   return (
-    <Link href={href} as={as}>
+    <Link href={href} as={as} passHref>
       <Styled.ImgLink itemProp="author" itemScope itemType="http://schema.org/Person">
         <Styled.Img {...imgParams} alt={name} itemProp="image" />
       </Styled.ImgLink>

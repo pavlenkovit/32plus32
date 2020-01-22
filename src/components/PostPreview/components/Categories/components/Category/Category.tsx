@@ -13,7 +13,7 @@ const Category: FC<IProps> = ({ name, slug }) => {
   const as = `/category/${slug}`;
 
   return (
-    <Link href={href} as={as}>
+    <Link href={href} as={as} passHref>
       <Styled.Link>{name}</Styled.Link>
     </Link>
   );

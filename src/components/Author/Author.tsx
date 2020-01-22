@@ -20,13 +20,13 @@ const Author: FC<IProps> = ({ name, slug, date }) => {
 
   return (
     <Styled.Wrapper itemProp="author" itemScope itemType="http://schema.org/Person">
-      <Link href={href} as={as}>
+      <Link href={href} as={as} passHref>
         <Styled.ImgLink>
           <Styled.Img {...imgParams} alt={name} itemProp="image" />
         </Styled.ImgLink>
       </Link>
       <Styled.Content>
-        <Link href={href} as={as}>
+        <Link href={href} as={as} passHref>
           <Styled.Name itemProp="url">
             <span itemProp="name">{name}</span>
           </Styled.Name>

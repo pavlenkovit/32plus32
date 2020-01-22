@@ -35,7 +35,7 @@ const Breadcrumbs: FC<IProps> = ({ items }) => {
       <Container>
         <Styled.List itemScope itemType="http://schema.org/BreadcrumbList">
           <Styled.Item itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-            <Link href="/">
+            <Link href="/" passHref>
               <a itemProp="item">
                 <span itemProp="name">Главная</span>
               </a>
@@ -45,7 +45,7 @@ const Breadcrumbs: FC<IProps> = ({ items }) => {
             if (item.href) {
               return (
                 <Styled.Item key={idx} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem">
-                  <Link href={item.href} as={item.as}>
+                  <Link href={item.href} as={item.as} passHref>
                     <a itemProp="item">
                       <span itemProp="name">{item.title}</span>
                     </a>

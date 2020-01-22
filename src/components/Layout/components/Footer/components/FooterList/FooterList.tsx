@@ -19,7 +19,7 @@ const FooterList: FC<IProps> = ({ list }) => {
       {list.map((item, idx) => {
         return (
           <Styled.List key={idx}>
-            <Link href={item.href} as={item.as}>
+            <Link href={item.href} as={item.as} passHref>
               <a>{item.title}</a>
             </Link>
           </Styled.List>

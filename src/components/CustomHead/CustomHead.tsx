@@ -16,7 +16,7 @@ const CustomHead: FC<IProps> = (props) => {
     description = 'Сайт о гиревом спорте',
     img = '/img/main.png',
     url = '',
-    keywords = '',
+    keywords = 'гиревой спорт, гиревой спорт тренировки',
     type,
   } = props;
 
@@ -27,7 +27,7 @@ const CustomHead: FC<IProps> = (props) => {
       <meta key="meta-url" property="og:url" content={`https://32plus32.ru${url}`} />
       <meta key="meta-title" property="og:title" content={title} />
       <meta key="meta-description" name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+      <meta key="keywords" name="keywords" content={keywords} />
       {type && <meta key="meta-type" property="og:type" content={type} />}
     </Head>
   );

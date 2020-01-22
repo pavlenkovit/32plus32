@@ -42,7 +42,7 @@ const SmallPostsList: FC<IProps> = ({ posts }) => {
         return (
           <Styled.Block key={category.id}>
             <Styled.Title>
-              <Link href={href} as={as}>
+              <Link href={href} as={as} passHref>
                 <a>{name}</a>
               </Link>
             </Styled.Title>

@@ -76,6 +76,6 @@ rp(`${baseURL}/pages`)
     });
 
     const xml = root.end({ pretty: true });
-    fs.writeFileSync(path.resolve(__dirname, '..', 'static', 'sitemap.xml'), xml);
+    fs.writeFileSync(path.resolve(__dirname, '..', 'public', 'sitemap.xml'), xml);
   })
   .catch(err => console.log(err));

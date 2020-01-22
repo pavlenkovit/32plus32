@@ -29,7 +29,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
         <Styled.ImgWrap>
           <meta itemProp="image" content={fimg_url} />
           <Styled.ImgContainer>
-            <Link href={href} as={as}>
+            <Link href={href} as={as} passHref>
               <Styled.ImgLink {...imgParams} itemProp="url" />
             </Link>
           </Styled.ImgContainer>
@@ -37,7 +37,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
       )}
       <Styled.Body>
         <Styled.Title>
-          <Link href={href} as={as}>
+          <Link href={href} as={as} passHref>
             <Styled.TitleLink itemProp="url headline name">
               {renderedTitle}
             </Styled.TitleLink>
