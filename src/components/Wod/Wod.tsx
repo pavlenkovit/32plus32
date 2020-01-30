@@ -25,7 +25,7 @@ const Wod: FC<IPost> = ({ content, title }) => {
               </Styled.Title>
             ) : (
               <Styled.Title>
-                <strong>Тренировка</strong> по классическому двоеборью
+                <strong>Тренировка</strong> по длинному циклу
               </Styled.Title>
             )}
           </div>

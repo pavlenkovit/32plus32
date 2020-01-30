@@ -92,11 +92,11 @@ const More = styled.div`
 
 const Brand = styled.div`
   position: absolute;
-  bottom: 6px;
+  bottom: 7px;
   right: 15px;
   z-index: 2;
   & img {
-    width: 90px;
+    width: 110px;
   }
 `;
 

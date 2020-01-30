@@ -23,12 +23,12 @@ const TrainingsPage: NextPage = () => {
       <div>
         <div>
           <Link href="/trainings/[slug]" as="/trainings/dv" passHref>
-            <a>Тренирвоки по классическому двоеборью</a>
+            <a>Тренировки по классическому двоеборью</a>
           </Link>
         </div>
         <div>
           <Link href="/trainings/[slug]" as="/trainings/dc" passHref>
-            <a>Тренирвоки по длинному циклу</a>
+            <a>Тренировки по длинному циклу</a>
           </Link>
         </div>
       </div>
