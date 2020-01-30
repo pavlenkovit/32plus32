@@ -7,6 +7,13 @@ import ArrowIcon from '../../../../../../icons/ArrowIcon';
 import Submenu from './components/Submenu';
 import Styled from './Nav.styled';
 
+export interface IMenuItem {
+  title: string;
+  href: string;
+  as?: string;
+  items?: IMenuItem[];
+}
+
 const Nav: FC = () => {
   // const router = useRouter();
   // console.log(router); // TODO: выделять активный роут
@@ -20,13 +27,13 @@ const Nav: FC = () => {
               <Link href={item.href} as={item.as} passHref>
                 <Styled.Link property="item" typeof="WebPage">
                   <span property="name">{item.title}</span>
-                  {item.arrow && (
+                  {item.items && (
                     <ArrowIcon color="#fff" size={12} />
                   )}
                 </Styled.Link>
               </Link>
             </span>
-            {item.arrow && <Submenu />}
+            {item.items && <Submenu items={item.items} />}
           </Styled.Item>
         ))}
       </Styled.Menu>

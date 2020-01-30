@@ -1,46 +1,20 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 
 import Styled from './Submenu.styled';
+import { IMenuItem } from '../../Nav';
 
-const list = [
-  {
-    title: 'Научные статьи',
-    slug: 'nauchnye-stati',
-  },
-  {
-    title: 'Планирование',
-    slug: 'planirovanie-trenirovok',
-  },
-  {
-    title: 'Упражнения',
-    slug: 'upragneniya',
-  },
-  {
-    title: 'Техника',
-    slug: 'tehnika',
-  },
-  {
-    title: 'Тренинг',
-    slug: 'trenirovki',
-  },
-  {
-    title: 'Восстановление',
-    slug: 'vosstanovlenie',
-  },
-  {
-    title: 'Личности',
-    slug: 'lichnosti',
-  },
-];
+interface IProps {
+  items: IMenuItem[];
+}
 
-const Submenu = () => {
+const Submenu: FC<IProps> = ({ items }) => {
   return (
     <Styled.List>
-      {list.map((item) => {
+      {items.map((item, idx) => {
         return (
-          <Styled.Item key={item.slug} itemProp="itemListElement">
-            <Link href="/category/[slug]" as={`/category/${item.slug}`} passHref>
+          <Styled.Item key={idx} itemProp="itemListElement">
+            <Link href={item.href} as={item.as} passHref>
               <Styled.Link property="item" typeof="WebPage">
                 <span property="name">{item.title}</span>
               </Styled.Link>

@@ -15,7 +15,7 @@ const WodPage: NextPage<IProps> = ({ trainings }) => {
 };
 
 WodPage.getInitialProps = async () => {
-  const res = await fetch(`${baseURL}/posts?categories=77&per_page=1&_embed`);
+  const res = await fetch(`${baseURL}/posts?categories=94&per_page=1&_embed`);
   const trainings = await res.json();
   return { trainings };
 };

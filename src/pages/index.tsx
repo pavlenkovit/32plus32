@@ -40,7 +40,7 @@ const Index: NextPage<IProps> = ({ posts, totalPages, page }) => {
 
 Index.getInitialProps = async ({ query: { page: p } }) => {
   const page = p ? +p : 1;
-  const res = await fetch(`${baseURL}/posts?categories_exclude=77&page=${page}&_embed`);
+  const res = await fetch(`${baseURL}/posts?categories_exclude=77,94&page=${page}&_embed`);
   const posts = await res.json();
   const totalPages = getTotalPages(res);
   return { posts, totalPages, page };

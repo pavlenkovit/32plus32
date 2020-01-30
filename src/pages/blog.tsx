@@ -34,7 +34,7 @@ const Blog: NextPage<IProps> = ({ posts }) => {
 };
 
 Blog.getInitialProps = async () => {
-  const res = await fetch(`${baseURL}/posts?categories_exclude=77&per_page=100&_embed`);
+  const res = await fetch(`${baseURL}/posts?categories_exclude=77,94&per_page=100&_embed`);
   const posts = await res.json();
   return { posts };
 };

@@ -96,7 +96,7 @@ const Brand = styled.div`
   right: 15px;
   z-index: 2;
   & img {
-    width: 70px;
+    width: 90px;
   }
 `;
 

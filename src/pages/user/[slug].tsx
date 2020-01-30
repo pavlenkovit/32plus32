@@ -44,7 +44,7 @@ UserPage.getInitialProps = async (context) => {
   const resUser = await fetch(`${baseURL}/users?slug=${slug}`);
   const dataUser = await resUser.json();
   const user = dataUser && dataUser.length > 0 ? dataUser[0] : null;
-  const resPosts = await fetch(`${baseURL}/posts?author=${user.id}&categories_exclude=77&page=${page}&_embed`);
+  const resPosts = await fetch(`${baseURL}/posts?author=${user.id}&categories_exclude=77,94&page=${page}&_embed`);
   const posts = await resPosts.json();
   const totalPages = getTotalPages(resPosts);
 

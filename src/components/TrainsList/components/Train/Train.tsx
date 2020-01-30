@@ -19,13 +19,13 @@ const Train: FC<IPost> = ({ title, slug, date, modified, _embedded: { author } }
       <Styled.Content>
         <Styled.TitleLine>
           <Styled.Title>
-            <Link href="train/[slug]" as={`train/${slug}`} passHref>
+            <Link href="/train/[slug]" as={`/train/${slug}`} passHref>
               <a itemProp="url headline name">
                 {`${day}/${month}/${year} (${weekDay})`}
               </a>
             </Link>
           </Styled.Title>
-          <Link href="train/[slug]" as={`train/${slug}`} passHref>
+          <Link href="/train/[slug]" as={`/train/${slug}`} passHref>
             <Styled.Action>
               <span>Тренироваться</span>
               <ArrowIcon size={10} color="#e24242" />

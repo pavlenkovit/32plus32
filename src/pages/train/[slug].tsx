@@ -13,11 +13,30 @@ interface IProps {
 }
 
 const TrainPage: NextPage<IProps> = ({ train }) => {
+  const { slug } = train;
   const matchDates = train.title.rendered.match(/\b\d*\.\d*\.\d*\b/ig);
+
+  let type = 'dv';
+  if (/^dc-/ig.test(slug)) {
+    type = 'dc';
+  }
+
   const dateStr = matchDates ? matchDates[0] : '???';
 
-  const title = `Тренировка по классическому двоеборью на ${dateStr}`;
-  const description = `Тренировка по гиревому спорту по классическому двоеборью на ${dateStr}`;
+  const values: any = {
+    dv: {
+      title: `Тренировка по классическому двоеборью на ${dateStr}`,
+      parentTitle: 'Классическое двоеборье',
+      description: `Тренировка по гиревому спорту по классическому двоеборью на ${dateStr}`,
+    },
+    dc: {
+      title: `Тренировка по длинному циклу на ${dateStr}`,
+      parentTitle: 'Длинный цикл',
+      description: `Тренировка по гиревому спорту по длинному циклу на ${dateStr}`,
+    },
+  };
+
+  const { title, description, parentTitle } = values[type];
   const keywords = 'тренировка по гиревому спорту, гиревой спорт план';
   const url = `/train/${train.slug}`;
 
@@ -33,9 +52,14 @@ const TrainPage: NextPage<IProps> = ({ train }) => {
       <Breadcrumbs
         items={[
           {
-            title: 'Тренировки (ДВ)',
+            title: 'Тренировки',
             href: '/trainings',
             as: '/trainings',
+          },
+          {
+            title: parentTitle,
+            href: '/trainings/[slug]',
+            as: `/trainings/${type}`,
           },
           { title: dateStr },
         ]}
