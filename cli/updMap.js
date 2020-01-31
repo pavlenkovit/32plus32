@@ -19,8 +19,17 @@ const arr = [
   {
     loc: `${site}/`,
     lastmod: date,
-  }, {
+  },
+  {
     loc: `${site}/trainings`,
+    lastmod: date,
+  },
+  {
+    loc: `${site}/trainings/dv`,
+    lastmod: date,
+  },
+  {
+    loc: `${site}/trainings/dc`,
     lastmod: date,
   },
   {
