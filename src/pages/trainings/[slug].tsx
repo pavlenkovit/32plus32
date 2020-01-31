@@ -64,8 +64,8 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
       <Pagination
         total={totalPages}
         activePage={page}
-        rootHref="/trainings"
-        rootAs="/trainings"
+        rootHref="/trainings/[slug]"
+        rootAs={`/trainings/${slug}`}
       />
     </>
   );
