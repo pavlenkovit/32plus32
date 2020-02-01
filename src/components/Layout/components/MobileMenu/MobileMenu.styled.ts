@@ -14,7 +14,8 @@ const Container = styled.div`
   padding: 40px 15px 120px;
   display: flex;
   align-items: center;
-  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Button = styled.button`
@@ -34,7 +35,7 @@ const Button = styled.button`
 const List = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 15px;
   font-size: 1.25em;
   display: block;
   width: 100%;

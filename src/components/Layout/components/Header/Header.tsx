@@ -10,6 +10,8 @@ import MenuButton from './components/MenuButton';
 import Styled from './Header.styled';
 import { IState } from '../../../../store/reducers';
 import useWindowWidth from '../../../../hooks/useWindowWidth';
+import { size } from '../../../../constants/device';
+import DonateButton from '../../../DonateButton';
 
 const Header: React.FC = () => {
   const { searchIsActive } = useSelector((state: IState) => state.app);
@@ -19,7 +21,7 @@ const Header: React.FC = () => {
     <Styled.Container>
       <Container>
         <Styled.Inner>
-          {(windowWidth !== 0 && windowWidth <= 768) && (
+          {(windowWidth !== 0 && windowWidth <= size.laptop) && (
             <>
               <Logo />
               <Styled.MobileWrapper>
@@ -28,13 +30,16 @@ const Header: React.FC = () => {
               </Styled.MobileWrapper>
             </>
           )}
-          {windowWidth > 768 && (
+          {windowWidth > size.laptop && (
             <>
               <Styled.Left>
                 <Logo />
                 <Nav />
               </Styled.Left>
               <SearchButton />
+              <Styled.ButtonWrap>
+                <DonateButton />
+              </Styled.ButtonWrap>
             </>
           )}
         </Styled.Inner>

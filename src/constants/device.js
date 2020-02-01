@@ -1,9 +1,9 @@
-const size = {
-  tablet: '768px',
-  laptop: '1024px',
+export const size = {
+  tablet: 768,
+  laptop: 1024,
 };
 
 export default {
-  tablet: `(max-width: ${size.tablet})`,
-  laptop: `(max-width: ${size.laptop})`,
+  tablet: `(max-width: ${size.tablet}px)`,
+  laptop: `(max-width: ${size.laptop}px)`,
 };

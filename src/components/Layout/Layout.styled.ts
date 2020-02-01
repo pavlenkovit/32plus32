@@ -17,7 +17,7 @@ const Main = styled.main`
 
 const BreadCrumbs = styled.div`
   margin-top: 66px;
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     margin-top: 48px;
   }
 `;

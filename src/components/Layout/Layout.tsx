@@ -9,6 +9,7 @@ import MobileMenu from './components/MobileMenu';
 
 import Styled from './Layout.styled';
 import useWindowWidth from '../../hooks/useWindowWidth';
+import { size } from '../../constants/device';
 
 const Layout: FC = ({ children }) => {
   const windowWidth = useWindowWidth();
@@ -43,7 +44,7 @@ const Layout: FC = ({ children }) => {
         />
         <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
       </Head>
-      {(windowWidth !== 0 && windowWidth <= 768) && <MobileMenu />}
+      {(windowWidth !== 0 && windowWidth <= size.laptop) && <MobileMenu />}
       <div id="header">
         <Header />
         <Styled.BreadCrumbs id="breadcrumbs" />

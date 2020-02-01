@@ -22,7 +22,7 @@ const Title = styled.h2`
   margin: 0 0 0.75em;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
 `;
 
 export default { Container, Title };

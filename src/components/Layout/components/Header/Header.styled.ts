@@ -13,7 +13,7 @@ const Container = styled.header`
   & > div:first-child {
     height: 100%;
   }
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     height: 48px;
   }
 `;
@@ -28,6 +28,7 @@ const Inner = styled.div`
 const Left = styled.div`
   display: flex;
   align-items: center;
+  flex: 1 1 auto;
 `;
 
 const MobileWrapper = styled.div`
@@ -35,4 +36,8 @@ const MobileWrapper = styled.div`
   align-items: center;
 `;
 
-export default { Container, Inner, Left, MobileWrapper };
+const ButtonWrap = styled.div`
+  margin-left: 15px;
+`;
+
+export default { Container, Inner, Left, MobileWrapper, ButtonWrap };

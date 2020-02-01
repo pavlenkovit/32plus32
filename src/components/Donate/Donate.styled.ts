@@ -22,15 +22,35 @@ const Avatars = styled.div`
   display: flex;
   flex-wrap: wrap;
   & img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border: solid 2px #f4f4f4;
     border-radius: 50%;
     display: block;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin-right: 10px;
   }
 `;
 
+const CommentsList = styled.div`
 
-export default { Main, Col, Avatars };
+`;
+
+const Comment = styled.div`
+  margin-bottom: 7px;
+`;
+
+const Hide = styled.span`
+  color: #9B9FA3;
+`;
+
+const Price = styled.span`
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 3px 5px;
+  border-radius: 1px;
+  margin-left: 10px;
+  background: #9B9FA3;
+`;
+
+export default { Main, Col, Avatars, CommentsList, Comment, Price, Hide };

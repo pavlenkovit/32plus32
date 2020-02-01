@@ -30,7 +30,7 @@ const Item = styled.li`
 const Link = styled.a`
   display: block;
   white-space: nowrap;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
   font-weight: 500;
   text-decoration: none;
   padding: 4px 15px;
