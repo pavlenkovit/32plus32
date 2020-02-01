@@ -32,7 +32,8 @@ const Donate: FC = () => {
             width="100%"
             height="325"
             frameBorder="0"
-            allowTransparency
+            // @ts-ignore
+            allowTransparency="true"
             scrolling="no"
           />
         </Styled.Col>
