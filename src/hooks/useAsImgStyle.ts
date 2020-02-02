@@ -8,7 +8,7 @@ interface IImgParams {
   }
 }
 
-function useAsImgStyle(src: string, dummy: string = '/img/dummy.png'): IImgParams {
+function useAsImgStyle(src: string, dummy: string = '/img/dummy.png', array: any[] = []): IImgParams {
   const initParams = {
     style: {
       backgroundImage: `url(${dummy})`,
@@ -23,7 +23,7 @@ function useAsImgStyle(src: string, dummy: string = '/img/dummy.png'): IImgParam
         backgroundImage: `url(${src})`,
       },
     });
-  }, []);
+  }, array);
 
   return params;
 }

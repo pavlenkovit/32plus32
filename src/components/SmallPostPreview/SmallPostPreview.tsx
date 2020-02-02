@@ -18,7 +18,7 @@ const SmallPostPreview: FC<IProps> = ({ post }) => {
   const href = '/post/[slug]';
   const as = `/post/${slug}`;
   const imgPath = getImgPath(featuredmedia, fimg_url, 'medium');
-  const imgParams = useAsImgStyle(imgPath);
+  const imgParams = useAsImgStyle(imgPath, '/img/dummy.png', [slug]);
 
   return (
     <Styled.Container itemScope itemType="http://schema.org/Article">
