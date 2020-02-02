@@ -24,7 +24,7 @@ const Container = styled.div < IContainer > `
   height: ${({ isRect }) => {
     return isRect ? 764 : 955;
   }}px;
-  background: rgba(41,41,41,0.9);
+  background: rgba(41,41,41,0.85);
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -55,14 +55,14 @@ const TopContent = styled.div`
 
 const Title = styled.div`
   text-transform: uppercase;
-  font-size: 58px;
+  font-size: 56px;
   font-weight: 600;
   line-height: 1.2;
 `;
 
 const Date = styled.div`
   font-weight: 600;
-  font-size: 36px;
+  font-size: 40px;
   color: #e24242;
   margin-bottom: 5px;
   //color: rgba(255, 255, 255, 0.65);

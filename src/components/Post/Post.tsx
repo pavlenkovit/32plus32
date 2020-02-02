@@ -8,20 +8,15 @@ import MainTitle from '../MainTitle';
 import { IPost } from '../../models/wp';
 import useImgParams from '../../hooks/useImgParams';
 import useWindowWidth from '../../hooks/useWindowWidth';
-import useContent from '../../hooks/useContent';
-import useHandleObservers from '../../hooks/useHandleObservers';
 
 import Styled from './Post.styled';
 
 const Post: FC<IPost> = (props) => {
   const { title, content, date, modified, fimg_url, _embedded: { author } } = props;
   const renderedTitle: any = ReactHTMLParser(title.rendered)[0];
-  const newContent = useContent(content.rendered);
   const imgParams = useImgParams(fimg_url);
   const windowWidth = useWindowWidth();
   const container = useRef<HTMLDivElement>(null);
-
-  useHandleObservers(container.current, newContent);
 
   return (
     <article itemScope itemType="http://schema.org/Article">
@@ -43,14 +38,14 @@ const Post: FC<IPost> = (props) => {
         itemProp="articleBody"
         ref={container}
         // @ts-ignore
-        dangerouslySetInnerHTML={{ __html: newContent }}
+        dangerouslySetInnerHTML={{ __html: content.rendered }}
       />
-      {windowWidth > 1350 && (
+      {windowWidth > 1060 && (
         <StickyContainer>
           <Share />
         </StickyContainer>
       )}
-      {(windowWidth && windowWidth <= 1350) && (
+      {(windowWidth && windowWidth <= 1060) && (
         <Share isInline />
       )}
     </article>

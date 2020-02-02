@@ -23,20 +23,11 @@ const BreadCrumbs = styled.div`
 `;
 
 const Inner = styled.div`
-  display: flex;
 `;
 
 const Content = styled.div`
-  flex: 1 1 auto;
-  width: 1%;
+  max-width: 920px;
+  margin: 0 auto;
 `;
 
-const Sidebar = styled.div`
-  width: 300px;
-  margin-left: 30px;
-  @media ${device.tablet} {
-    display: none;
-  }
-`;
-
-export default { Container, Main, BreadCrumbs, Inner, Content, Sidebar };
+export default { Container, Main, BreadCrumbs, Inner, Content };

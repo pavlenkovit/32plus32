@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import Head from 'next/head';
 
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
 import Container from '../Container';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
@@ -23,12 +22,9 @@ const Layout: FC = ({ children }) => {
         <link rel="manifest" href="/favicons/site.webmanifest" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet" />
         <title>32PLUS32</title>
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
         <meta httpEquiv="Cache-Control" content="max-age=31536000, must-revalidate" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="32PLUS32" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -53,9 +49,6 @@ const Layout: FC = ({ children }) => {
         <Container>
           <Styled.Inner>
             <Styled.Content>{children}</Styled.Content>
-            <Styled.Sidebar>
-              {(windowWidth > 768) && <Sidebar />}
-            </Styled.Sidebar>
           </Styled.Inner>
         </Container>
       </Styled.Main>

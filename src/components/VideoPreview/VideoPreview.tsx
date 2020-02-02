@@ -6,10 +6,10 @@ const VideoPreview: FC = () => {
 
   return (
     <Styled.Main>
-      <Styled.Container isRect={isRect} src="/img/video/3.png">
+      <Styled.Container isRect={isRect} src="/img/video/5.png">
         <Styled.TopContent>
           <Styled.Date>#упражнение</Styled.Date>
-          <Styled.Title>Запрыгивания <br />на тумбу</Styled.Title>
+          <Styled.Title>Горшок</Styled.Title>
         </Styled.TopContent>
         <Styled.Brand>
           <img src="/img/logo.png" alt="32PLUS32" />
