@@ -3,11 +3,27 @@ import Styled from './Donate.styled';
 
 const comments = [
   {
+    comment: 'Спасибо! Так держать!',
+    date: '2 фев',
+    year: 2020,
+    price: 100,
+  },
+  {
+    comment: 'На развитие. Павел А',
+    date: '2 фев',
+    year: 2020,
+    price: 500,
+  },
+  {
     comment: 'Спасибо за работу!',
+    date: '1 фев',
+    year: 2020,
     price: 100,
   },
   {
     comment: '',
+    date: '1 фев',
+    year: 2020,
     price: 200,
   },
 ];
@@ -43,8 +59,13 @@ const Donate: FC = () => {
         {comments.map((item, idx) => {
           return (
             <Styled.Comment key={idx}>
-              {item.comment !== '' ? item.comment : <Styled.Hide>Без комментария</Styled.Hide>}
-              <Styled.Price>{item.price} руб.</Styled.Price>
+              <Styled.Date>
+                <div>{item.date}</div>
+                <div>{item.year} г</div>
+              </Styled.Date>
+              <Styled.Wallet />
+              <Styled.Text>{item.comment !== '' ? item.comment : <Styled.Hide>Без комментария</Styled.Hide>}</Styled.Text>
+              <Styled.Price>+ {item.price} ₽</Styled.Price>
             </Styled.Comment>
           );
         })}

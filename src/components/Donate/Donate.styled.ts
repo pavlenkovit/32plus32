@@ -36,21 +36,44 @@ const CommentsList = styled.div`
 `;
 
 const Comment = styled.div`
-  margin-bottom: 7px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #f4f4f4;
+`;
+
+const Date = styled.div`
+  margin-right: 15px;
+  font-size: 0.75em;
+  text-align: center;
+  & div:nth-child(2) {
+    color: #9B9FA3;
+  }
+`;
+
+const Text = styled.div`
+  flex: 1 1 auto;
+  width: 1%;
 `;
 
 const Hide = styled.span`
   color: #9B9FA3;
 `;
 
-const Price = styled.span`
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  padding: 3px 5px;
-  border-radius: 1px;
-  margin-left: 10px;
-  background: #9B9FA3;
+const Wallet = styled.div`
+  background: #f4f4f4;
+  background-image: url('/img/wallet.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 15px;
 `;
 
-export default { Main, Col, Avatars, CommentsList, Comment, Price, Hide };
+const Price = styled.div`
+  color: #04a504;
+`;
+
+export default { Main, Col, Avatars, CommentsList, Comment, Price, Text, Hide, Date, Wallet };

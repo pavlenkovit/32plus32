@@ -20,7 +20,7 @@ interface IContainer {
 
 const Container = styled.div < IContainer > `
   width: 764px;
-  height: 955px;
+  height: ${({ isRect }) => { return isRect ? 764 : 955; }}px;
   background: #292929;
   position: relative;
   box-sizing: border-box;
@@ -28,9 +28,6 @@ const Container = styled.div < IContainer > `
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  &.rect {
-    height: 764px;
-  }
 `;
 
 const Img = styled.img`
