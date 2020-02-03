@@ -36,6 +36,10 @@ const arr = [
     loc: `${site}/blog`,
     lastmod: date,
   },
+  {
+    loc: `${site}/donate`,
+    lastmod: date,
+  },
 ];
 
 const pushPost = (list) => {

@@ -3,18 +3,29 @@ import device from '../../constants/device';
 
 const Main = styled.div`
   display: flex;
-  flex-wrap: wrap;
   margin: 0 -15px;
+  @media ${device.laptop} {
+    flex-wrap: wrap;
+  }
 `;
 
 const Col = styled.div`
-  max-width: 50%;
-  flex: 0 0 50%;
   box-sizing: border-box;
   padding: 0 15px;
+  &:first-child {
+    flex: 1 1 auto;
+    width: 1%;
+  }
+  &:last-child {
+    width: 380px;
+  }
   @media ${device.laptop} {
-    max-width: 100%;
-    flex: 0 0 100%;
+   &:first-child {
+     width: 100%;
+   }
+   &:last-child {
+     width: 100%;
+   }
   }
 `;
 
