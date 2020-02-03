@@ -47,9 +47,9 @@ const Layout: FC = ({ children }) => {
       </div>
       <Styled.Main>
         <Container>
-          <Styled.Inner>
+          <div>
             <Styled.Content>{children}</Styled.Content>
-          </Styled.Inner>
+          </div>
         </Container>
       </Styled.Main>
       <Footer />

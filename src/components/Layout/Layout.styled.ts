@@ -4,7 +4,6 @@ import device from '../../constants/device';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 `;
 
 const Main = styled.main`
@@ -12,7 +11,8 @@ const Main = styled.main`
   flex: 1 1 auto;
   height: 1%;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 110px);
+  box-sizing: border-box;
 `;
 
 const BreadCrumbs = styled.div`
@@ -22,12 +22,9 @@ const BreadCrumbs = styled.div`
   }
 `;
 
-const Inner = styled.div`
-`;
-
 const Content = styled.div`
   max-width: 920px;
   margin: 0 auto;
 `;
 
-export default { Container, Main, BreadCrumbs, Inner, Content };
+export default { Container, Main, BreadCrumbs, Content };

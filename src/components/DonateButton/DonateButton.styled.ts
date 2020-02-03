@@ -4,7 +4,7 @@ const Button = styled.a`
   background: #e24242;
   color: #fff;
   text-decoration: none;
-  padding: 6px 13px 7px;
+  padding: 8px 14px 9px;
   border-radius: 1px;
   letter-spacing: 0.075em;
   font-weight: 500;

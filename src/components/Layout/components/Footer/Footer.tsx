@@ -7,6 +7,7 @@ import FooterList from './components/FooterList';
 import Social from './components/Social';
 
 import Styled from './Footer.styled';
+import DonateButton from '../../../DonateButton';
 
 const Footer: FC = () => {
   return (
@@ -82,6 +83,9 @@ const Footer: FC = () => {
           </FooterSidebar>
           <FooterSidebar title="Мы в соцсетях">
             <Social />
+          </FooterSidebar>
+          <FooterSidebar>
+            <DonateButton />
           </FooterSidebar>
         </Styled.Row>
         <Styled.Copy>
