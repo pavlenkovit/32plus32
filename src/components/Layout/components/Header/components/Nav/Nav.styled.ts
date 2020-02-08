@@ -44,10 +44,10 @@ const Link = styled.a`
 
   &:hover {
     text-decoration: none;
-    color: #e24242;
+    color: ${({ theme }) => theme.colors.primary};
 
     & path {
-      fill: #e24242
+      fill: ${({ theme }) => theme.colors.primary};
     }
   }
 

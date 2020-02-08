@@ -5,7 +5,7 @@ const Container = styled.div`
   top: 100%;
   left: 0;
   width: 100%;
-  background: #e24242;
+  background: ${({ theme }) => theme.colors.primary};
   color: #fff;
   z-index: 3;
   transition: height .2s ease-out;
@@ -23,7 +23,7 @@ const Input = styled.input`
   font-size: 1em;
   outline: none;
   border: none;
-  background: #e24242;
+  background: ${({ theme }) => theme.colors.primary};
   color: inherit;
   margin-right: 15px;
 

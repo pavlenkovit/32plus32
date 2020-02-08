@@ -65,7 +65,7 @@ const Title = styled.div`
   font-size: 27px;
   & strong {
     font-weight: 600;
-    color: #e24242
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 
@@ -80,7 +80,7 @@ const More = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background: #e24242;
+  background: ${({ theme }) => theme.colors.primary};
   z-index: 1;
   box-shadow: 0 0 40px 40px #292929;
   padding: 10px 15px 11px;

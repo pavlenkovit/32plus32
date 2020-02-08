@@ -60,10 +60,10 @@ const Title = styled.div`
   line-height: 1.2;
 `;
 
-const Date = styled.div`
+const Tag = styled.div`
   font-weight: 600;
   font-size: 40px;
-  color: #e24242;
+  color: ${({ theme }) => theme.colors.primary};
   margin-bottom: 5px;
   //color: rgba(255, 255, 255, 0.65);
 `;
@@ -90,4 +90,4 @@ const Buttons = styled.div`
   }
 `;
 
-export default { Main, Container, TopContent, Title, Date, Brand, Buttons };
+export default { Main, Container, TopContent, Title, Tag, Brand, Buttons };

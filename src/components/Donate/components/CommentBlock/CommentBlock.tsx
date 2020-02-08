@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Styled from './CommentBlock.styled';
 
 interface IProps {
-  comment: string;
+  comment?: string;
   date: string;
   year: number;
   price: number;
@@ -16,7 +16,7 @@ const CommentBlock: FC<IProps> = ({ date, year, comment, price }) => {
         <div>{year} г</div>
       </Styled.Date>
       <Styled.Wallet />
-      <Styled.Text>{comment !== '' ? comment : <Styled.Hide>Без комментария</Styled.Hide>}</Styled.Text>
+      <Styled.Text>{comment || <Styled.Hide>Без комментария</Styled.Hide>}</Styled.Text>
       <Styled.Price>+ {price} ₽</Styled.Price>
     </Styled.Container>
   );

@@ -17,11 +17,6 @@ const Col = styled.div`
   }
 `;
 
-const Content = styled(Col)`
-  flex: 1 1 auto;
-  width: 1%;
-`;
-
 const Form = styled(Col)`
   width: 380px;
   margin-top: 15px;
@@ -38,6 +33,11 @@ const Avatars = styled.div`
     display: block;
     margin-right: 10px;
   }
+`;
+
+const Content = styled(Col)`
+  flex: 1 1 auto;
+  width: 1%;
 `;
 
 export default { Main, Avatars, Content, Form };

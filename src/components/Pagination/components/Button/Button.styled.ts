@@ -16,10 +16,10 @@ const Link = styled.a`
     }
   }
   &:hover {
-    color: #e24242;
+    color: ${({ theme }) => theme.colors.primary};
     & svg {
       & path {
-        fill: #e24242;
+        fill: ${({ theme }) => theme.colors.primary};
       }
     }
   }

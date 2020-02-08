@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Link = styled.a`
-  color: #e24242;
+  color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
   display: block;
   padding: .2em .5em;

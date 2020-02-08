@@ -6,7 +6,7 @@ const Title = styled.h2`
     text-decoration: none;
     color: inherit;
     &:hover {
-      color: #e24242;
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 `;

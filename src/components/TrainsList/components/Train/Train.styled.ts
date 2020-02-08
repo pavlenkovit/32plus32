@@ -11,7 +11,7 @@ const Title = styled.h2`
     text-decoration: none;
     color: inherit;
     &:hover {
-      color: #e24242;
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
   @media ${device.tablet} {
@@ -64,7 +64,7 @@ const Action = styled.a`
 
   &:hover {
     text-decoration: none;
-    color: #e24242;
+    color: ${({ theme }) => theme.colors.primary};
     & svg {
       transform: rotate(-90deg) translateY(7px);
     }
