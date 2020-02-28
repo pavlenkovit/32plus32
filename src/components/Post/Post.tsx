@@ -19,36 +19,38 @@ const Post: FC<IPost> = (props) => {
   const container = useRef<HTMLDivElement>(null);
 
   return (
-    <article itemScope itemType="http://schema.org/Article">
-      <meta itemProp="datePublished" content={date} />
-      <meta itemProp="dateModified" content={modified} />
-      <MainTitle itemProp="headline name">{renderedTitle}</MainTitle>
-      <Styled.Info>
-        <Author
-          {...author[0]}
-          date={date}
+    <>
+      <article itemScope itemType="http://schema.org/Article">
+        <meta itemProp="datePublished" content={date} />
+        <meta itemProp="dateModified" content={modified} />
+        <MainTitle itemProp="headline name">{renderedTitle}</MainTitle>
+        <Styled.Info>
+          <Author
+            {...author[0]}
+            date={date}
+          />
+        </Styled.Info>
+        {fimg_url && (
+          <div>
+            <Styled.Img {...imgParams} alt={renderedTitle} itemProp="image" />
+          </div>
+        )}
+        <Styled.Content
+          itemProp="articleBody"
+          ref={container}
+          // @ts-ignore
+          dangerouslySetInnerHTML={{ __html: content.rendered }}
         />
-      </Styled.Info>
-      {fimg_url && (
-        <div>
-          <Styled.Img {...imgParams} alt={renderedTitle} itemProp="image" />
-        </div>
-      )}
-      <Styled.Content
-        itemProp="articleBody"
-        ref={container}
-        // @ts-ignore
-        dangerouslySetInnerHTML={{ __html: content.rendered }}
-      />
-      {windowWidth > 1060 && (
-        <StickyContainer>
-          <Share />
-        </StickyContainer>
-      )}
-      {(windowWidth && windowWidth <= 1060) && (
-        <Share isInline />
-      )}
-    </article>
+        {windowWidth > 1060 && (
+          <StickyContainer>
+            <Share />
+          </StickyContainer>
+        )}
+        {(windowWidth && windowWidth <= 1060) && (
+          <Share isInline />
+        )}
+      </article>
+    </>
   );
 };
 
