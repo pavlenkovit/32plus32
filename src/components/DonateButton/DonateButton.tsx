@@ -3,12 +3,13 @@ import Link from 'next/link';
 import Styled from './DonateButton.styled';
 
 interface IProps {
+  text?: string;
 }
 
-const DonateButton: FC<IProps> = () => {
+const DonateButton: FC<IProps> = ({ text = 'Поддержать проект' }) => {
   return (
     <Link href="/donate" passHref>
-      <Styled.Button>Поддержать проект</Styled.Button>
+      <Styled.Button>{text}</Styled.Button>
     </Link>
   );
 };

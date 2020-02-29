@@ -59,14 +59,16 @@ blockquote cite {
 
 figure {
   margin: 1.33em 0;
+  text-align: center;
 }
 
 figure img {
   display: block;
+  margin: 0 auto;
 }
 
 figcaption {
-  background: #f4f4f4;
+  //background: #f4f4f4;
   margin-top: 0;
   font-style: italic;
   color: #9B9FA3;

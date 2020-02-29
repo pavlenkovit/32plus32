@@ -9,6 +9,7 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 import CustomHead from '../../components/CustomHead';
 import getMeta from '../../utils/getMeta';
 import { IPost } from '../../models/wp';
+import DonateEnd from '../../components/DonateEnd';
 
 interface IProps {
   post: IPost;
@@ -36,6 +37,7 @@ const PostPage: NextPage<IProps> = ({ post }) => {
         ]}
       />
       <Post {...post} />
+      <DonateEnd>Понравилась статья? Поддержите нас</DonateEnd>
     </>
   );
 };
