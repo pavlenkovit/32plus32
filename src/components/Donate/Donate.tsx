@@ -56,6 +56,7 @@ const Donate: FC = () => {
         <img src="/avatars/pavlenko_32plus32.jpg" alt="Павленко Виталий" />
         <img src="/avatars/sergey_rudnev.jpg" alt="Руднев Сергей" />
         <img src="/avatars/davydik.jpg" alt="Давыдик Дмитрий" />
+        <img src="/avatars/voronin.jpg" alt="Илья Воронин" />
       </Styled.Avatars>
       <Styled.Main>
         <Styled.Content>
