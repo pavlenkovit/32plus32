@@ -4,6 +4,29 @@ import CommentBlock from './components/CommentBlock/CommentBlock';
 
 const comments = [
   {
+    comment: 'Циклим дальше! Павел А',
+    date: '1 мар',
+    year: 2020,
+    price: 500,
+  },
+  {
+    comment: 'Спасибо!',
+    date: '1 мар',
+    year: 2020,
+    price: 200,
+  },
+  {
+    date: '1 мар',
+    year: 2020,
+    price: 200,
+  },
+  {
+    comment: 'Спасибо за тренировки!!!',
+    date: '1 мар',
+    year: 2020,
+    price: 200,
+  },
+  {
     date: '28 фев',
     year: 2020,
     price: 200,
