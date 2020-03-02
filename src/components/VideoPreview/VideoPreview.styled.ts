@@ -55,7 +55,7 @@ const TopContent = styled.div`
 
 const Title = styled.div`
   text-transform: uppercase;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 1.2;
 `;

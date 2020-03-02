@@ -35,9 +35,15 @@ const Avatars = styled.div`
   }
 `;
 
+const ImgMoney = styled.img`
+  margin-bottom: -0.25em;
+  width: 60px;
+  margin-right: 0.15em;
+`;
+
 const Content = styled(Col)`
   flex: 1 1 auto;
   width: 1%;
 `;
 
-export default { Main, Avatars, Content, Form };
+export default { Main, Avatars, Content, Form, ImgMoney };

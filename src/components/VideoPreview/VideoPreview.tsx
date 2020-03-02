@@ -6,10 +6,10 @@ const VideoPreview: FC = () => {
 
   return (
     <Styled.Main>
-      <Styled.Container isRect={isRect} src="/img/video/prised-art.jpg">
+      <Styled.Container isRect={isRect} src="https://api.32plus32.ru/wp-content/uploads/2020/03/fatigue.jpg">
         <Styled.TopContent>
           <Styled.Tag>#статья</Styled.Tag>
-          <Styled.Title>Фундаментальные аспекты подседа: <br />совершенствование толчка гирь</Styled.Title>
+          <Styled.Title>Перетренированность<br />и методы восстановления</Styled.Title>
         </Styled.TopContent>
         <Styled.Brand>
           <img src="/img/logo.png" alt="32PLUS32" />

@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://32plus32.ru/</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings/dv</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings/dc</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/blog</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/donate</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/page/trenirovki-po-dlinnomu-ciklu</loc>
@@ -46,43 +46,51 @@
   </url>
   <url>
     <loc>https://32plus32.ru/category/null</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/vosstanovlenie</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/lichnosti</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/nauchnye-stati</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/novosti</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/dvoeborie</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/dc</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/planirovanie-trenirovok</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/tehnika</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/trenirovki</loc>
-    <lastmod>2020-02-29</lastmod>
+    <lastmod>2020-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-2-03-20</loc>
+    <lastmod>2020-03-01</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/peretrenirovannost-i-metody-vosstanovleniya</loc>
+    <lastmod>2020-03-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/post/fundamentalnye-aspekty-podseda</loc>
@@ -106,7 +114,7 @@
   </url>
   <url>
     <loc>https://32plus32.ru/post/dc-24-02-20</loc>
-    <lastmod>2020-02-23</lastmod>
+    <lastmod>2020-03-01</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/post/dc-22-02-20</loc>
@@ -1275,13 +1283,5 @@
   <url>
     <loc>https://32plus32.ru/post/kak-lechit-sorvannye-mozoli-na-rukax</loc>
     <lastmod>2019-11-23</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/post/plan-trenirovok-po-girevomu-sportu-dlya-novichkov</loc>
-    <lastmod>2018-11-25</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-19-06-17</loc>
-    <lastmod>2018-11-10</lastmod>
   </url>
 </urlset>
