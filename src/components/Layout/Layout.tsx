@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import Head from 'next/head';
 
 import Header from './components/Header';
-import Container from '../Container';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
@@ -46,11 +45,7 @@ const Layout: FC = ({ children }) => {
         <Styled.BreadCrumbs id="breadcrumbs" />
       </div>
       <Styled.Main>
-        <Container>
-          <div>
-            <Styled.Content>{children}</Styled.Content>
-          </div>
-        </Container>
+        {children}
       </Styled.Main>
       <Footer />
     </Styled.Container>

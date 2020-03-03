@@ -22,9 +22,4 @@ const BreadCrumbs = styled.div`
   }
 `;
 
-const Content = styled.div`
-  max-width: 920px;
-  margin: 0 auto;
-`;
-
-export default { Container, Main, BreadCrumbs, Content };
+export default { Container, Main, BreadCrumbs };

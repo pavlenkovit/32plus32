@@ -4,6 +4,11 @@ import CommentBlock from './components/CommentBlock/CommentBlock';
 
 const comments = [
   {
+    date: '3 мар',
+    year: 2020,
+    price: 300,
+  },
+  {
     date: '2 мар',
     year: 2020,
     price: 200,

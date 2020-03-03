@@ -10,6 +10,7 @@ import CustomHead from '../../components/CustomHead';
 import getMeta from '../../utils/getMeta';
 import { IPost } from '../../models/wp';
 import DonateEnd from '../../components/DonateEnd';
+import Container from '../../components/Container';
 
 interface IProps {
   post: IPost;
@@ -36,7 +37,9 @@ const PostPage: NextPage<IProps> = ({ post }) => {
           { title },
         ]}
       />
-      <Post {...post} />
+      <Container isSmall>
+        <Post {...post} />
+      </Container>
       <DonateEnd>Понравилась статья? Поддержите нас</DonateEnd>
     </>
   );

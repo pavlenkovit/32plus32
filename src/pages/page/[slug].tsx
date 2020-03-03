@@ -8,6 +8,7 @@ import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getMeta from '../../utils/getMeta';
 import { IPost } from '../../models/wp';
+import Container from '../../components/Container';
 
 interface IProps {
   page: IPost;
@@ -25,7 +26,9 @@ const SimplePage: NextPage<IProps> = ({ page }) => {
         {...getMeta(page)}
       />
       <Breadcrumbs items={[{ title }]} />
-      <Post {...page} />
+      <Container isSmall>
+        <Post {...page} />
+      </Container>
     </>
   );
 };

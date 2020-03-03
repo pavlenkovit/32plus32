@@ -11,6 +11,7 @@ import Pagination from '../../components/Pagination';
 import { IPost } from '../../models/wp';
 import getTotalPages from '../../utils/getTotalPages';
 import { IPaginationProps } from '../../models/pagination';
+import Container from '../../components/Container';
 
 interface IProps extends IPaginationProps {
   trainings: IPost[];
@@ -59,14 +60,16 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
           },
         ]}
       />
-      <MainTitle>{title}</MainTitle>
-      <TrainsList trainings={trainings} />
-      <Pagination
-        total={totalPages}
-        activePage={page}
-        rootHref="/trainings/[slug]"
-        rootAs={`/trainings/${slug}`}
-      />
+      <Container isSmall>
+        <MainTitle>{title}</MainTitle>
+        <TrainsList trainings={trainings} />
+        <Pagination
+          total={totalPages}
+          activePage={page}
+          rootHref="/trainings/[slug]"
+          rootAs={`/trainings/${slug}`}
+        />
+      </Container>
     </>
   );
 };
