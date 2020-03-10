@@ -9,54 +9,6 @@ const comments = [
     year: 2020,
     price: 100,
   },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '3 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 100,
-  },
-  {
-    comment: 'Циклим дальше! Павел А',
-    date: '1 мар',
-    year: 2020,
-    price: 500,
-  },
-  {
-    comment: 'Спасибо!',
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    comment: 'Спасибо за тренировки!!!',
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
 ];
 
 const DonateInfo: FC = () => {
