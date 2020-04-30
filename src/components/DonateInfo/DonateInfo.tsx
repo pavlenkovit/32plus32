@@ -4,68 +4,30 @@ import CommentBlock from './components/CommentBlock/CommentBlock';
 
 const comments = [
   {
-    date: '29 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '17 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    comment: 'Спасибо, поучительно.',
-    date: '10 мар',
-    year: 2020,
-    price: 100,
-  },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '3 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 100,
-  },
-  {
-    comment: 'Циклим дальше! Павел А',
-    date: '1 мар',
+    date: '5 апр',
     year: 2020,
     price: 500,
   },
   {
-    comment: 'Спасибо!',
-    date: '1 мар',
+    date: '4 апр',
     year: 2020,
-    price: 200,
+    price: 300,
   },
   {
-    date: '1 мар',
+    comment: 'Продолжаем! Павел А',
+    date: '3 апр',
     year: 2020,
-    price: 200,
+    price: 500,
   },
   {
-    comment: 'Спасибо за тренировки!!!',
-    date: '1 мар',
+    date: '2 апр',
     year: 2020,
-    price: 200,
+    price: 100,
+  },
+  {
+    date: '1 апр',
+    year: 2020,
+    price: 500,
   },
 ];
 
@@ -82,7 +44,7 @@ const DonateInfo: FC = () => {
         <Styled.Img src="/img/kettlebell.png" alt="" />
         <Styled.TopContent>
           <Styled.Title>
-            Поддержка проекта <strong>(февраль 2020)</strong>
+            Поддержка проекта <strong>(апрель 2020)</strong>
           </Styled.Title>
         </Styled.TopContent>
         <Styled.List>
@@ -93,7 +55,7 @@ const DonateInfo: FC = () => {
           })}
         </Styled.List>
         <Styled.All>
-          Всего собрано за февраль: <strong>{sum} ₽</strong>
+          Всего собрано за апрель: <strong>{sum} ₽</strong>
         </Styled.All>
         <Styled.Brand>
           <img src="/img/logo.png" alt="32PLUS32" />
