@@ -1,145 +1,11 @@
-import React, { FC } from 'react';
-import Styled from './Donate.styled';
+import React, { FC, useState } from 'react';
+import * as Styled from './Donate.styled';
 import CommentBlock from './components/CommentBlock/CommentBlock';
-
-const comments = [
-  {
-    date: '5 апр',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '4 апр',
-    year: 2020,
-    price: 300,
-  },
-  {
-    comment: 'Продолжаем! Павел А',
-    date: '3 апр',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '2 апр',
-    year: 2020,
-    price: 100,
-  },
-  {
-    date: '1 апр',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '29 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '17 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    comment: 'Спасибо, поучительно.',
-    date: '10 мар',
-    year: 2020,
-    price: 100,
-  },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '5 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '3 мар',
-    year: 2020,
-    price: 300,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '2 мар',
-    year: 2020,
-    price: 100,
-  },
-  {
-    comment: 'Циклим дальше! Павел А',
-    date: '1 мар',
-    year: 2020,
-    price: 500,
-  },
-  {
-    comment: 'Спасибо!',
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    comment: 'Спасибо за тренировки!!!',
-    date: '1 мар',
-    year: 2020,
-    price: 200,
-  },
-  {
-    date: '28 фев',
-    year: 2020,
-    price: 200,
-  },
-  {
-    comment: 'Так держать',
-    date: '28 фев',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '28 фев',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '8 фев',
-    year: 2020,
-    price: 150,
-  },
-  {
-    comment: 'Спасибо! Так держать!',
-    date: '2 фев',
-    year: 2020,
-    price: 100,
-  },
-  {
-    comment: 'На развитие. Павел А',
-    date: '2 фев',
-    year: 2020,
-    price: 500,
-  },
-  {
-    comment: 'Спасибо за работу!',
-    date: '1 фев',
-    year: 2020,
-    price: 100,
-  },
-  {
-    date: '1 фев',
-    year: 2020,
-    price: 200,
-  },
-];
+import comments from '../../constants/donate';
 
 const Donate: FC = () => {
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <section>
       <Styled.Avatars>
@@ -171,11 +37,16 @@ const Donate: FC = () => {
       </Styled.Main>
       <h2>Поддержали проект:</h2>
       <aside>
-        {comments.map((item, idx) => {
+        {comments.slice(0, showAll ? 100 : 15).map((item, idx) => {
           return (
             <CommentBlock key={idx} {...item} />
           );
         })}
+        {!showAll && (
+          <Styled.ButtonWrap>
+            <Styled.Button onClick={() => setShowAll(true)}>Показать еще</Styled.Button>
+          </Styled.ButtonWrap>
+        )}
       </aside>
     </section>
   );

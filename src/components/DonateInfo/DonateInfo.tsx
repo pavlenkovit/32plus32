@@ -1,50 +1,27 @@
 import React, { FC, useState } from 'react';
 import Styled from './DonateInfo.styled';
 import CommentBlock from './components/CommentBlock/CommentBlock';
-
-const comments = [
-  {
-    date: '5 апр',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '4 апр',
-    year: 2020,
-    price: 300,
-  },
-  {
-    comment: 'Продолжаем! Павел А',
-    date: '3 апр',
-    year: 2020,
-    price: 500,
-  },
-  {
-    date: '2 апр',
-    year: 2020,
-    price: 100,
-  },
-  {
-    date: '1 апр',
-    year: 2020,
-    price: 500,
-  },
-];
+import commentsAll from '../../constants/donate';
 
 const DonateInfo: FC = () => {
   const [isRect, toggleRect] = useState(false);
+
+  const currentMonth = commentsAll[0].date.slice(-3);
+  const currentYear = commentsAll[0].year;
+  const comments = commentsAll.filter((com) => com.date.indexOf(currentMonth) !== -1 && com.year === currentYear);
 
   let sum = 0;
   comments.forEach((comment) => {
     sum += comment.price;
   });
+
   return (
     <Styled.Main>
       <Styled.Container isRect={isRect}>
         <Styled.Img src="/img/kettlebell.png" alt="" />
         <Styled.TopContent>
           <Styled.Title>
-            Поддержка проекта <strong>(апрель 2020)</strong>
+            Поддержка проекта <strong>(май 2020)</strong>
           </Styled.Title>
         </Styled.TopContent>
         <Styled.List>
@@ -55,7 +32,7 @@ const DonateInfo: FC = () => {
           })}
         </Styled.List>
         <Styled.All>
-          Всего собрано за апрель: <strong>{sum} ₽</strong>
+          Всего собрано за май: <strong>{sum} ₽</strong>
         </Styled.All>
         <Styled.Brand>
           <img src="/img/logo.png" alt="32PLUS32" />
