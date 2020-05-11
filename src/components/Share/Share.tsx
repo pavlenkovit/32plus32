@@ -72,26 +72,29 @@ const Share: FC<IProps> = ({ isInline = false }) => {
   }, []);
 
   return (
-    <Styled.List isInline={isInline}>
-      <Styled.Item>
-        <Styled.Button onClick={shareVk}>
-          <VkIcon size={23} />
-          {vkCount > 0 && <Styled.Info>{vkCount}</Styled.Info>}
-        </Styled.Button>
-      </Styled.Item>
-      <Styled.Item>
-        <Styled.Button onClick={shareFb}>
-          <FbIcon />
-          {fbCount > 0 && <Styled.Info>{fbCount}</Styled.Info>}
-        </Styled.Button>
-      </Styled.Item>
-      <Styled.Item>
-        <Styled.Button onClick={shareOk}>
-          <OkIcon />
-          {okCount > 0 && <Styled.Info>{okCount}</Styled.Info>}
-        </Styled.Button>
-      </Styled.Item>
-    </Styled.List>
+    <>
+      <Styled.List isInline={isInline}>
+        {isInline && <Styled.Item><Styled.ShareTitle>Поделиться:</Styled.ShareTitle></Styled.Item>}
+        <Styled.Item>
+          <Styled.Button onClick={shareVk}>
+            <VkIcon size={23} />
+            {vkCount > 0 && <Styled.Info>{vkCount}</Styled.Info>}
+          </Styled.Button>
+        </Styled.Item>
+        <Styled.Item>
+          <Styled.Button onClick={shareFb}>
+            <FbIcon />
+            {fbCount > 0 && <Styled.Info>{fbCount}</Styled.Info>}
+          </Styled.Button>
+        </Styled.Item>
+        <Styled.Item>
+          <Styled.Button onClick={shareOk}>
+            <OkIcon />
+            {okCount > 0 && <Styled.Info>{okCount}</Styled.Info>}
+          </Styled.Button>
+        </Styled.Item>
+      </Styled.List>
+    </>
   );
 };
 

@@ -66,6 +66,7 @@ const List = styled.div < IList > `
   `}
   ${({ isInline }) => isInline && `
     justify-content: center;
+    margin-bottom: 1em;
     & ${Button} {
       flex-direction: row;
     }
@@ -84,4 +85,9 @@ const List = styled.div < IList > `
   `}
 `;
 
-export default { Item, Button, Info, List };
+const ShareTitle = styled.span`
+  color: #9B9FA3;
+  margin-right: 5px;
+`;
+
+export default { Item, Button, Info, List, ShareTitle };

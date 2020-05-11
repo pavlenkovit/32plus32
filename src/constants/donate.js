@@ -1,5 +1,10 @@
 export default [
   {
+    date: '10 мая',
+    year: 2020,
+    price: 100,
+  },
+  {
     comment: 'Спасибо за тренировки. Клюхин Сергей',
     date: '1 мая',
     year: 2020,

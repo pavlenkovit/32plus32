@@ -39,8 +39,8 @@ const PostPage: NextPage<IProps> = ({ post }) => {
       />
       <Container isSmall>
         <Post {...post} />
+        <DonateEnd>Понравилась статья? Поддержите нас</DonateEnd>
       </Container>
-      <DonateEnd>Понравилась статья? Поддержите нас</DonateEnd>
     </>
   );
 };

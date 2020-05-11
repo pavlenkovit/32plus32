@@ -68,8 +68,8 @@ const TrainPage: NextPage<IProps> = ({ train }) => {
       />
       <Container isSmall>
         <Post {...train} title={{ rendered: title }} />
+        <DonateEnd>Нравятся тренировки? Поддержите нас</DonateEnd>
       </Container>
-      <DonateEnd>Нравятся тренировки? Поддержите нас</DonateEnd>
     </>
   );
 };

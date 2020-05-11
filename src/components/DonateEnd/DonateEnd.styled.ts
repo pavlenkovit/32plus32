@@ -1,16 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.aside`
-  position: relative;
-  background: #f4f4f4;
+  border-top: 1px solid #dee2e6;
 `;
 
-export const Inner = styled.div`
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 30px 0;
-`;
-
-export const Title = styled.h3`
-  margin: 0 0 1em;
+export const Title = styled.h2`
+  //margin: 0 0 1em;
 `;

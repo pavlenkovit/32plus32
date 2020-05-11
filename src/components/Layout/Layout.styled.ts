@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.main`
-  padding: 30px 0;
+  padding: 50px 0;
   flex: 1 1 auto;
   height: 1%;
   position: relative;
