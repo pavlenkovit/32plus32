@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
-import Styled from './Layout.styled';
+import * as Styled from './Layout.styled';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import { size } from '../../constants/device';
 
