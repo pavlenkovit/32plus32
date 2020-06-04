@@ -1,5 +1,10 @@
 export default [
   {
+    date: '4 июн',
+    year: 2020,
+    price: 300,
+  },
+  {
     date: '1 июн',
     year: 2020,
     price: 300,
