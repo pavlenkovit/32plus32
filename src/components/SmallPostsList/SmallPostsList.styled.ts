@@ -12,10 +12,7 @@ const Title = styled.h2`
 `;
 
 const Block = styled.div`
-  background: #f4f4f4;
-  border-radius: 2px;
-  padding: 15px;
-  margin: 0 -15px 30px;
+  margin-bottom: 30px;
 `;
 
 export default { Title, Block };

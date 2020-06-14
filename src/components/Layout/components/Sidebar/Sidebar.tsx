@@ -32,7 +32,9 @@ class Sidebar extends PureComponent<{}, IState> {
 
   componentDidMount() {
     window.addEventListener('scroll', this.setPosition);
-    this.setPosition();
+    setTimeout(() => {
+      this.setPosition();
+    }, 0);
   }
 
   componentWillUnmount() {
@@ -64,13 +66,12 @@ class Sidebar extends PureComponent<{}, IState> {
     const windowHeight = window.innerHeight;
     const rect = sidebar.getBoundingClientRect();
     // @ts-ignore
-    const offsetTop = document.querySelector('#header').offsetHeight + 30;
-
+    const offsetTop = document.querySelector('#header').offsetHeight + 50;
     this.scrollDirection();
 
     this.sidebarOverflow = sidebarHeight > windowHeight;
 
-    if (y < offsetTop - 15) { // в зоне хедера
+    if (y < 0) { // в зоне хедера
       this.updatePosition(false, false, 0);
       return;
     }
@@ -99,14 +100,14 @@ class Sidebar extends PureComponent<{}, IState> {
         }
 
         if (isFixedTop) { // если поменяли направление при прибитом к верху сайдбару
-          this.updatePosition(false, false, y - offsetTop + 15);
+          this.updatePosition(false, false, y);
           return;
         }
       }
 
       if (!this.downDirectionScroll) { // листаем вверх
         if (!isFixedTop) {
-          if (rect.y - 15 > 0) {
+          if (rect.y - offsetTop > 0) {
             this.updatePosition(true, false, 0);
             return;
           }

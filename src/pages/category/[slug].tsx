@@ -11,7 +11,6 @@ import Pagination from '../../components/Pagination';
 import { ICategory, IPost } from '../../models/wp';
 import getTotalPages from '../../utils/getTotalPages';
 import { IPaginationProps } from '../../models/pagination';
-import Container from '../../components/Container';
 
 interface IProps extends IPaginationProps {
   category: ICategory;
@@ -27,17 +26,15 @@ const CategoryPage: NextPage<IProps> = (props) => {
         title={category.name}
         type="blog.category"
       />
-      <Breadcrumbs items={[{ title: category.name }]} />
-      <Container isSmall>
-        <MainTitle>{category.name}</MainTitle>
-        <PostsList posts={posts} />
-        <Pagination
-          total={totalPages}
-          activePage={page}
-          rootHref="/category/[slug]"
-          rootAs={`/category/${category.slug}`}
-        />
-      </Container>
+      <Breadcrumbs />
+      <MainTitle>{category.name}</MainTitle>
+      <PostsList posts={posts} />
+      <Pagination
+        total={totalPages}
+        activePage={page}
+        rootHref="/category/[slug]"
+        rootAs={`/category/${category.slug}`}
+      />
     </>
   );
 };

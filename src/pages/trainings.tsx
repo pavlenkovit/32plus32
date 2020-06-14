@@ -5,7 +5,6 @@ import Link from 'next/link';
 import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
-import Container from '../components/Container';
 
 const TrainingsPage: NextPage = () => {
   const title = 'Тренировки по гиревому спорту';
@@ -19,22 +18,20 @@ const TrainingsPage: NextPage = () => {
         description={description}
         keywords={keywords}
       />
-      <Breadcrumbs items={[{ title: 'Тренировки' }]} />
-      <Container isSmall>
-        <MainTitle>{title}</MainTitle>
+      <Breadcrumbs />
+      <MainTitle>{title}</MainTitle>
+      <div>
         <div>
-          <div>
-            <Link href="/trainings/[slug]" as="/trainings/dv" passHref>
-              <a>Тренировки по классическому двоеборью</a>
-            </Link>
-          </div>
-          <div>
-            <Link href="/trainings/[slug]" as="/trainings/dc" passHref>
-              <a>Тренировки по длинному циклу</a>
-            </Link>
-          </div>
+          <Link href="/trainings/[slug]" as="/trainings/dv" passHref>
+            <a>Тренировки по классическому двоеборью</a>
+          </Link>
         </div>
-      </Container>
+        <div>
+          <Link href="/trainings/[slug]" as="/trainings/dc" passHref>
+            <a>Тренировки по длинному циклу</a>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

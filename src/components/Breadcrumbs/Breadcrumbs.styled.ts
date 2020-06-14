@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background: #f4f4f4;
-  padding: 10px 0;
   font-size: 0.9em;
   color: #9B9FA3;
+  margin-bottom: 15px;
 `;
 
 const List = styled.ul`
@@ -18,7 +17,7 @@ const List = styled.ul`
 const Item = styled.li`
   white-space: nowrap;
   &:after {
-    content: '/';
+    content: '❯';
     margin: 0 10px;
   }
   &:last-child {
@@ -26,12 +25,14 @@ const Item = styled.li`
     width: 1%;
     overflow: hidden;
     text-overflow: ellipsis;
-    &:after {
-      content: '';
-    }
   }
   & a {
     white-space: nowrap;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+    }
   }
 `;
 

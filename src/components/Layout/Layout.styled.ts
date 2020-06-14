@@ -4,6 +4,7 @@ import device from '../../constants/device';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 100vh !important;
 `;
 
 export const Main = styled.main`
@@ -11,13 +12,35 @@ export const Main = styled.main`
   flex: 1 1 auto;
   height: 1%;
   position: relative;
-  min-height: calc(100vh - 110px);
   box-sizing: border-box;
+  display: flex;
+  margin-top: 66px;
+  @media ${device.laptop} {
+    margin-top: 48px;
+  }
+`;
+
+export const InnerContainer = styled.div`
+  display: flex;
+`;
+
+export const Content = styled.div`
+  flex: 1 1 auto;
+  position:relative;
+  width: 1%;
 `;
 
 export const BreadCrumbs = styled.div`
   margin-top: 66px;
   @media ${device.laptop} {
     margin-top: 48px;
+  }
+`;
+
+export const SidebarWrapper = styled.div`
+  width: 300px;
+  margin-left: 30px;
+  @media ${device.laptop} {
+    display: none;
   }
 `;

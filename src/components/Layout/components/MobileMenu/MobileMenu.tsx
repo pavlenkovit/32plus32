@@ -7,7 +7,6 @@ import nav from '../../../../constants/nav';
 
 import Styled from './MobileMenu.styled';
 import { IState } from '../../../../store/reducers';
-import DonateButton from '../../../DonateButton';
 
 const MobileMenu: FC = () => {
   const { menuIsActive } = useSelector((state: IState) => state.app);
@@ -50,7 +49,6 @@ const MobileMenu: FC = () => {
           );
         })}
       </Styled.List>
-      <DonateButton />
     </Styled.Container>
   );
 };

@@ -11,7 +11,6 @@ import Pagination from '../../components/Pagination';
 import { IPost, IUser } from '../../models/wp';
 import getTotalPages from '../../utils/getTotalPages';
 import { IPaginationProps } from '../../models/pagination';
-import Container from '../../components/Container';
 
 interface IProps extends IPaginationProps {
   user: IUser;
@@ -25,17 +24,15 @@ const UserPage: NextPage<IProps> = ({ user, posts, totalPages, page }) => {
         title={user.name}
         type="person"
       />
-      <Breadcrumbs items={[{ title: user.name }]} />
-      <Container isSmall>
-        <MainTitle>{user.name}</MainTitle>
-        <PostsList posts={posts} />
-        <Pagination
-          total={totalPages}
-          activePage={page}
-          rootHref="/user/[slug]"
-          rootAs={`/user/${user.slug}`}
-        />
-      </Container>
+      <Breadcrumbs />
+      <MainTitle>{user.name}</MainTitle>
+      <PostsList posts={posts} />
+      <Pagination
+        total={totalPages}
+        activePage={page}
+        rootHref="/user/[slug]"
+        rootAs={`/user/${user.slug}`}
+      />
     </>
   );
 };

@@ -15,7 +15,7 @@ const Container = styled.div < IProps > `
     'position: fixed;'
   )}
   ${({ isFixedTop }) => isFixedTop && (
-    'top: 15px;'
+    'top: 116px;'
   )}
   ${({ isFixedBottom }) => isFixedBottom && (
     'bottom: 0;'

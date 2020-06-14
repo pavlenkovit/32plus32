@@ -36,8 +36,4 @@ const MobileWrapper = styled.div`
   align-items: center;
 `;
 
-const ButtonWrap = styled.div`
-  margin-left: 15px;
-`;
-
-export default { Container, Inner, Left, MobileWrapper, ButtonWrap };
+export default { Container, Inner, Left, MobileWrapper };

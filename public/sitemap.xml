@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://32plus32.ru/</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings/dv</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/trainings/dc</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/blog</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/donate</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/page/trenirovki-po-dlinnomu-ciklu</loc>
@@ -46,42 +46,82 @@
   </url>
   <url>
     <loc>https://32plus32.ru/category/null</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/vosstanovlenie</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/lichnosti</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/nauchnye-stati</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/novosti</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/dvoeborie</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/dc</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/planirovanie-trenirovok</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/tehnika</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/category/trenirovki</loc>
+    <lastmod>2020-06-14</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-13-06-20</loc>
+    <lastmod>2020-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-11-06-20</loc>
+    <lastmod>2020-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-10-06-20</loc>
+    <lastmod>2020-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-9-06-20</loc>
+    <lastmod>2020-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-8-06-20</loc>
+    <lastmod>2020-06-07</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-6-06-20</loc>
+    <lastmod>2020-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-5-06-20</loc>
+    <lastmod>2020-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-4-06-20</loc>
+    <lastmod>2020-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-3-06-20</loc>
+    <lastmod>2020-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://32plus32.ru/post/dc-2-06-20</loc>
     <lastmod>2020-06-01</lastmod>
   </url>
   <url>
@@ -130,7 +170,7 @@
   </url>
   <url>
     <loc>https://32plus32.ru/post/dc-18-05-20</loc>
-    <lastmod>2020-05-19</lastmod>
+    <lastmod>2020-06-02</lastmod>
   </url>
   <url>
     <loc>https://32plus32.ru/post/dc-16-05-20</loc>
@@ -1243,45 +1283,5 @@
   <url>
     <loc>https://32plus32.ru/post/russkij-tvist-s-girej</loc>
     <lastmod>2019-11-23</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/post/xodba-vypadami-s-girej-v-fiksacii</loc>
-    <lastmod>2019-11-23</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-2-04-19</loc>
-    <lastmod>2019-04-04</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-1-04-19</loc>
-    <lastmod>2019-04-04</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-30-03-19</loc>
-    <lastmod>2019-04-02</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-29-03-19</loc>
-    <lastmod>2019-04-02</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-28-03-19</loc>
-    <lastmod>2019-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-27-03-19</loc>
-    <lastmod>2019-04-02</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-26-03-19</loc>
-    <lastmod>2019-03-24</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-25-03-19</loc>
-    <lastmod>2019-04-02</lastmod>
-  </url>
-  <url>
-    <loc>https://32plus32.ru/train/trenirovka-po-dvoeboryu-na-23-03-19</loc>
-    <lastmod>2019-04-02</lastmod>
   </url>
 </urlset>

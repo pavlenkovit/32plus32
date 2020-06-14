@@ -35,7 +35,7 @@ const Button = styled.button`
 const List = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 0 0 15px;
+  margin: 0;
   font-size: 1.25em;
   display: block;
   width: 100%;

@@ -8,7 +8,6 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import SmallPostsList from '../components/SmallPostsList';
 import MainTitle from '../components/MainTitle';
 import { IPost } from '../models/wp';
-import Container from '../components/Container';
 
 interface IProps {
   posts: IPost[];
@@ -27,11 +26,9 @@ const Blog: NextPage<IProps> = ({ posts }) => {
         keywords={keywords}
         type="blog"
       />
-      <Breadcrumbs items={[{ title }]} />
-      <Container isSmall>
-        <MainTitle>{title}</MainTitle>
-        <SmallPostsList posts={posts} />
-      </Container>
+      <Breadcrumbs />
+      <MainTitle>{title}</MainTitle>
+      <SmallPostsList posts={posts} />
     </>
   );
 };

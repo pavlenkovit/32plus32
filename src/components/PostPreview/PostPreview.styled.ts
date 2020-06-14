@@ -2,14 +2,10 @@ import styled from 'styled-components';
 import device from '../../constants/device';
 
 const ImgWrap = styled.div`
-  width: 400px;
-  max-width: 50%;
-  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 20px;
   @media ${device.tablet} {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    margin-right: 0;
+    
   }
 `;
 
@@ -26,7 +22,10 @@ const ImgLink = styled.a`
 
 const Container = styled.article`
   margin-bottom: 40px;
-  display: flex;
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
   &:hover {
     & ${ImgLink} {
       transform: scale(1.05);
@@ -34,7 +33,8 @@ const Container = styled.article`
     }
   }
   @media ${device.tablet} {
-    flex-wrap: wrap;
+    max-width: 100%;
+    flex: 0 0 100%;
   }
 `;
 
@@ -45,11 +45,6 @@ const ImgContainer = styled.div`
   padding: 33.3% 0;
   position: relative;
   overflow: hidden;
-`;
-
-const Body = styled.div`
-  flex: 1 1 auto;
-  width: 1%;
 `;
 
 const Info = styled.div`
@@ -79,4 +74,4 @@ const Excerpt = styled.div`
   }
 `;
 
-export default { ImgWrap, Container, ImgLink, ImgContainer, Body, Info, Title, TitleLink, Excerpt };
+export default { ImgWrap, Container, ImgLink, ImgContainer, Info, Title, TitleLink, Excerpt };

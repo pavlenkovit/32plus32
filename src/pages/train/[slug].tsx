@@ -8,7 +8,6 @@ import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { IPost } from '../../models/wp';
 import DonateEnd from '../../components/DonateEnd';
-import Container from '../../components/Container';
 
 interface IProps {
   train: IPost;
@@ -63,13 +62,10 @@ const TrainPage: NextPage<IProps> = ({ train }) => {
             href: '/trainings/[slug]',
             as: `/trainings/${type}`,
           },
-          { title: dateStr },
         ]}
       />
-      <Container isSmall>
-        <Post {...train} title={{ rendered: title }} />
-        <DonateEnd>Нравятся тренировки? Поддержите нас</DonateEnd>
-      </Container>
+      <Post {...train} title={{ rendered: title }} />
+      <DonateEnd>Нравятся тренировки? Поддержите нас</DonateEnd>
     </>
   );
 };

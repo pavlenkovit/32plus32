@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 0;
+  left: -60px;
   bottom: 15px;
   width: 50px;
 `;
@@ -18,14 +18,14 @@ const Inner = styled.div < IInner > `
   display: flex;
   align-items: center;
   width: 50px;
-  height: 100vh;
+  height: calc(100vh - 116px);
   margin-top: ${({ marginTop }) => marginTop}px;
   transform: translateZ(0);
   ${({ isFixedTop, isFixedBottom }) => (isFixedTop || isFixedBottom) && (
     'position: fixed;'
   )}
     ${({ isFixedTop }) => isFixedTop && (
-    'top: 0'
+    'top: 116px;'
   )}
     ${({ isFixedBottom }) => isFixedBottom && (
     'bottom: 0;'

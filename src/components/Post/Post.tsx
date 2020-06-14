@@ -56,12 +56,12 @@ const Post: FC<IPost> = (props) => {
         // @ts-ignore
         dangerouslySetInnerHTML={{ __html: content.rendered }}
       />
-      {windowWidth > 1060 && (
+      {windowWidth >= 1260 && (
         <StickyContainer>
           <Share />
         </StickyContainer>
       )}
-      {(windowWidth && windowWidth <= 1060) && (
+      {(windowWidth && windowWidth < 1260) && (
         <Share isInline />
       )}
     </article>

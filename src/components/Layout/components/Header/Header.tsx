@@ -11,7 +11,6 @@ import Styled from './Header.styled';
 import { IState } from '../../../../store/reducers';
 import useWindowWidth from '../../../../hooks/useWindowWidth';
 import { size } from '../../../../constants/device';
-import DonateButton from '../../../DonateButton';
 
 const Header: React.FC = () => {
   const { searchIsActive } = useSelector((state: IState) => state.app);
@@ -37,9 +36,6 @@ const Header: React.FC = () => {
                 <Nav />
               </Styled.Left>
               <SearchButton />
-              <Styled.ButtonWrap>
-                <DonateButton />
-              </Styled.ButtonWrap>
             </>
           )}
         </Styled.Inner>

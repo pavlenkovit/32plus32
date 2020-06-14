@@ -4,6 +4,7 @@ const Container = styled.footer`
   background: #000;
   color: #9B9B9B;
   padding-top: 30px;
+  z-index: 1;
 `;
 
 const Row = styled.div`

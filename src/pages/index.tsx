@@ -6,11 +6,9 @@ import baseURL from '../constants/baseURL';
 import CustomHead from '../components/CustomHead';
 import PostsList from '../components/PostsList';
 import Pagination from '../components/Pagination';
-import MainTitle from '../components/MainTitle';
 import { IPost } from '../models/wp';
 import getTotalPages from '../utils/getTotalPages';
 import { IPaginationProps } from '../models/pagination';
-import Container from '../components/Container';
 
 interface IProps extends IPaginationProps {
   posts: IPost[];
@@ -27,8 +25,7 @@ const Index: NextPage<IProps> = ({ posts, totalPages, page }) => {
         keywords={keywords}
         type="website"
       />
-      <Container isSmall>
-        <MainTitle>Сайт о гиревом спорте 32PLUS32</MainTitle>
+      <>
         <PostsList posts={posts} />
         <Pagination
           total={totalPages}
@@ -36,7 +33,7 @@ const Index: NextPage<IProps> = ({ posts, totalPages, page }) => {
           rootHref="/"
           rootAs="/"
         />
-      </Container>
+      </>
     </>
   );
 };

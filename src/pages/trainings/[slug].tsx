@@ -11,7 +11,6 @@ import Pagination from '../../components/Pagination';
 import { IPost } from '../../models/wp';
 import getTotalPages from '../../utils/getTotalPages';
 import { IPaginationProps } from '../../models/pagination';
-import Container from '../../components/Container';
 
 interface IProps extends IPaginationProps {
   trainings: IPost[];
@@ -21,12 +20,10 @@ interface IProps extends IPaginationProps {
 const values: any = {
   dv: {
     title: 'Тренировки по классическому двоеборью',
-    shirtTitle: 'Классическое двоеборье',
     description: 'Тренировочный план по гиревому спорту по классическому двоеборью',
   },
   dc: {
     title: 'Тренировки по длинному циклу',
-    shirtTitle: 'Длинный цикл',
     description: 'Тренировочный план по гиревому спорту по длинному циклу',
   },
 };
@@ -37,7 +34,7 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
     localSlug = 'dc';
   }
 
-  const { title, shirtTitle, description } = values[localSlug];
+  const { title, description } = values[localSlug];
   const keywords = 'тренировки по гиревому спорту, гири тренировки';
 
   return (
@@ -55,21 +52,16 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
             href: '/trainings',
             as: '/trainings',
           },
-          {
-            title: shirtTitle,
-          },
         ]}
       />
-      <Container isSmall>
-        <MainTitle>{title}</MainTitle>
-        <TrainsList trainings={trainings} />
-        <Pagination
-          total={totalPages}
-          activePage={page}
-          rootHref="/trainings/[slug]"
-          rootAs={`/trainings/${slug}`}
-        />
-      </Container>
+      <MainTitle>{title}</MainTitle>
+      <TrainsList trainings={trainings} />
+      <Pagination
+        total={totalPages}
+        activePage={page}
+        rootHref="/trainings/[slug]"
+        rootAs={`/trainings/${slug}`}
+      />
     </>
   );
 };

@@ -47,15 +47,15 @@ class StickyContainer extends PureComponent<{}, IState> {
     const sidebarHeight = sidebar.offsetHeight;
     const parentHeight = sidebar.parentElement.offsetHeight;
     // @ts-ignore
-    const offsetTop = document.querySelector('#header').offsetHeight + 30;
+    const offsetTop = document.querySelector('#header').offsetHeight + 50;
 
-    if (y < offsetTop - 15) { // в зоне хедера
+    if (y < 0) { // в зоне хедера
       this.updatePosition(false, false, 0);
       return;
     }
 
-    if (y > offsetTop + parentHeight - sidebarHeight - 15) { // долистали до футера
-      this.updatePosition(false, false, parentHeight - sidebarHeight);
+    if (y > offsetTop + parentHeight - sidebarHeight) { // долистали до футера
+      this.updatePosition(false, false, parentHeight - sidebarHeight + 50);
       return;
     }
 
