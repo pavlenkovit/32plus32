@@ -8,25 +8,24 @@ import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getMeta from '../../utils/getMeta';
 import { IPost } from '../../models/wp';
+import SmallContainer from '../../components/SmallContainer';
 
 interface IProps {
   page: IPost;
 }
 
 const SimplePage: NextPage<IProps> = ({ page }) => {
-  const title = page.title.rendered;
-
   return (
-    <>
+    <SmallContainer>
       <CustomHead
-        title={title}
+        title={page.title.rendered}
         url={`/page/${page.slug}`}
         type="article"
         {...getMeta(page)}
       />
       <Breadcrumbs />
       <Post {...page} />
-    </>
+    </SmallContainer>
   );
 };
 

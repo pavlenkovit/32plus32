@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+const ImgLink = styled.a`
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .3s ease-out, opacity .2s ease-out;
+`;
+
 const Container = styled.article`
   display: flex;
   padding-bottom: 15px;
@@ -11,7 +22,6 @@ const Container = styled.article`
   }
   &:not(:last-child) {
     margin-bottom: 15px;
-    border-bottom: solid 1px #d8d8d8;
   }
 `;
 
@@ -27,17 +37,6 @@ const ImgContainer = styled.div`
   padding: 33.3% 0;
   position: relative;
   overflow: hidden;
-`;
-
-const ImgLink = styled.a`
-  display: block;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform .3s ease-out, opacity .2s ease-out;
 `;
 
 const Body = styled.div`

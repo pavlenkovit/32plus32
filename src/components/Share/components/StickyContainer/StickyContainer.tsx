@@ -22,7 +22,9 @@ class StickyContainer extends PureComponent<{}, IState> {
 
   componentDidMount() {
     window.addEventListener('scroll', this.setPosition);
-    this.setPosition();
+    setTimeout(() => {
+      this.setPosition();
+    }, 0);
   }
 
   componentWillUnmount() {
@@ -48,11 +50,6 @@ class StickyContainer extends PureComponent<{}, IState> {
     const parentHeight = sidebar.parentElement.offsetHeight;
     // @ts-ignore
     const offsetTop = document.querySelector('#header').offsetHeight + 50;
-
-    if (y < 0) { // в зоне хедера
-      this.updatePosition(false, false, 0);
-      return;
-    }
 
     if (y > offsetTop + parentHeight - sidebarHeight) { // долистали до футера
       this.updatePosition(false, false, parentHeight - sidebarHeight + 50);

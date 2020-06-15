@@ -5,6 +5,7 @@ import Link from 'next/link';
 import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
+import SmallContainer from '../components/SmallContainer';
 
 const TrainingsPage: NextPage = () => {
   const title = 'Тренировки по гиревому спорту';
@@ -12,7 +13,7 @@ const TrainingsPage: NextPage = () => {
   const keywords = 'тренировки по гиревому спорту, гири тренировки';
 
   return (
-    <>
+    <SmallContainer>
       <CustomHead
         title={title}
         description={description}
@@ -32,7 +33,7 @@ const TrainingsPage: NextPage = () => {
           </Link>
         </div>
       </div>
-    </>
+    </SmallContainer>
   );
 };
 

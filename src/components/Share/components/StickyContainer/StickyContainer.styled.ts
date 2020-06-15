@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   position: absolute;
   top: 0;
-  left: -60px;
-  bottom: 15px;
+  left: 0;
+  bottom: 0;
   width: 50px;
 `;
 
@@ -17,6 +17,7 @@ interface IInner {
 const Inner = styled.div < IInner > `
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50px;
   height: calc(100vh - 116px);
   margin-top: ${({ marginTop }) => marginTop}px;

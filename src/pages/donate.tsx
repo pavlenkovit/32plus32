@@ -5,6 +5,7 @@ import CustomHead from '../components/CustomHead';
 import Breadcrumbs from '../components/Breadcrumbs';
 import MainTitle from '../components/MainTitle';
 import Donate from '../components/Donate';
+import SmallContainer from '../components/SmallContainer';
 
 const DonatePage: NextPage = () => {
   const title = 'Поддержать проект 32PLUS32';
@@ -12,7 +13,7 @@ const DonatePage: NextPage = () => {
   const keywords = 'поддержка проекта';
 
   return (
-    <>
+    <SmallContainer>
       <CustomHead
         title={title}
         description={description}
@@ -21,7 +22,7 @@ const DonatePage: NextPage = () => {
       <Breadcrumbs />
       <MainTitle>{title}</MainTitle>
       <Donate />
-    </>
+    </SmallContainer>
   );
 };
 

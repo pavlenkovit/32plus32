@@ -9,7 +9,7 @@ import { IPost } from '../../models/wp';
 import useImgParams from '../../hooks/useImgParams';
 import useWindowWidth from '../../hooks/useWindowWidth';
 
-import Styled from './Post.styled';
+import * as Styled from './Post.styled';
 
 const Post: FC<IPost> = (props) => {
   const { title, content, date, modified, fimg_url, _embedded: { author } } = props;
@@ -56,12 +56,12 @@ const Post: FC<IPost> = (props) => {
         // @ts-ignore
         dangerouslySetInnerHTML={{ __html: content.rendered }}
       />
-      {windowWidth >= 1260 && (
+      {windowWidth >= 1020 && (
         <StickyContainer>
           <Share />
         </StickyContainer>
       )}
-      {(windowWidth && windowWidth < 1260) && (
+      {(windowWidth && windowWidth < 1020) && (
         <Share isInline />
       )}
     </article>

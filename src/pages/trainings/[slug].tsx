@@ -11,6 +11,7 @@ import Pagination from '../../components/Pagination';
 import { IPost } from '../../models/wp';
 import getTotalPages from '../../utils/getTotalPages';
 import { IPaginationProps } from '../../models/pagination';
+import SmallContainer from '../../components/SmallContainer';
 
 interface IProps extends IPaginationProps {
   trainings: IPost[];
@@ -38,7 +39,7 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
   const keywords = 'тренировки по гиревому спорту, гири тренировки';
 
   return (
-    <>
+    <SmallContainer>
       <CustomHead
         title={title}
         description={description}
@@ -62,7 +63,7 @@ const TrainingsPage: NextPage<IProps> = ({ trainings, totalPages, page, slug }) 
         rootHref="/trainings/[slug]"
         rootAs={`/trainings/${slug}`}
       />
-    </>
+    </SmallContainer>
   );
 };
 

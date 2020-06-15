@@ -74,7 +74,7 @@ const Share: FC<IProps> = ({ isInline = false }) => {
   return (
     <>
       <Styled.List isInline={isInline}>
-        {isInline && <Styled.Item><Styled.ShareTitle>Поделиться:</Styled.ShareTitle></Styled.Item>}
+        {isInline && <Styled.Item><Styled.ShareTitle>Поделиться</Styled.ShareTitle></Styled.Item>}
         <Styled.Item>
           <Styled.Button onClick={shareVk}>
             <VkIcon size={23} />

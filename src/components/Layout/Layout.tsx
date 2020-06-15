@@ -8,7 +8,6 @@ import MobileMenu from './components/MobileMenu';
 import * as Styled from './Layout.styled';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import { size } from '../../constants/device';
-import Sidebar from './components/Sidebar';
 import Container from '../Container';
 
 const Layout: FC = ({ children }) => {
@@ -48,14 +47,7 @@ const Layout: FC = ({ children }) => {
       </div>
       <Styled.Main>
         <Container>
-          <Styled.InnerContainer>
-            <Styled.Content id="content-zone">
-              {children}
-            </Styled.Content>
-            <Styled.SidebarWrapper>
-              {windowWidth >= size.laptop && <Sidebar />}
-            </Styled.SidebarWrapper>
-          </Styled.InnerContainer>
+          {children}
         </Container>
       </Styled.Main>
       <Footer />

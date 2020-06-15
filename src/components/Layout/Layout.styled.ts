@@ -20,10 +20,6 @@ export const Main = styled.main`
   }
 `;
 
-export const InnerContainer = styled.div`
-  display: flex;
-`;
-
 export const Content = styled.div`
   flex: 1 1 auto;
   position:relative;
@@ -34,13 +30,5 @@ export const BreadCrumbs = styled.div`
   margin-top: 66px;
   @media ${device.laptop} {
     margin-top: 48px;
-  }
-`;
-
-export const SidebarWrapper = styled.div`
-  width: 300px;
-  margin-left: 30px;
-  @media ${device.laptop} {
-    display: none;
   }
 `;

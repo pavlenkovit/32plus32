@@ -2,13 +2,9 @@ import React, { FC } from 'react';
 
 import Styled from './Container.styled';
 
-interface IProps {
-  isSmall?: boolean;
-}
-
-const Container: FC<IProps> = ({ children, isSmall = false }) => {
+const Container: FC = ({ children }) => {
   return (
-    <Styled isSmall={isSmall}>
+    <Styled>
       {children}
     </Styled>
   );

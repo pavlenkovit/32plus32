@@ -8,6 +8,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import SmallPostsList from '../components/SmallPostsList';
 import MainTitle from '../components/MainTitle';
 import { IPost } from '../models/wp';
+import SmallContainer from '../components/SmallContainer';
 
 interface IProps {
   posts: IPost[];
@@ -19,7 +20,7 @@ const Blog: NextPage<IProps> = ({ posts }) => {
   const keywords = 'гиревой спорт статьи, статья гиревой спорт, гиревой спорт блог';
 
   return (
-    <>
+    <SmallContainer>
       <CustomHead
         title={title}
         description={description}
@@ -29,7 +30,7 @@ const Blog: NextPage<IProps> = ({ posts }) => {
       <Breadcrumbs />
       <MainTitle>{title}</MainTitle>
       <SmallPostsList posts={posts} />
-    </>
+    </SmallContainer>
   );
 };
 

@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-const Info = styled.div`
+export const Info = styled.div`
   margin-bottom: 25px;
 `;
 
-const Img = styled.img`
+export const Img = styled.img`
   width: 100%;
   display: block;
 `;
 
-const Content = styled.div`
+export const Content = styled.div`
   margin-bottom: 30px;
 
   & .table-responsive {
@@ -92,5 +92,3 @@ const Content = styled.div`
     }
   }
 `;
-
-export default { Info, Img, Content };

@@ -10,6 +10,7 @@ import CustomHead from '../../components/CustomHead';
 import getMeta from '../../utils/getMeta';
 import { IPost } from '../../models/wp';
 import DonateEnd from '../../components/DonateEnd';
+import SmallContainer from '../../components/SmallContainer';
 
 interface IProps {
   post: IPost;
@@ -19,7 +20,7 @@ const PostPage: NextPage<IProps> = ({ post }) => {
   const title = ReactHTMLParser(post.title.rendered)[0];
 
   return (
-    <>
+    <SmallContainer>
       <CustomHead
         title={title}
         url={`/post/${post.slug}`}
@@ -37,7 +38,7 @@ const PostPage: NextPage<IProps> = ({ post }) => {
       />
       <Post {...post} />
       <DonateEnd>Понравилась статья? Поддержите нас</DonateEnd>
-    </>
+    </SmallContainer>
   );
 };
 
