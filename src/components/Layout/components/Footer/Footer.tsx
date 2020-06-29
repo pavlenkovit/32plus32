@@ -19,8 +19,6 @@ const Footer: FC = () => {
         no_cover: 1,
         color1: '151111',
         color3: 'FFF',
-        width: 'auto',
-        height: '300px',
       }, 52965338);
     }
   }, []);
