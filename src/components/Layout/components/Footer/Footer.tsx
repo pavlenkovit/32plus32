@@ -13,7 +13,14 @@ const Footer: FC = () => {
     // @ts-ignore
     if (window && window.VK && window.VK.Widgets) {
       // @ts-ignore
-      window.VK.Widgets.Group('vk_groups', { mode: 3, color1: '151111', color3: 'E24242' }, 52965338);
+      window.VK.Widgets.Group('vk_groups', {
+        mode: 3,
+        /* eslint-disable */
+        no_cover: 1,
+        color1: '151111',
+        color3: 'FFF',
+        width: '100%',
+      }, 52965338);
     }
   }, []);
 
