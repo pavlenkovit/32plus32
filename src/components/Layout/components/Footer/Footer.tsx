@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import Link from 'next/link';
 
 import Container from '../../../Container';
@@ -9,6 +9,14 @@ import Social from './components/Social';
 import Styled from './Footer.styled';
 
 const Footer: FC = () => {
+  useEffect(() => {
+    // @ts-ignore
+    if (window && window.VK && window.VK.Widgets) {
+      // @ts-ignore
+      window.VK.Widgets.Group('vk_groups', { mode: 3, color1: '151111', color3: 'E24242' }, 52965338);
+    }
+  }, []);
+
   return (
     <Styled.Container>
       <Container>
@@ -79,6 +87,9 @@ const Footer: FC = () => {
                 },
               ]}
             />
+          </FooterSidebar>
+          <FooterSidebar title="Мы вконтакте">
+            <div id="vk_groups" />
           </FooterSidebar>
           <FooterSidebar title="Мы в соцсетях">
             <Social />

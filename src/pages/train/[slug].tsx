@@ -7,7 +7,6 @@ import Post from '../../components/Post';
 import CustomHead from '../../components/CustomHead';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { IPost } from '../../models/wp';
-import DonateEnd from '../../components/DonateEnd';
 import SmallContainer from '../../components/SmallContainer';
 
 interface IProps {
@@ -66,7 +65,6 @@ const TrainPage: NextPage<IProps> = ({ train }) => {
         ]}
       />
       <Post {...train} title={{ rendered: title }} />
-      <DonateEnd>Нравятся тренировки? Поддержите нас</DonateEnd>
     </SmallContainer>
   );
 };

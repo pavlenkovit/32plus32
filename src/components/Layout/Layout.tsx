@@ -40,6 +40,7 @@ const Layout: FC = ({ children }) => {
         />
         <script async defer src="https://connect.facebook.net/en_US/sdk.js" />
         <script data-ad-client="ca-pub-2490800653471089" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+        <script src="https://vk.com/js/api/openapi.js?168" type="text/javascript" />
       </Head>
       {(windowWidth !== 0 && windowWidth <= size.laptop) && <MobileMenu />}
       <div id="header">

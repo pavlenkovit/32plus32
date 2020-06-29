@@ -326,6 +326,7 @@ const redirects = [
   { from: '/page/karta-saita', to: '/blog' },
   { from: '/post/zabros-dvux-gir-na-grud-frontalnyj-prised', to: 'https://vk.com/video-52965338_456239048' },
   { from: '/post/ryvok-s-vypadom-v-polozhenii-fiksacii', to: 'https://vk.com/video-52965338_456239047' },
+  { from: '/donate', to: 'https://vk.com/32plus32' },
 ];
 
 posts.forEach((post) => {

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import device from '../../../../../../constants/device';
 
 const Container = styled.aside`
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 25%;
+  max-width: 25%;
   padding: 0 15px;
   box-sizing: border-box;
   margin-bottom: 30px;
