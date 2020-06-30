@@ -25,6 +25,7 @@ const Layout: FC = ({ children }) => {
         <meta httpEquiv="Cache-Control" content="max-age=31536000, must-revalidate" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="32PLUS32" />
+        <meta name="yandex-verification" content="2fa33287c5c04ae8" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
