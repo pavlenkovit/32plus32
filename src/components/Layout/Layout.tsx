@@ -13,6 +13,15 @@ import Container from '../Container';
 const Layout: FC = ({ children }) => {
   const windowWidth = useWindowWidth();
 
+  const els = React.Children.map(children, (element: any) => {
+    return {
+      element,
+      name: element?.type?.name,
+      displayName: element?.type?.displayName,
+    };
+  });
+  console.log(els);
+
   return (
     <Styled.Container>
       <Head>
