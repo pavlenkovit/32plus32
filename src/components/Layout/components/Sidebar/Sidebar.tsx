@@ -1,5 +1,4 @@
 import React, { PureComponent, Ref } from 'react';
-import Adsense from './components/Adsense';
 
 import Styled from './Sidebar.styled';
 
@@ -133,9 +132,7 @@ class Sidebar extends PureComponent<{}, IState> {
         isFixedTop={isFixedTop}
         isFixedBottom={isFixedBottom}
         marginTop={marginTop}
-      >
-        <Adsense />
-      </Styled.Container>
+      />
     );
   }
 }
