@@ -35,6 +35,8 @@ const Layout: FC = ({ children }) => {
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="32PLUS32" />
         <meta name="yandex-verification" content="2fa33287c5c04ae8" />
+        <script>window.yaContextCb=window.yaContextCb||[]</script>
+        <script src="https://yandex.ru/ads/system/context.js" async></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

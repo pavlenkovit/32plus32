@@ -19,9 +19,19 @@ const Post: FC<IPost> = (props) => {
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // вверху статьи
-    // @ts-ignore
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    window.yaContextCb.push(()=>{
+      Ya.Context.AdvManager.render({
+        renderTo: 'yandex_rtb_R-A-332263-2',
+        blockId: 'R-A-332263-2',
+      });
+    });
+
+    window.yaContextCb.push(()=>{
+      Ya.Context.AdvManager.render({
+        renderTo: 'yandex_rtb_R-A-332263-3',
+        blockId: 'R-A-332263-3',
+      });
+    });
   }, []);
 
   return (
@@ -41,14 +51,7 @@ const Post: FC<IPost> = (props) => {
         </div>
       )}
 
-      <ins
-        className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client="ca-pub-2490800653471089"
-        data-ad-slot="6823539128"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
+      <div id="yandex_rtb_R-A-332263-2" />
 
       <Styled.Content
         itemProp="articleBody"
@@ -56,6 +59,9 @@ const Post: FC<IPost> = (props) => {
         // @ts-ignore
         dangerouslySetInnerHTML={{ __html: content.rendered }}
       />
+
+      <div id="yandex_rtb_R-A-332263-3"></div>
+
       {windowWidth >= 1020 && (
         <StickyContainer>
           <Share />
